@@ -1,0 +1,37 @@
+/*Navigation*/
+body {
+ margin: 0;
+}
+
+.nav {
+    width: 100%;
+    height: auto;
+}
+
+.nav ul {
+    list-style-type: none;
+    background-color: #313131;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    max-height: 100%;
+    overflow-x: auto;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 450;
+    text-align: center;
+    display: block;
+    color: white;
+    padding: 15.5px 16px;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    background-color: rgb(160, 8, 8);
+}
