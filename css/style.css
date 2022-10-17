@@ -6,9 +6,8 @@ body {
 
 /*Navigation, lager boks øverst på siden*/
 .navigasjon {
-    display: block;
+    display: inline block;
     color: rgb(255, 255, 255);
-    text-align: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 35px;
     padding: 15px 10px;
@@ -21,6 +20,11 @@ body {
     float: left;
     margin-top: 8px;
 }
+
+.navigasjon img {
+    max-width: 200px;
+}
+
 /*Lager en boks som legger seg foran innholdet på siden, denne boksen inneholder navigasjonen*/
 .nav {
     height: 100%;
