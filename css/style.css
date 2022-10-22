@@ -6,24 +6,40 @@ body {
 
 /*Navigation, lager boks øverst på siden*/
 .navigasjon {
-    display: inline block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: rgb(255, 255, 255);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 35px;
-    padding: 15px 10px;
+    font-size: 2.5vw;
     background-color: #000000;
 }
 
 .material-icons.md1 {
     font-size: 36px;
     cursor: pointer;
-    float: left;
-    margin-top: 8px;
+    display: block;
 }
 
 .navigasjon img {
     max-width: 200px;
 }
+
+.navbtn {
+    padding-left: 20px;
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .navbtn {
+        display: block;
+    }
+
+    .material-icons.md1 {
+        display: none;
+    }
+}
+
 
 /*Lager en boks som legger seg foran innholdet på siden, denne boksen inneholder navigasjonen*/
 .nav {
@@ -35,7 +51,7 @@ body {
     left: 0;
     background-color: #101010;
     overflow-x: hidden;
-    transition: 0.7s;
+    transition: 0.5s;
     padding-top: 100px;
 
 }
@@ -53,7 +69,6 @@ body {
 
 .nav a:hover {
     color: rgb(150, 150, 150);
-    transition: 0.3s;
 }
 
 .nav .closebtn {
