@@ -8,10 +8,10 @@ body {
 .navigasjon {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     color: rgb(255, 255, 255);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2.5vw;
+    font-size: 2vw;
     background-color: #000000;
 }
 
@@ -30,6 +30,8 @@ body {
     display: none;
 }
 
+
+/*Medida query: CSS for når viewport er videre enn 600px*/
 @media only screen and (min-width: 600px) {
     .navbtn {
         display: block;
@@ -51,7 +53,7 @@ body {
     left: 0;
     background-color: #101010;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
     padding-top: 100px;
 
 }
