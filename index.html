@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tittel</title> <!--Tittelen som kommer opp i nettleseren-->
+    <title>Ottimo: Hosting and Restaurant</title> <!--Tittelen som kommer opp i nettleseren-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Setter initial screen size til enheten-->
     <link rel="stylesheet" type="text/css" href="css/style.css"> <!--Link til css fil-->
@@ -13,11 +13,13 @@
     <div class="navigasjon">
       <i class="material-icons md1" onclick="openNav()">menu</i> <!--Top menu bar som får frem en side nav-->
       <img src="IMG/logo.png"> <!--Logo?-->
-      <div class="navbtn">Home</div>
-      <div class="navbtn">Booking</div>
-      <div class="navbtn">Meny</div>
-      <div class="navbtn">Accessibility</div>
-      <div class="navbtn">Topic</div>
+      <div class="navbtn">
+        <a href="index.html">Home</a> 
+        <a href="booking.html">Booking</a>
+        <a href="menu.html">Meny</a>            <!--Linker til de forskjellige sidene, hele nav koden kan kopieres til alle sidene-->
+        <a href="accessibility.html">Accessibility</a>
+        <a href="topic.html">Topic</a>
+      </div>
     </div> 
     <div id="popout" class="nav"> <!--Nav bar div, er gjemt frem til js endrer width når onclick kalles-->
       <a class="closebtn" onclick="closeNav()"><i class="material-icons md2">close</i></a>  <!--Setter width til 0 igjen-->
