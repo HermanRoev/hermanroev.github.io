@@ -5,11 +5,13 @@
     <title>Ottimo: Hosting and Restaurant</title> <!--Tittelen som kommer opp i nettleseren-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Setter initial screen size til enheten-->
-    <link rel="stylesheet" type="text/css" href="css/style.css"> <!--Link til css fil-->
+    <link rel="stylesheet" type="text/css" href="css/style.css"> <!--Link til css fil for nav-->
+    <link rel="stylesheet" type="text/css" href="css/home.css"> <!--Link til css for home page-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!--Google sine free to use icons-->
     <script src="js/script.js"></script>  <!--Link til javascript fil-->
   </head>
   <body>
+    <!--Navigation-->
     <div class="navigasjon">
       <i class="material-icons md1" onclick="openNav()">menu</i> <!--Top menu bar som får frem en side nav-->
       <img src="IMG/logo.png"> <!--Logo?-->
@@ -29,6 +31,30 @@
       <a href="accessibility.html">Accessibility</a>
       <a href="topic.html">Topic</a>
     </div>
-    <h1 style="color: white;">Dette er forsiden</h1>
+    <!--End of navigation-->
+
+    <!--Events div-->
+    <div class="container">
+      <div class="events-container"> <!---->
+          <div class="col">
+            <div>
+              <div><img src="/IMG/gathering.jpg"></div>
+              <div><img src="/IMG/party.jpg"></div>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <div><img src="/IMG/wedding.jpg"></div>
+              <div><img src="/IMG/workshop.jpg"></div>
+            </div>
+          </div>
+      </div>
+      <div class="events-text-container">
+        <div class="headline">Events</div>
+        <div class="description">Her på Ottimo kan du ha alle events du kan tenkte deg. Vi hjelper til med å tilrrettelegge for bryllup, konfirmasjon, firmafester, workshops og mer.</div>
+        <a href="booking.html">Book her</a>
+      </div>
+    </div>
+    <!--End of events-->
   </body>
 </html>
