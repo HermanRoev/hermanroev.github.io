@@ -1,22 +1,117 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>tittel til siden</title>
+    <title>Ottimo: Menu</title> <!--Tittelen som kommer opp i nettleseren-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Setter initial screen size til enheten-->
+    <link rel="stylesheet" type="text/css" href="css/style.css"> <!--Link til css fil-->
+    <link rel="stylesheet" type="text/css" href="css/dining.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!--Google sine free to use icons-->
   </head>
   <body>
-    <div class="nav">
-      <ul>
-        <li><a href=>icon</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="booking.html">Booking</a></li>
-        <li><a href="menu.html">Meny</a></li>
-        <li><a href="accessibility.html">Accessibility</a></li>
-        <li><a href="topic.html">Topic</a></li>
-      </ul>
+
+<!--NAVIGASJON-->
+    <div class="navigasjon">
+      <i class="material-icons md1" onclick="openNav()">menu</i> <!--Top menu bar som får frem en side nav-->
+      <a href="index.html"><img src="IMG/logo.png"></a> <!--Logo-->
+      <div class="navbtn">
+        <a href="index.html">Home</a> 
+        <a href="events.html">Events</a>
+        <a href="dining.html">Dining</a>            <!--Linker til de forskjellige sidene, hele nav koden kan kopieres til alle sidene-->
+        <a href="accessibility.html">Accessibility</a>
+        <a href="topic.html">Topic</a>
+      </div>
+    </div> 
+    <div id="popout" class="nav"> <!--Nav bar div, er gjemt frem til js endrer width når onclick kalles-->
+      <a class="closebtn" onclick="closeNav()"><i class="material-icons md2">close</i></a>  <!--Setter width til 0 igjen-->
+      <a href="index.html">Home</a> 
+      <a href="events.html">Events</a>
+      <a href="dining.html">Dining</a>            <!--Linker til de forskjellige sidene, hele nav koden kan kopieres til alle sidene-->
+      <a href="accessibility.html">Accessibility</a>
+      <a href="topic.html">Topic</a>
     </div>
-    <h1>Dette er menyen</h1>
+<!--NAVIGASJON SLUTT-->
+
+
+
+
+
+<div class="header">
+ <div class="headertext"><h1>Menu</h1></div>
+</div>
+<div class="drinkchart">
+  <div class="drinkcharttext"><h3>Thirsty?</h3>
+  <button href="drinkchart.html" class="drinkbtn">Take a look at our drinkchart</button>
+</div>
+</div>
+
+
+
+
+
+<div class="main">
+<div class="starters">
+  <div class="starterstext">Starters</div>
+</div>
+  <h3>Focaccia sarda <small>Ⓜ️</small></h3>
+          <p>steinovnsbakt pizzabunn med pecorino, parmesan, olivenolje, rosmarin, havsalt og aioli<p>
+              <div class="allergener">allergener: egg, hvete, melk, sennep, svoveldioksid og sulfitt</div>
+<br>
+<h3>Salumi e parmigiano reggiano <small>Ⓜ️</small></h3>
+  <p>parmaskinke, fennikelsalami og parmigiano reggiano<p>
+      <div class="allergener">allergener: melk, egg, svoveldioksid og sulfitt</div>
+
+
+
+
+
+
+  <div class="pizza">
+    <div class="pizzatext">Pizza</div>
+  </div>
+      
+ <h3>Pizza al formaggio <small>🌱Ⓜ️</small></h3> 
+ <p>ost, tomatsaus og oregano<p>
+     <div class="allergener">allergener: hvete, melk, selleri</div>
+<br>
+<h3>Pizza al peperoni <small>🌱Ⓜ️</small></h3>
+ <p>ost, tomatsaus, pepperoni, rødløk, rød paprika, gul paprika og oregano<p>
+     <div class="allergener">allergener: hvete, melk, selleri</div> 
+<br>
+<h3>Pizza al prosciutto <small>🌱Ⓜ️</small></h3>
+ <p>ost, tomatsaus, parmaskinke, rødløk, oliven og oregano<p>
+     <div class="allergener">allergener: hvete, melk, selleri</div>
+
+<div class="pasta">
+<div class="pastatext">Pasta</div>
+</div>
+     <h3>Pasta carbonara <small>Ⓜ️</small></h3> 
+         <p>linguine, guanciale, eggeplommer, fløte, parmesan, nykvernet sort pepper<p>
+             <div class="allergener">allergener: hvete, egg, melk</div>
+ <br>
+     <h3>Penne al pollo ubriaco <small>Ⓜ️</small></h3>
+         <p>penne, kylling, bacon, tomat, basilikum, chili, fløte<p>
+             <div class="allergener">allergener: hvete, melk</div>
+ <br>
+     <h3>Pasta di manzo <small>Ⓜ️</small></h3>
+         <p>tagliatelle, ytrefilet av okse, sopp, fløte, gorgonzola<p>
+             <div class="allergener">allergener: hvete, melk, selleri</div>
+ <br>
+
+
+<div class="dessert">
+ <div class="desserttext">Dessert</div>
+</div>
+ <h3>Panna cotta <small>Ⓜ️</small></h3>
+     <p>klassisk fløte- og vaniljedessert med marinerte bjørnebær og bringebærcoulis<p>
+         <div class="allergener">allergener: melk</div>
+<br>
+ <h3>Tiramisù <small>Ⓜ️</small></h3>
+     <p>savoiardikjeks dyppet i espresso og rom med mascarponekrem og kakaodryss<p>
+         <div class="allergener">allergener: egg, hvete, melk</div>
+<br>
+
+
+</div>
   </body>
 </html>
