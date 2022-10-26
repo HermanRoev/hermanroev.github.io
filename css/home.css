@@ -1,20 +1,20 @@
-.container {
+.events-container {
     display: flex;
+    padding: 5% 5%;
 }
 
-.events-container {
+.events-image-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 50%;
-    margin: 10px 0;
 }
 
-.events-container .col {
+.events-image-container .col {
     max-width: 45%;
 }
 
-.events-container .col img{
+.events-image-container .col img{
     max-width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
