@@ -111,3 +111,20 @@ body {
     cursor: pointer;
 }
 
+/*FOOTER*/
+.footerheader{
+    width: 100%;
+    text-align: center;
+}
+.footerrow {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+  }
+
+  .footercolumn {
+    flex: 50%;
+    padding: 10px;
+  }
+  /*FOOTER END*/
