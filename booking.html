@@ -1,22 +1,103 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>tittel til siden</title>
+    <title>Ottimo: Hosting and Restaurant</title> <!--Tittelen som kommer opp i nettleseren-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Setter initial screen size til enheten-->
+    <link rel="stylesheet" type="text/css" href="css/style.css"> <!--Link til css fil-->
+    <link rel="stylesheet" type="text/css" href="css/booking.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!--Google sine free to use icons-->
+    <script src="js/script.js"></script>  <!--Link til javascript fil-->
   </head>
   <body>
-    <div class="nav">
-      <ul>
-        <li><a href=>icon</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="booking.html">Booking</a></li>
-        <li><a href="menu.html">Meny</a></li>
-        <li><a href="accessibility.html">Accessibility</a></li>
-        <li><a href="topic.html">Topic</a></li>
-      </ul>
+    <div class="navigasjon">
+      <i class="material-icons md1" onclick="openNav()">menu</i> <!--Top menu bar som får frem en side nav-->
+      <img src="IMG/logo.png"> <!--Logo?-->
+      <div class="navbtn">
+        <a href="index.html">Home</a> 
+        <a href="events.html">Events</a>
+        <a href="dining.html">Dining</a>            <!--Linker til de forskjellige sidene, hele nav koden kan kopieres til alle sidene-->
+        <a href="accessibility.html">Accessibility</a>
+        <a href="topic.html">Topic</a>
+      </div>
     </div>
-    <h1>Dette er booking siden</h1>
+    
+    <div id="popout" class="nav"> <!--Nav bar div, er gjemt frem til js endrer width når onclick kalles-->
+      <a class="closebtn" onclick="closeNav()"><i class="material-icons md2">close</i></a>  <!--Setter width til 0 igjen-->
+      <a href="index.html">Home</a> 
+      <a href="events.html">Events</a>
+      <a href="dining.html">Dining</a>            <!--Linker til de forskjellige sidene, hele nav koden kan kopieres til alle sidene-->
+      <a href="accessibility.html">Accessibility</a>
+      <a href="topic.html">Topic</a>
+    </div>
+    
+    <div class= "page-background">
+      <div class="header">
+        <h1>Dine with Prestiege</h1>
+        <a href="#reservation">
+          <div class="button">
+            <button class="btn">Make a reservation</button>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="about-us-page">
+      <div class="about-us-text">
+        <h4>about us</h4>
+        <h1>We are Prestiege</h1>
+        <p> your requests, our passion</p>
+        <a href="aboutus.html">
+          <div class="button">
+            <button class="btn" style="border: 2px solid black; color: black;" >Read more</button>
+          </div>
+        </a>
+      </div>
+      <div class="aboutus-image">
+        <img src="img/aboutUs.jpeg" alt="aboutUs">
+      </div>
+    </div>
+
+    <section id="reservation">
+      <div class="reservation-page">
+        <form action="#">
+          <h1>Reserve a table</h1>
+            <div class="input-field">
+              <label for="date">Date:</label>
+              <input type="date" name="date" id="date" required>
+            </div>
+            <div class="input-field">
+              <label for="time-of-date">Time:</label>
+              <input type="time" name="time" id="time" value="07:00" required> 
+            </div>
+            <div class="input-field">
+              <label for="number-of-people">Table for how many?</label>
+              <select name="People" id="number-of-people">
+              <option value="1">1 person</option>
+              <option value="2">2 persons</option>
+              <option value="3">3 persons</option>
+              <option value="4">4 persons</option>
+              <option value="5">5 persons</option>
+              <option value="6">6 persons</option>
+            </select>
+            </div>
+            <div class="input-field">
+              <label for="first-name">Phone:</label>
+              <input type="tel" name="phonenumber" id="phonenumber" placeholder="E.g. 987 65 432" pattern="[0-9]{3} [0-9]{2} [0-9]{3}|[0-9]{8}|[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+            </div>
+            <div class="input-field">
+              <label for="first-name">First Name:</label>
+              <input type="text" name="first-name" id="first-name" placeholder="E.g. John" required>
+            </div>
+            <div class="input-field">
+              <label for="last-name">Last Name:</label>
+              <input type="text" name="last-name" id="last-name" placeholder= "E.g. Smith" required>
+            </div>
+            <div class="reservation-button">
+              <button class="reservation-btn">Make a reservation</button>
+            </div>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
