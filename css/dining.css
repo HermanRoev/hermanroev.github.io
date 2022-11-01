@@ -58,81 +58,39 @@ body, html {
 
 
 
-.starters
+.mealtypes
+{
+    background-size: cover;
+    height: 340px;
+    background-attachment: fixed;
+    display: flex;
+    margin-bottom: 10%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 4rem;
+    color: #f6f3ef;
+}
+
+.startersbg
 {
     background-image: url(/IMG/food/starters.png);
-    background-size: cover;
-    height: 340px;
-    background-attachment: fixed;
-    display: flex;
-    margin-bottom: 10%;
 }
 
-.starterstext
-{
-    font-size: 4rem;
-    color: #f6f3ef;
-    text-align: center;
-    margin: auto;
-}
-
-.pizza
+.pizzabg
 {
     background-image: url(/IMG/food/pizza.png);
-    background-size: cover;
-    height: 340px;
-    background-attachment: fixed;
-    display: flex;
-    margin-bottom: 10%;
-    margin-top: 10%;
 }
 
-.pizzatext
-{
-    font-size: 4rem;
-    color: #f6f3ef;
-    text-align: center;
-    margin: auto;
-}
-
-.pasta
+.pastabg
 {
     background-image: url(/IMG/food/pasta.png);
-    background-size: cover;
-    height: 340px;
-    background-attachment: fixed;
-    display: flex;
-    margin-bottom: 10%;
-    margin-top: 10%;
 }
 
-.pastatext
-{
-    font-size: 4rem;
-    color: #f6f3ef;
-    text-align: center;
-    margin: auto;
-}
-
-.dessert
+.dessertbg
 {
     background-image: url(/IMG/food/dessert.png);
-    background-size: cover;
-    height: 340px;
-    background-attachment: fixed;
-    display: flex;
-    margin-bottom: 10%;
-    margin-top: 10%;
 }
-
-.desserttext
-{
-    font-size: 4rem;
-    color: #f6f3ef;
-    text-align: center;
-    margin: auto;
-}
-
 
 
 
