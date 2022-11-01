@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ottimo: Menu</title> <!--Tittelen som kommer opp i nettleseren-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Setter initial screen size til enheten-->
+    <link rel="stylesheet" type="text/css" href="css/style.css"> <!--Link til css fil-->
+    <link rel="stylesheet" type="text/css" href="css/dining.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><!--Google sine free to use icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!--Google sine free to use icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--font awesome, for facebook logo-->
+    <script src="/js/script.js"></script>  <!--Link til javascript fil-->
+  </head>
+  <body>
+
+<!--NAVIGASJON-->
+    <div class="navigasjon">
+      <i class="material-icons md1" onclick="openNav()">menu</i> <!--Top menu bar som får frem en side nav-->
+      <a href="index.html"><img src="IMG/logo.png"></a> <!--Logo-->
+      <div class="navbtn">
+        <a href="index.html">Home</a> 
+        <a href="events.html">Events</a>
+        <a href="dining.html">Dining</a>            <!--Linker til de forskjellige sidene, hele nav koden kan kopieres til alle sidene-->
+        <a href="accessibility.html">Accessibility</a>
+        <a href="topic.html">Topic</a>
+      </div>
+    </div> 
+    <div id="popout" class="nav"> <!--Nav bar div, er gjemt frem til js endrer width når onclick kalles-->
+      <a class="closebtn" onclick="closeNav()"><i class="material-icons md2">close</i></a>  <!--Setter width til 0 igjen-->
+      <a href="index.html">Home</a> 
+      <a href="events.html">Events</a>
+      <a href="dining.html">Dining</a>            <!--Linker til de forskjellige sidene, hele nav koden kan kopieres til alle sidene-->
+      <a href="accessibility.html">Accessibility</a>
+      <a href="topic.html">Topic</a>
+    </div>
+<!--NAVIGASJON SLUTT-->
+
+
+
+
+
+<div class="header">
+ <div class="headertext"><h1>Menu</h1></div>
+</div>
+<div class="drinkchart">
+  <div class="drinkcharttext"><h3>Thirsty?</h3>
+  <button href="drinkchart.html" class="drinkbtn">Take a look at our drinkchart</button>
+</div>
+</div>
+
+
+
+
+
+<div class="main">
+<div class="mealtypes startersbg">
+  Starters
+</div>
+  <h3>Focaccia sarda <small>Ⓜ️</small></h3>
+          <p>steinovnsbakt pizzabunn med pecorino, parmesan, olivenolje, rosmarin, havsalt og aioli<p>
+              <div class="allergener">allergener: egg, hvete, melk, sennep, svoveldioksid og sulfitt</div>
+<br>
+<h3>Salumi e parmigiano reggiano <small>Ⓜ️</small></h3>
+  <p>parmaskinke, fennikelsalami og parmigiano reggiano<p>
+      <div class="allergener">allergener: melk, egg, svoveldioksid og sulfitt</div>
+
+
+
+
+
+
+  <div class="mealtypes pizzabg">
+    Pizza
+  </div>
+      
+ <h3>Pizza al formaggio <small>🌱Ⓜ️</small></h3> 
+ <p>ost, tomatsaus og oregano<p>
+     <div class="allergener">allergener: hvete, melk, selleri</div>
+<br>
+<h3>Pizza al peperoni <small>🌱Ⓜ️</small></h3>
+ <p>ost, tomatsaus, pepperoni, rødløk, rød paprika, gul paprika og oregano<p>
+     <div class="allergener">allergener: hvete, melk, selleri</div> 
+<br>
+<h3>Pizza al prosciutto <small>🌱Ⓜ️</small></h3>
+ <p>ost, tomatsaus, parmaskinke, rødløk, oliven og oregano<p>
+     <div class="allergener">allergener: hvete, melk, selleri</div>
+
+<div class="mealtypes pastabg">
+  Pasta
+</div>
+     <h3>Pasta carbonara <small>Ⓜ️</small></h3> 
+         <p>linguine, guanciale, eggeplommer, fløte, parmesan, nykvernet sort pepper<p>
+             <div class="allergener">allergener: hvete, egg, melk</div>
+ <br>
+     <h3>Penne al pollo ubriaco <small>Ⓜ️</small></h3>
+         <p>penne, kylling, bacon, tomat, basilikum, chili, fløte<p>
+             <div class="allergener">allergener: hvete, melk</div>
+ <br>
+     <h3>Pasta di manzo <small>Ⓜ️</small></h3>
+         <p>tagliatelle, ytrefilet av okse, sopp, fløte, gorgonzola<p>
+             <div class="allergener">allergener: hvete, melk, selleri</div>
+ <br>
+
+
+<div class="mealtypes dessertbg">
+  Dessert
+</div>
+ <h3>Panna cotta <small>Ⓜ️</small></h3>
+     <p>klassisk fløte- og vaniljedessert med marinerte bjørnebær og bringebærcoulis<p>
+         <div class="allergener">allergener: melk</div>
+<br>
+ <h3>Tiramisù <small>Ⓜ️</small></h3>
+     <p>savoiardikjeks dyppet i espresso og rom med mascarponekrem og kakaodryss<p>
+         <div class="allergener">allergener: egg, hvete, melk</div>
+<br>
+</div>
+
+
+<!--FOOTER-->
+<footer>
+  <div class="footerheader"><h3>Our location</h3><p>Our location lies in a suberb spot in the beautiful sorroundings of Aker Brygge, Oslo. Come visit us at Bryggetorget 2, Oslo during our opening hours. If you have any questions feel free to contact us.</p></div>
+<div class="footerrow">
+    <div class="footercolumn">
+      <div class="google-maps">
+        <iframe
+            src="https://maps.google.com/maps?q=bryggetorget%202&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="600"
+            height="500"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+        </div>
+      </div>
+    
+        <div class="footercolumn">
+      <p>Mandag - Torsdag   15:00 - 22:00</p>
+      <p>Fredag - Lørdag    16:00 - 23:15</p>
+      <p>Søndag Stengt</p>
+      <br>
+      <p>987 65 432 <span class="material-symbols-rounded" style="color:#7f6e56;">phone_in_talk</span></p>
+      
+      <p>contact@ottimo.com <span class="material-symbols-rounded" style="color:#7f6e56;">mail</span></p>
+      <p><a href="facebook.com">facebook <i class="fa fa-facebook-f" style="color:#7f6e56;"></i></a></p>
+  </div>
+</div>
+<div class="footerinfo" style="background-color:#2b251d; width: 100%; height: 100%; color:#CFB997; padding: 1.5%;"> <p><strong>Site created by</strong></p>
+  <p>S374949 - Ludvig Stenvik</p>
+  <p>S348906 - Herman Røv</p>
+  <p>S374993 - Selmer James Solland</p>
+  <p>S374955 - Michael Nguyen</p>
+     </div>
+</footer>
+<!--FOOTER END-->
+  </body>
+</html>

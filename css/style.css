@@ -5,38 +5,53 @@
 
 body {
  margin: 0;
- background-color: #1f1f1f;
+ background-color: #fbfbfb;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*Navigation, lager boks øverst på siden*/
 .navigasjon {
     display: flex;
+    float: left;
     align-items: center;
-    justify-content: center;
-    background-color: #000000;
+    justify-content: space-around;
+    background-color: #0f0f0fdf;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 1;
 }
+
 
 .material-icons.md1 {
     font-size: 36px;
     cursor: pointer;
-    color: white;
+    color: rgb(240, 240, 240);
 }
 
 .navigasjon img {
-    max-width: 200px;
+    max-width: 140px;
+    padding: 20px 0px;
+    transition: transform .5s;
+}
+.navigasjon img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .navbtn a{
     padding-left: 20px;
     display: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
-    color: rgb(255, 255, 255);
+    color: rgb(240, 240, 240);
     text-decoration: none;
+    transition: transform .5s;
 }
 
 .navbtn a:hover {
-    color: rgb(150, 150, 150);
+    color: #CFB997;
+    transform: scale(1.1);
 }
 
 
@@ -68,18 +83,17 @@ body {
 }
 
 .nav a {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 25px;
     font-weight: 450;
     text-align: left;
     display: block;
-    color: rgb(255, 255, 255);
+    color: rgb(240, 240, 240);
     padding: 15px 16px;
     text-decoration: none;
 }
 
 .nav a:hover {
-    color: rgb(150, 150, 150);
+    color: #CFB997;
 }
 
 .nav .closebtn {
@@ -89,11 +103,81 @@ body {
 }
 
 .material-icons.md2 {
-    color: rgb(255, 255, 255);
+    color: rgb(240, 240, 240);
     font-size: 48px;
 }
 
-.closebtn:hover {
+.material-icons.md2:hover {
+    color: #CFB997;
     cursor: pointer;
 }
 
+/*FOOTER*/
+.footerheader{
+    max-width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 15%;
+    font-weight: 100;
+}
+
+.footercolumn {
+    margin: auto;
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 2.5%;
+    padding-left: 7.5%;
+  }
+
+.footerrow::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 800px) {
+    .footercolumn {
+      width: 100%;
+    }
+  }
+
+  .google-maps {
+    position: relative;
+    padding-bottom: 60%;
+    padding-top: 5%;
+    height: 0;
+  }
+
+  .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+footer a:link{
+    text-decoration: none;
+    color: #7f6e56;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: #CFB997;
+    cursor: pointer;
+}
+footer a:visited{
+    color: #7f6e56;
+}
+  footer p {
+    font-size: 1.5rem;
+  }
+
+  .footerinfo p {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 1%;
+  }
+  /*FOOTER END*/
