@@ -74,7 +74,7 @@ body, html {
 
 .about-us-text {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: white;
+  color: black;
   flex: 1;
   order: 1;
   text-align: center;
@@ -100,7 +100,7 @@ body, html {
 
 .about-us-info {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: white;
+  color: black;
   flex: 1;
   order: 3;
   text-align: center;
