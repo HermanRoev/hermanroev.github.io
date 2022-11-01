@@ -60,9 +60,9 @@ body, html {
 
 .starters
 {
-    background-image: url(/IMG/pizza.png);
+    background-image: url(/IMG/food/starters.png);
     background-size: cover;
-    height: 600px;
+    height: 340px;
     background-attachment: fixed;
     display: flex;
     margin-bottom: 10%;
@@ -70,7 +70,7 @@ body, html {
 
 .starterstext
 {
-    font-size: 7rem;
+    font-size: 4rem;
     color: #f6f3ef;
     text-align: center;
     margin: auto;
@@ -78,9 +78,9 @@ body, html {
 
 .pizza
 {
-    background-image: url(/IMG/pizza.png);
+    background-image: url(/IMG/food/pizza.png);
     background-size: cover;
-    height: 600px;
+    height: 340px;
     background-attachment: fixed;
     display: flex;
     margin-bottom: 10%;
@@ -89,7 +89,7 @@ body, html {
 
 .pizzatext
 {
-    font-size: 7rem;
+    font-size: 4rem;
     color: #f6f3ef;
     text-align: center;
     margin: auto;
@@ -97,9 +97,9 @@ body, html {
 
 .pasta
 {
-    background-image: url(/IMG/pizza.png);
+    background-image: url(/IMG/food/pasta.png);
     background-size: cover;
-    height: 600px;
+    height: 340px;
     background-attachment: fixed;
     display: flex;
     margin-bottom: 10%;
@@ -108,7 +108,7 @@ body, html {
 
 .pastatext
 {
-    font-size: 7rem;
+    font-size: 4rem;
     color: #f6f3ef;
     text-align: center;
     margin: auto;
@@ -116,9 +116,9 @@ body, html {
 
 .dessert
 {
-    background-image: url(/IMG/pizza.png);
+    background-image: url(/IMG/food/dessert.png);
     background-size: cover;
-    height: 600px;
+    height: 340px;
     background-attachment: fixed;
     display: flex;
     margin-bottom: 10%;
@@ -127,7 +127,7 @@ body, html {
 
 .desserttext
 {
-    font-size: 7rem;
+    font-size: 4rem;
     color: #f6f3ef;
     text-align: center;
     margin: auto;
@@ -186,3 +186,6 @@ body, html {
             color: rgb(230, 230, 230);
             text-align: center;
         }
+
+
+ 

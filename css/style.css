@@ -15,18 +15,19 @@ body {
     float: left;
     align-items: center;
     justify-content: space-around;
-    background-color: #0f0f0fc1;
+    background-color: #0f0f0fdf;
     position: fixed;
     top: 0;
     width: 100%;
     transition: top 0.3s;
+    z-index: 1;
 }
 
 
 .material-icons.md1 {
     font-size: 36px;
     cursor: pointer;
-    color: rgb(22, 22, 22);
+    color: rgb(240, 240, 240);
 }
 
 .navigasjon img {
@@ -36,7 +37,7 @@ body {
 }
 .navigasjon img:hover{
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .navbtn a{
@@ -102,7 +103,7 @@ body {
 }
 
 .material-icons.md2 {
-    color: rgb(255, 255, 255);
+    color: rgb(240, 240, 240);
     font-size: 48px;
 }
 
@@ -113,18 +114,70 @@ body {
 
 /*FOOTER*/
 .footerheader{
-    width: 100%;
+    max-width: 100%;
     text-align: center;
+    font-size: 1.5rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 15%;
+    font-weight: 100;
 }
-.footerrow {
-    display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 5%;
+
+.footercolumn {
+    margin: auto;
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 2.5%;
+    padding-left: 7.5%;
   }
 
-  .footercolumn {
-    flex: 50%;
-    padding: 10px;
+.footerrow::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 700px) {
+    .footercolumn {
+      width: 100%;
+    }
+  }
+
+  .google-maps {
+    position: relative;
+    padding-bottom: 60%;
+    padding-top: 5%;
+    height: 0;
+  }
+
+  .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+footer a:link{
+    text-decoration: none;
+    color: #7f6e56;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: #CFB997;
+    cursor: pointer;
+}
+footer a:visited{
+    color: #7f6e56;
+}
+  footer p {
+    font-size: 1.5rem;
+  }
+
+  .footerinfo p {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 1%;
   }
   /*FOOTER END*/
