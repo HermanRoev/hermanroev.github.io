@@ -4,7 +4,7 @@ body, html {
     }
 
 .header {
-    background-image: url(/IMG/menuBG.png);
+    background-image: url(/IMG/dining/menuBG.png);
     height: 500px; 
     background-position: center;
     background-repeat: no-repeat;
@@ -73,22 +73,22 @@ body, html {
 
 .startersbg
 {
-    background-image: url(/IMG/food/starters.png);
+    background-image: url(/IMG/dining/food/starters.png);
 }
 
 .pizzabg
 {
-    background-image: url(/IMG/food/pizza.png);
+    background-image: url(/IMG/dining/food/pizza.png);
 }
 
 .pastabg
 {
-    background-image: url(/IMG/food/pasta.png);
+    background-image: url(/IMG/dining/food/pasta.png);
 }
 
 .dessertbg
 {
-    background-image: url(/IMG/food/dessert.png);
+    background-image: url(/IMG/dining/food/dessert.png);
 }
 
 
