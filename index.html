@@ -41,18 +41,14 @@
     <div class="logo">
       <img src="/IMG/OttimoW.png"> 
       <div id="logoinfo">Events and dining</div>
-      <div id="headerbuttons"><button href="events.html" class="headerbtn">Events</button><button o class="headerbtn">Dining</button></div>
+      <div id="headerbuttons"><button class="headerbtn" onClick="document.getElementById('events').scrollIntoView();">Events</button><button o class="headerbtn"  onClick="document.getElementById('meny').scrollIntoView();">Dining</button></div>
     </div>
 </div>
-
-<div class="events"></div>
-
-
 
 
     <!--End of navigation-->
     <!--Events div, mangler alt tekst på bildene-->
-    <div class="events-container">
+    <div id="events" class="events-container">
       <div class="events-image-container">
         <div class="col">
           <div style="padding-bottom: 10px;"><img src="/IMG/home/gathering.jpg"></div>
@@ -72,7 +68,7 @@
     </div>
     <!--End of events-->
     <!--Menu div, mangler alt tekst på bildene--> 
-    <div class="events-container meny">
+    <div id="meny" class="events-container meny">
       <div class="events-text-container">
         <h1 class="headline">Meny</h1>
         <img src=""> <!--Divider img-->
