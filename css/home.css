@@ -4,7 +4,7 @@ body, html {
     }
 
     .header {
-        background-image:url(/IMG/homepageBG.png);
+        background-image:url(/IMG/home/homepageBG-min.png);
         height: 900px; 
         background-position: center;
         background-repeat: no-repeat;
