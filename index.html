@@ -38,16 +38,16 @@
 
 
 <div class="header">
-    <div class="logo">
-      <img src="/IMG/OttimoW.png"> 
-      <div id="logoinfo">Events and dining</div>
-      <div id="headerbuttons"><button href="events.html" class="headerbtn">Events</button><button o class="headerbtn">Dining</button></div>
-    </div>
+  <div class="logo">
+    <img src="/IMG/OttimoW.png"> 
+    <div id="logoinfo">Events and dining</div>
+    <div id="headerbuttons"><button class="headerbtn" onClick="document.getElementById('events').scrollIntoView();">Events</button><button o class="headerbtn"  onClick="document.getElementById('meny').scrollIntoView();">Dining</button></div> <!--Creates buttons when clicked scrolls the divs into view-->
+  </div>
 </div>
 
     <!--End of navigation-->
     <!--Events div, mangler alt tekst på bildene-->
-    <div class="events-container">
+    <div id="events" class="events-container">
       <div class="events-image-container">
         <div class="col">
           <div style="padding-bottom: 10px;"><img src="/IMG/home/gathering-min.jpg"></div>
@@ -67,7 +67,7 @@
     </div>
     <!--End of events-->
     <!--Menu div, mangler alt tekst på bildene--> 
-    <div class="events-container meny">
+    <div id="meny" class="events-container meny">
       <div class="events-text-container">
         <h1 class="headline">Meny</h1>
         <img src=""> <!--Divider img-->
@@ -92,9 +92,9 @@
     <!--FOOTER-->
 <footer>
   <div class="footerheader"><h3>Our location</h3><p>Our location lies in a suberb spot in the beautiful sorroundings of Aker Brygge, Oslo. Come visit us at Bryggetorget 2, Oslo during our opening hours. If you have any questions feel free to contact us.</p></div>
-<div class="footerrow">
+<div class="footerrow">   <!-- Footer row and columns for responsive design on different screen width -->
     <div class="footercolumn">
-      <div class="google-maps">
+      <div class="google-maps">  <!-- Google maps integrated into site via iframe element, from https://google-map-generator.com/ -->
         <iframe
             src="https://maps.google.com/maps?q=bryggetorget%202&t=&z=13&ie=UTF8&iwloc=&output=embed"
             width="600"
@@ -106,7 +106,7 @@
         </div>
       </div>
     
-        <div class="footercolumn">
+        <div class="footercolumn">   <!-- Footer row and columns for responsive design on different screen width -->
       <p>Mandag - Torsdag   15:00 - 22:00</p>
       <p>Fredag - Lørdag    16:00 - 23:15</p>
       <p>Søndag Stengt</p>
@@ -117,6 +117,7 @@
       <p><a href="">facebook <i class="fa fa-facebook-f" style="color:#7f6e56;"></i></a></p>
   </div>
 </div>
+<!-- Design credits, bottom of footer -->
 <div class="footerinfo" style="background-color:#2b251d; width: 100%; height: 100%; color:#CFB997; padding: 1.5%;"> <p><strong>Site created by</strong></p>
   <p>S374949 - Ludvig Stenvik</p>
   <p>S348906 - Herman Røv</p>
