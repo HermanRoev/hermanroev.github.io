@@ -59,30 +59,30 @@ body, html {
 
 /* Background images for mealtype headlines */
 
-        .mealtypes
-        {
-            background-size: cover;
-            height: 340px;
-            background-attachment: fixed;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            font-size: 4rem;
-            color: #f6f3ef;
-        }
+.mealtypes
+{
+    background-size: cover;
+    height: 340px;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 4rem;
+    color: #f6f3ef;
+}
 
-                .startersbg
-                {background-image: url(/IMG/dining/food/starters.png);}
+.startersbg
+{background-image: url(/IMG/dining/food/starters.png);}
 
-                .pizzabg
-                {background-image: url(/IMG/dining/food/pizza.png);}
+.pizzabg
+{background-image: url(/IMG/dining/food/pizza.png);}
 
-                .pastabg
-                {background-image: url(/IMG/dining/food/pasta.png);}
+.pastabg
+{background-image: url(/IMG/dining/food/pasta.png);}
 
-                .dessertbg
-                {background-image: url(/IMG/dining/food/dessert.png);}
+.dessertbg
+{background-image: url(/IMG/dining/food/dessert.png);}
 
 /* Background images for mealtype headlines end */
 
