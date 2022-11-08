@@ -1,12 +1,12 @@
 body, html {
     scroll-behavior: smooth;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     height: 100%;
 }
 
 .page-background {
-    background-image: url("/IMG/booking.jpg");
-    height: 91%;
+    background-image: url("/IMG/booking/bookingBG.png");
+    height: 100vh;
     width: auto;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,11 +16,7 @@ body, html {
 }
 
 .header {
-    background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    font-weight: lighter;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border: 3px solid white;
     position: absolute;
     width: auto;
     border-radius: 25px;
@@ -30,31 +26,31 @@ body, html {
     text-align: center;
 }
 
-.button {
-    margin: 2%;
-    text-align: center;
-    font-weight: lighter;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.header h1{
+  margin: 30px;
+  margin: auto;
+  color: #f6f3ef;
+  font-size: 4rem;
 }
 
-.btn {
+.headerbtn {
   background-color: transparent;
   border: 2px solid white;
   color: white;
   padding: 14px 30px;
   text-align: center;
   text-decoration: none;
-  display: inline-flexbox;
+  display: inline-block;
   margin: 2%;
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 10px;
   font-size: larger;
 }
-  
-.btn:hover {  
-   border: 2px solid #CFB997;
-   color: #CFB997;
+
+.headerbtn:hover {  
+  border: 2px solid #CFB997;
+  color: #CFB997;
 }
 
 .about-us-page {
@@ -108,7 +104,7 @@ body, html {
 }
 
 #reservation {
-  background:rgba(0, 0, 0, 0.5) url(/IMG/reservation.jpg);
+  background:rgba(0, 0, 0, 0.5) url(/IMG/booking/reservation.jpg);
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-position: center;
