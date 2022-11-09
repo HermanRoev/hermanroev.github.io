@@ -5,7 +5,7 @@ body, html {
 
 .header {
     background-image: url(/IMG/dining/menuBG.png);
-    height: 500px; 
+    height: 900px; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,6 +57,7 @@ body, html {
   }
 
 
+/* Background images for mealtype headlines */
 
 .mealtypes
 {
@@ -72,26 +73,18 @@ body, html {
 }
 
 .startersbg
-{
-    background-image: url(/IMG/dining/food/starters.png);
-}
+{background-image: url(/IMG/dining/food/starters.png);}
 
 .pizzabg
-{
-    background-image: url(/IMG/dining/food/pizza.png);
-}
+{background-image: url(/IMG/dining/food/pizza.png);}
 
 .pastabg
-{
-    background-image: url(/IMG/dining/food/pasta.png);
-}
+{background-image: url(/IMG/dining/food/pasta.png);}
 
 .dessertbg
-{
-    background-image: url(/IMG/dining/food/dessert.png);
-}
+{background-image: url(/IMG/dining/food/dessert.png);}
 
-
+/* Background images for mealtype headlines end */
 
 
 
@@ -102,7 +95,6 @@ body, html {
 
 /* main */
 .meny-text {
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,16 +103,17 @@ body, html {
     margin: 50px 0;
 }
 
-.rett {
+.dishes {
     margin: 30px 0;
 }
 
-.allergener {
+
+.allergens {
     font-size: 18px;
     opacity: 90%;
     font-style: italic;
     font-family: 'Times New ROman', Times, serif;
-    color: #4a4032;
+    color: #4a4032; 
     text-align: center;  
 }
 #Meny {
@@ -132,4 +125,9 @@ body, html {
     text-align: center;
 }
 
+@media only screen and (min-width: 600px) {
+    .meny-text {
+        width: 100%;
 
+    }
+}

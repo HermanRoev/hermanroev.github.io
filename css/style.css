@@ -1,54 +1,58 @@
-/*Setter body margin til 0 og legger til bg color*/
+/*Sets body bargin to zero, adds bg image, sets auto scroll to smooth, sets the global font*/
 * {
     box-sizing: border-box;
 }
+
 html{
     scroll-behavior: smooth;
 }
+
 body {
  margin: 0;
  background-color: #fbfbfb;
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/*Navigation, lager boks øverst på siden*/
+/*Navigation container at the top of the page*/
 .navigasjon {
     display: flex;
-    float: left;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: #0f0f0fdf;
     position: fixed;
     top: 0;
     width: 100%;
-    transition: top 0.3s;
+    transition: top 0.6s;
     z-index: 1;
 }
 
-
+/* Google icons*/
 .material-icons.md1 {
     font-size: 36px;
     cursor: pointer;
     color: rgb(240, 240, 240);
 }
 
+/* Logo */
 .navigasjon img {
     max-width: 140px;
     padding: 20px 0px;
-    transition: transform .5s;
+    transition: .4s;
 }
+
 .navigasjon img:hover{
     cursor: pointer;
     transform: scale(1.05);
 }
 
+/* Menu buttons */
 .navbtn a{
     padding-left: 20px;
     display: none;
     font-size: 20px;
     color: rgb(240, 240, 240);
     text-decoration: none;
-    transition: transform .5s;
+    transition: .4s;
 }
 
 .navbtn a:hover {
@@ -57,7 +61,7 @@ body {
 }
 
 
-/*Medida query: CSS for når viewport er videre enn 600px*/
+/*Medida query: CSS when viewport is wider than 600px, hides menu icon and shows the nav buttons*/
 @media only screen and (min-width: 600px) {
     .navbtn a{
         display: inline-flex;
@@ -69,7 +73,7 @@ body {
 }
 
 
-/*Lager en boks som legger seg foran innholdet på siden, denne boksen inneholder navigasjonen*/
+/* Creates a container to hold our nav menu */
 .nav {
     height: 100%;
     width: 0px;
@@ -126,7 +130,7 @@ footer
     font-size: 1.5rem;
     margin-left: 15%;
     margin-right: 15%;
-    margin-top: 15%;
+    margin-top: 10px;
     font-weight: 100;
 }
 
@@ -145,26 +149,27 @@ footer
     clear: both;
   }
 
-  @media screen and (max-width: 800px) {
-    .footercolumn {
-      width: 100%;
-    }
-  }
+@media screen and (max-width: 800px) {
+.footercolumn {
+    width: 100%;
+}
+}
 
-  .google-maps {
-    position: relative;
-    padding-bottom: 60%;
-    padding-top: 5%;
-    height: 0;
-  }
+/* Google maps api */
+.google-maps {
+position: relative;
+padding-bottom: 60%;
+padding-top: 5%;
+height: 0;
+}
 
-  .google-maps iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
-  }
+.google-maps iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100% !important;
+height: 100% !important;
+}
 
 footer a:link{
     text-decoration: none;

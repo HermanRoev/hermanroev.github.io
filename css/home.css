@@ -1,70 +1,69 @@
 body, html {
     scroll-behavior: smooth;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+}
 
-    .header {
-        background-image:url(/IMG/home/homepageBG-min.png);
-        height: 900px; 
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        }
+.header {
+    background-image:url(/IMG/home/homepageBG-min.png);
+    height: 900px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
-    .logo {
-        margin: auto;
-        width: 50%;
-        height: 40%;
-    }
+.logo {
+    margin: auto;
+    width: 50%;
+    height: 40%;
+}
 
-    .logo img {
-        width: 100%;
-    }
+.logo img {
+    width: 100%;
+}
 
-    #logoinfo {
-        color: white;
-        text-align: center;
-        font-size: 200%;
-        font-weight: lighter;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
+#logoinfo {
+    color: white;
+    text-align: center;
+    font-size: 200%;
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-    #headerbuttons {
-        margin: 2%;
-        text-align: center;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
+#headerbuttons {
+    margin: 2%;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-    .headerbtn {
-        background-color: transparent;
-        border: 2px solid white;
-        color: white;
-        padding: 14px 30px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        margin: 2%;
-        transition-duration: 0.4s;
-        cursor: pointer;
-        border-radius: 10px;
-        font-size: larger;
-      }
-      
-      .headerbtn:hover {  
-        border: 2px solid #CFB997;
-        color: #CFB997;
-      }
+.headerbtn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 14px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: larger;
+}
+    
+.headerbtn:hover {  
+    border: 2px solid #CFB997;
+    color: #CFB997;
+}
 
-      .events
-{
+.events {
     height: 100px;
 }
 
-.events-container {
+.home-container {
     display: flex;
     flex-direction: column;
     padding: 5% 5%;
@@ -74,24 +73,24 @@ body, html {
     flex-direction: column-reverse;
 }
 
-.events-image-container {
+.home-image-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.events-image-container .col {
+.home-image-container .col {
     max-width: 45%;
 }
 
-.events-image-container .col img{
+.home-image-container .col img{
     max-width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
 }
 
-.events-text-container {
+.home-text-container {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -100,8 +99,9 @@ body, html {
     align-items: center;
 }
 
-.events-text-container-button {
+.home-text-container-button {
     text-decoration: none;
+    font-size: 25px;
     color: rgb(0, 0, 0);
     border-style: solid;
     border-width: 1px;
@@ -110,13 +110,15 @@ body, html {
     padding: 6px;
 }
 
-.events-text-container-button:hover {
-    background-color: #CFB997;
-    transition: 0.5s;
+.home-text-container-button:hover {
+    color: #CFB997;
+    border-color: #CFB997;
+    transition: 0.4s;
 }
 
 .headline {
     margin-top: 0;
+    margin-bottom: 5%;
     font-size: 75px;
 }
 
@@ -126,8 +128,9 @@ body, html {
     text-align: center;
 }
 
+/* Changes the layout of the events and menu section */
 @media only screen and (min-width: 600px) {
-    .events-container {
+    .home-container {
         flex-direction: row;
     }
 
