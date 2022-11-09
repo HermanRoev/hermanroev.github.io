@@ -63,7 +63,7 @@ body, html {
     height: 100px;
 }
 
-.events-container {
+.home-container {
     display: flex;
     flex-direction: column;
     padding: 5% 5%;
@@ -73,24 +73,24 @@ body, html {
     flex-direction: column-reverse;
 }
 
-.events-image-container {
+.home-image-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.events-image-container .col {
+.home-image-container .col {
     max-width: 45%;
 }
 
-.events-image-container .col img{
+.home-image-container .col img{
     max-width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
 }
 
-.events-text-container {
+.home-text-container {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -99,7 +99,7 @@ body, html {
     align-items: center;
 }
 
-.events-text-container-button {
+.home-text-container-button {
     text-decoration: none;
     font-size: 25px;
     color: rgb(0, 0, 0);
@@ -110,7 +110,7 @@ body, html {
     padding: 6px;
 }
 
-.events-text-container-button:hover {
+.home-text-container-button:hover {
     color: #CFB997;
     border-color: #CFB997;
     transition: 0.4s;
@@ -130,7 +130,7 @@ body, html {
 
 /* Changes the layout of the events and menu section */
 @media only screen and (min-width: 600px) {
-    .events-container {
+    .home-container {
         flex-direction: row;
     }
 

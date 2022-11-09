@@ -12,28 +12,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--font awesome, for facebook logo-->
     <script src="/js/script.js"></script>  <!--Link til javascript fil-->
   </head>
-  <body>
+<body>
 
 <!--NAVIGASJON-->
-    <div id="navbar" class="navigasjon">
-      <i class="material-icons md1" onclick="openNav()">menu</i> <!--Top menu bar som får frem en side nav-->
-      <a href="index.html"><img src="IMG/logo.png"></a> <!--Logo-->
-      <div class="navbtn">
-        <a href="index.html">Home</a> 
-        <a href="booking.html">Booking</a>
-        <a href="dining.html">Dining</a>            <!--Linker til de forskjellige sidene, hele nav koden kan kopieres til alle sidene-->
-        <a href="accessibility.html">Accessibility</a>
-        <a href="topic.html">Topic</a>
-      </div>
-    </div> 
-    <div id="popout" class="nav"> <!--Nav bar div, er gjemt frem til js endrer width når onclick kalles-->
-      <a class="closebtn" onclick="closeNav()"><i class="material-icons md2">close</i></a>  <!--Setter width til 0 igjen-->
-      <a href="index.html">Home</a> 
-      <a href="booking.html">Booking</a>
-      <a href="dining.html">Dining</a>            <!--Linker til de forskjellige sidene, hele nav koden kan kopieres til alle sidene-->
-      <a href="accessibility.html">Accessibility</a>
-      <a href="topic.html">Topic</a>
-    </div>
+<div id="navbar" class="navigasjon">
+  <i class="material-icons md1" onclick="openNav()">menu</i> <!--Top menu bar som får frem en side nav-->
+  <a href="index.html"><img src="IMG/logo.png"></a> <!--Logo-->
+  <div class="navbtn">
+    <a href="index.html">Home</a> 
+    <a href="booking.html">Booking</a>
+    <a href="dining.html">Dining</a>            <!--Linker til de forskjellige sidene, hele nav koden kan kopieres til alle sidene-->
+    <a href="accessibility.html">Accessibility</a>
+    <a href="topic.html">Topic</a>
+  </div>
+</div> 
+<div id="popout" class="nav"> <!--Nav bar div, er gjemt frem til js endrer width når onclick kalles-->
+  <a class="closebtn" onclick="closeNav()"><i class="material-icons md2">close</i></a>  <!--Setter width til 0 igjen-->
+  <a href="index.html">Home</a> 
+  <a href="booking.html">Booking</a>
+  <a href="dining.html">Dining</a>            <!--Linker til de forskjellige sidene, hele nav koden kan kopieres til alle sidene-->
+  <a href="accessibility.html">Accessibility</a>
+  <a href="topic.html">Topic</a>
+</div>
 
 
 
@@ -45,48 +45,48 @@
   </div>
 </div>
 
-    <!--End of navigation-->
-    <!--Events div, mangler alt tekst på bildene-->
-    <div id="events" class="events-container">
-      <div class="events-image-container">
-        <div class="col">
-          <div style="padding-bottom: 10px;"><img src="/IMG/home/gathering-min.jpg"></div>
-          <div><img src="/IMG/home/party-min.jpg"></div>
-        </div>
-        <div class="col">
-          <div style="padding-bottom: 10px;"><img src="/IMG/home/wedding-min.jpg"></div>
-          <div><img src="/IMG/home/workshop-min.jpg"></div>
-        </div>
-      </div>
-      <div class="events-text-container">
-        <h1 class="headline">Events</h1>
-        <img src=""> <!--Divider image-->
-        <p class="description">Her på Ottimo kan du ha alle events du kan tenkte deg. Vi hjelper til med å tilrettelegge for bryllup, konfirmasjon, firmafester, workshops og mer.</p>
-        <a href="booking.html" class="events-text-container-button">Book her</a>
-      </div>
+<!--End of navigation-->
+<!--Events div, mangler alt tekst på bildene-->
+<div id="events" class="home-container">
+  <div class="home-image-container">
+    <div class="col">
+      <div style="padding-bottom: 10px;"><img src="/IMG/home/gathering-min.jpg"></div>
+      <div><img src="/IMG/home/party-min.jpg"></div>
     </div>
-    <!--End of events-->
-    <!--Menu div, mangler alt tekst på bildene--> 
-    <div id="meny" class="events-container meny">
-      <div class="events-text-container">
-        <h1 class="headline">Meny</h1>
-        <img src=""> <!--Divider img-->
-        <p class="description">Her på Ottimo er vi stolte av å servere Italiensk mat. ogås noe mer tekst om maten jeg er litt usikker på hva det er vanlig å ha her</p>
-        <a href="menu.html" class="events-text-container-button">Se Menyen</a>
-      </div>
-      <div class="events-image-container">
-        <div class="col">
-          <div style="padding-bottom: 10px;"><img src="IMG/home/bolognese-min.jpg"></div>
-          <div><img src="IMG/home/lasagne-min.jpg"></div>
-        </div>
-        <div class="col">
-          <div style="padding-bottom: 10px;"><img src="IMG/home/pizzabunn-min.jpg"></div>
-          <div><img src="IMG/home/carbonara-min.jpg"></div>
-        </div>
-      </div>
+    <div class="col">
+      <div style="padding-bottom: 10px;"><img src="/IMG/home/wedding-min.jpg"></div>
+      <div><img src="/IMG/home/workshop-min.jpg"></div>
     </div>
-    <!--End Menu div-->
-    
+  </div>
+  <div class="home-text-container">
+    <h1 class="headline">Events</h1>
+    <img src=""> <!--Divider image-->
+    <p class="description">Her på Ottimo kan du ha alle events du kan tenkte deg. Vi hjelper til med å tilrettelegge for bryllup, konfirmasjon, firmafester, workshops og mer.</p>
+    <a href="booking.html" class="home-text-container-button">Book her</a>
+  </div>
+</div>
+<!--End of events-->
+<!--Menu div, mangler alt tekst på bildene--> 
+<div id="meny" class="home-container meny">
+  <div class="home-text-container">
+    <h1 class="headline">Meny</h1>
+    <img src=""> <!--Divider img-->
+    <p class="description">Her på Ottimo er vi stolte av å servere Italiensk mat. ogås noe mer tekst om maten jeg er litt usikker på hva det er vanlig å ha her</p>
+    <a href="dining.html" class="home-text-container-button">Se Menyen</a>
+  </div>
+  <div class="home-image-container">
+    <div class="col">
+      <div style="padding-bottom: 10px;"><img src="IMG/home/bolognese-min.jpg"></div>
+      <div><img src="IMG/home/lasagne-min.jpg"></div>
+    </div>
+    <div class="col">
+      <div style="padding-bottom: 10px;"><img src="IMG/home/pizzabunn-min.jpg"></div>
+      <div><img src="IMG/home/carbonara-min.jpg"></div>
+    </div>
+  </div>
+</div>
+<!--End Menu div-->
+
     
     
     <!--FOOTER-->
@@ -127,5 +127,5 @@
      </div>
 </footer>
 <!--FOOTER END-->
-  </body>
+</body>
 </html>
