@@ -1,68 +1,24 @@
-body, html {
-    scroll-behavior: smooth;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
 .header {
     background-image: url(/IMG/dining/menuBG.png);
-    height: 900px; 
+    height: 100vh; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    }
+} /* Creates header with bg and aligns items */
 
 .headertext{
     padding-top: 2%;
-    margin: auto;
     color: #f6f3ef;
     font-size: xx-large;
-}
-
-.drinkchart{
-    height: 370px;
-    background-color: #2b251d;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.drinkcharttext{
-    padding-bottom: 5%;
-    margin: auto;
-    color: #f6f3ef;
-    font-size: xx-large;
-    text-align: center;
-}
-
-.drinkbtn {
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    padding: 14px 30px;
-    margin-top: 15%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    transition-duration: 0.5s;
-    cursor: pointer;
-    border-radius: 10px;
-    font-size: large;
-  }
-  
-  .drinkbtn:hover {  
-    border: 2px solid #CFB997;
-    color: #CFB997;
-  }
-
-
-/* Background images for mealtype headlines */
+} /* Styles header text */
 
 .mealtypes
 {
     background-size: cover;
-    height: 340px;
+    height: 35vh;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
@@ -70,8 +26,9 @@ body, html {
     display: flex;
     font-size: 4rem;
     color: #f6f3ef;
-}
+} /* Styles mealtype headlines with fixed image bg and aligns and styles text */
 
+/* Background images for mealtype headlines */
 .startersbg
 {background-image: url(/IMG/dining/food/starters.png);}
 
@@ -83,13 +40,13 @@ body, html {
 
 .dessertbg
 {background-image: url(/IMG/dining/food/dessert.png);}
-
 /* Background images for mealtype headlines end */
 
-
-
-
-
+@media only screen and (max-width: 600px) {
+    .mealtypes {
+        height: 20vh;
+    }
+} /* Makes mealtypes headline divs with image smaller on smaller screens */
 
 
 
@@ -100,34 +57,59 @@ body, html {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    margin: 50px 0;
-}
+    margin: 50px 5px 50px 5px;
+} /* Creates div for meny text, centers text and creates margins between mealtype header and meny text */
 
 .dishes {
-    margin: 30px 0;
-}
-
+    margin: 20px 0;
+} /* Creates bigger margin between each dish */
+.dishes p{
+    color: #2b251d;
+} /* Changes text color of dishes and price */
 
 .allergens {
     font-size: 18px;
-    opacity: 90%;
+    opacity: 95%;
     font-style: italic;
     font-family: 'Times New ROman', Times, serif;
-    color: #4a4032; 
-    text-align: center;  
-}
-#Meny {
-    margin-bottOm: 70px;
-    font-size: 50px;
-    font-weight: bolder;
-    font-family: 'Times New ROman', Times, serif;
-    color: rgb(230, 230, 230);
+    color: #4a4032;   
+} /* Styling the allergens text */
+
+.drinkchart{
+    height: 30vh;
+    background-color: #2b251d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}/* Styles drinkchart div and aligns items inside div */
+.drinkcharttext{
+    color: #f6f3ef;
+    font-size: xx-large;
     text-align: center;
+    margin: 10px;
 }
 
-@media only screen and (min-width: 600px) {
-    .meny-text {
-        width: 100%;
+/* Styles drinkchart headline text */
+.drinkcharttext h3{
+    margin: 0px 0px 10px 0px;
+} /* Overrites h3 margin from style.css and sets another */
 
-    }
-}
+.drinkchart a {
+    margin-top: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 14px 30px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: large;
+  } /* Styles drinkchart button */
+  
+  .drinkchart a:hover {  
+    border: 2px solid #CFB997;
+    color: #CFB997;
+    cursor: pointer;
+  } /* Changes btn on hover */
