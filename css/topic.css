@@ -5,15 +5,14 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    height: 1800px;
     overflow-x: hidden;
 }
  
- .header{
+.header{
     height: 100vh;
- }
+}
 
- .headertxt{
+.headertxt{
     position: relative;
     color: aliceblue;
     font-size: 4rem;
@@ -23,7 +22,7 @@ body {
     text-align: right;
  }
 
- .bg {
+.bg {
     position: sticky;
     top: 0;
     background-image: url("/IMG/topic/topicBG.png");
@@ -36,10 +35,33 @@ body {
     justify-content: flex-end;
 }
 
-.headset {
+.graphic {
+    margin-top: 300px;
     position: relative;
     z-index: 1;
-    
+}
+
+.headset {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.highlight {
+    position: absolute;
+    top: -370px;
+    left: -100px;
+}
+
+.vr-zoom {
+    margin-top: 400px;
+    height: 3000px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
 }
 
 
