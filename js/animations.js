@@ -10,9 +10,8 @@ window.onscroll = function() {
         document.getElementById("txt").style.display = "flex";
         document.getElementById("txt").style.left = position*1.5 + "px";
     }
-    
-    vrzoom();
 
+    vrzoom();
  }
  
  function getCoords(element) {
@@ -30,9 +29,9 @@ window.onscroll = function() {
     console.log(cords);
     var zoom = document.getElementById("zoom")
     if (window.scrollY >= cords) {
-        zoom.classList.add("sticky");
+        
     }
     else {
-        zoom.classList.remove("sticky");
+        
     }
  }

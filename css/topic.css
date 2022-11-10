@@ -27,7 +27,7 @@ body {
     position: sticky;
     top: 0;
     background-image: url("/IMG/topic/topicBG.png");
-    height: 100vh; 
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,12 +58,6 @@ body {
 .vr-zoom {
     position: relative;
     margin-top: 400px;
-    
-}
-
-.sticky {
-    position: sticky;
-    top: 0;
 }
 
 
