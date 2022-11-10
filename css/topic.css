@@ -5,7 +5,8 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    height: 1300px;
+    height: 1800px;
+    overflow-x: hidden;
 }
  
  .header{
@@ -23,7 +24,8 @@ body {
  }
 
  .bg {
-    position: relative;
+    position: sticky;
+    top: 0;
     background-image: url("/IMG/topic/topicBG.png");
     height: 100vh; 
     background-position: center;
