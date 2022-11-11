@@ -9,9 +9,18 @@ html{
 
 body {
  margin: 0;
+ overflow: overlay; /* For custom transp scrollbar */
  background-color: #fbfbfb;
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb {  /* Styles the scrollbar */
+    background: #2b251d;}
+::-webkit-scrollbar-track {
+    background: #7f6e5640;} 
 
 /*Navigation container at the top of the page*/
 .navigasjon {
@@ -60,6 +69,25 @@ body {
     transform: scale(1.1);
 }
 
+.headerbtn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 14px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: larger;
+}
+    
+.headerbtn:hover {  
+    border: 2px solid #CFB997;
+    color: #CFB997;
+}
 
 /*Medida query: CSS when viewport is wider than 600px, hides menu icon and shows the nav buttons*/
 @media only screen and (min-width: 600px) {

@@ -25,7 +25,7 @@
   background-color: transparent;
   border: 2px solid white;
   color: white;
-  padding: 14px 30px;
+  position: absolute;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -41,18 +41,18 @@
 }
 
 .about-us-page {
-  display: flex;
-  height: auto;
-  width: auto;
-  flex-direction: column;
-  margin: 200px;
+display: flex;
+height: auto;
+width: auto;
+flex-direction: column;
+margin: 200px;
 }
 
 .about-us-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 100%;
+display: flex;
+flex-direction: row;
+align-items: center;
+height: 100%;
 }
 
 .about-us-text {
@@ -65,18 +65,18 @@
 }
 
 .aboutus-image {
-  height: 60%;
-  display: flex;
-  justify-content: center;
-  flex: 1;
-  order: 2;
- 
+height: 60%;
+display: flex;
+justify-content: center;
+flex: 1;
+order: 2;
+
 }
 
 .about-us-container2 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+display: flex;
+flex-direction: row;
+align-items: center;
 
 }
 
@@ -97,59 +97,59 @@
 }
 
 .reservation-page {
-  padding: 20px 0;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+padding: 20px 0;
+height: auto;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .reservation-page form {
-  display: grid;
-  grid-row-gap: 20px;
-  background-color: white;
-  border-radius: 5%;
-  width: 700px;
-  padding: 20px;
-  box-shadow: 0px 0px 38px -7px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0px 0px 38px -7px rgba(0, 0, 0, 0.5);
+display: grid;
+grid-row-gap: 20px;
+background-color: white;
+border-radius: 5%;
+width: 700px;
+padding: 20px;
+box-shadow: 0px 0px 38px -7px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0px 0px 38px -7px rgba(0, 0, 0, 0.5);
 }
 
 .reservation-page h1, .reservation-button {
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: underline;
-  text-decoration-color: #CFB997;
+text-align: center;
+text-transform: uppercase;
+text-decoration: underline;
+text-decoration-color: #CFB997;
 }
 
 .input-field {
-  display: flex;
-  justify-content: space-between;
-  margin: 4px;
+display: flex;
+justify-content: space-between;
+margin: 4px;
 }
 
 .input-field label, .text-box label {
-  font-weight: 575;
+font-weight: 575;
 }
 
 .input-field input, select {
-  height: 40px;
-  outline-style: solid;
-  border-radius: 4px;
-  outline-color: #CFB997;
-  border: none;
-  box-shadow: 0px 12px 29px -11px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0px 12px 29px -11px rgba(0, 0, 0, 0.5);;
+height: 40px;
+outline-style: solid;
+border-radius: 4px;
+outline-color: #CFB997;
+border: none;
+box-shadow: 0px 12px 29px -11px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0px 12px 29px -11px rgba(0, 0, 0, 0.5);;
 }
 
 .text-box textarea {
-  outline-style: solid;
-  border-radius: 4px;
-  outline-color: #CFB997;
-  border: none;
-  box-shadow: 0px 12px 29px -11px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0px 12px 29px -11px rgba(0, 0, 0, 0.5);;
-  margin-top: 6px;
+outline-style: solid;
+border-radius: 4px;
+outline-color: #CFB997;
+border: none;
+box-shadow: 0px 12px 29px -11px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0px 12px 29px -11px rgba(0, 0, 0, 0.5);;
+margin-top: 6px;
 }
 
 .reservation-button {
@@ -159,33 +159,33 @@
 }
 
 .reservation-btn {
-  background-color: #CFB997;
-  border: none;
-  color: white;
-  padding: 14px 30px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  border-radius: 10px;
-  font-size: larger;
+background-color: #CFB997;
+border: none;
+color: white;
+padding: 14px 30px;
+transition-duration: 0.4s;
+cursor: pointer;
+border-radius: 10px;
+font-size: larger;
 }
 
 .reservation-btn:hover {  
-  border: 2px solid #CFB997;
-  color: black;
+border: 2px solid #CFB997;
+color: black;
 }
 
 
 @media (max-width: 768px) {
-  [class="about-us-page"] {
-    flex-direction: column;
-    height: 100%;
-  }
-  [class="aboutus-image"] {
-    order:1;
-    height: 50%;
-    margin: 35px;
-  }
-  [class="about-us-text"] {
-    order:2;
-  }
+[class="about-us-page"] {
+  flex-direction: column;
+  height: 100%;
+}
+[class="aboutus-image"] {
+  order:1;
+  height: 50%;
+  margin: 35px;
+}
+[class="about-us-text"] {
+  order:2;
+}
 }
