@@ -3,22 +3,11 @@ body, html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-.header {
+.bg {
     background-image: url(/IMG/dining/menuBG.png);
-    height: 100vh; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
-
-.headertext{
-    padding-top: 2%;
-    margin: auto;
-    color: #f6f3ef;
-    font-size: xx-large;
 }
 
 .drinkchart{
