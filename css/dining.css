@@ -10,21 +10,6 @@ body, html {
     background-size: cover;
 }
 
-.drinkchart{
-    height: 370px;
-    background-color: #2b251d;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.drinkcharttext {
-    padding-bottom: 5%;
-    margin: auto;
-    color: #f6f3ef;
-    font-size: xx-large;
-} /* Styles header text */
-
 .mealtypes {
     background-size: cover;
     height: 35vh;
@@ -76,6 +61,7 @@ body, html {
 .dishes {
     margin: 20px 0;
 } /* Creates bigger margin between each dish */
+
 .dishes p{
     color: #2b251d;
 } /* Changes text color of dishes and price */
@@ -95,6 +81,7 @@ body, html {
     align-items: center;
     justify-content: center;
 }/* Styles drinkchart div and aligns items inside div */
+
 .drinkcharttext{
     color: #f6f3ef;
     font-size: xx-large;
@@ -107,7 +94,7 @@ body, html {
     margin: 0px 0px 10px 0px;
 } /* Overrites h3 margin from style.css and sets another */
 
-.drinkchart a {
+.drinkbtn {
     margin-top: 10px;
     background-color: transparent;
     border: 2px solid white;
@@ -119,10 +106,10 @@ body, html {
     cursor: pointer;
     border-radius: 10px;
     font-size: large;
-  } /* Styles drinkchart button */
+} /* Styles drinkchart button */
   
-  .drinkchart a:hover {  
+.drinkbtn:hover {  
     border: 2px solid #CFB997;
     color: #CFB997;
     cursor: pointer;
-  } /* Changes btn on hover */
+} /* Changes btn on hover */
