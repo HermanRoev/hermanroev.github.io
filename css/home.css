@@ -67,12 +67,17 @@ body, html {
     display: inline-block;
     transition-duration: 0.4s;
     cursor: pointer;
+    border: 2px solid black;
     border-radius: 10px;
     font-size: larger;
+    color: black;
+    padding: 14px 30px;
+    
 }
 
 .home-text-container-button:hover {
     color: #CFB997;
+    border-color: #CFB997;
 }
 
 .headline {
