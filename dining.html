@@ -1,157 +1,253 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ottimo: Menu</title> <!--Tittelen som kommer opp i nettleseren-->
+    <title>Ottimo: Menu</title> <!--Title in the browser-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Setter initial screen size til enheten-->
     <link rel="icon" href="/IMG/O.png" sizes="16x16" type="image/png">
     <link rel="stylesheet" type="text/css" href="css/style.css"> <!--Link til css fil-->
     <link rel="stylesheet" type="text/css" href="css/dining.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><!--Google sine free to use icons-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!--Google sine free to use icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--font awesome, for facebook logo-->
-    <script src="/js/script.js"></script>  <!--Link til javascript fil-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><!--Google´s free to use icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!--Google´s free to use icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Font awesome, for facebook logo-->
+    <script src="/js/script.js"></script>  <!--Link to javascript file-->
   </head>
   <body>
 
-<!--NAVIGASJON-->
-    <div class="navigasjon">
-      <i class="material-icons md1" onclick="openNav()">menu</i> <!--Top menu bar som får frem en side nav-->
-      <a href="index.html"><img src="IMG/logo.png"></a> <!--Logo-->
-      <div class="navbtn">
-        <a href="index.html">Home</a> 
-        <a href="booking.html">Booking</a>
-        <a href="dining.html">Dining</a>            <!--Linker til de forskjellige sidene, hele nav koden kan kopieres til alle sidene-->
-        <a href="accessibility.html">Accessibility</a>
-        <a href="topic.html">Topic</a>
-      </div>
-    </div> 
-    <div id="popout" class="nav"> <!--Nav bar div, er gjemt frem til js endrer width når onclick kalles-->
-      <a class="closebtn" onclick="closeNav()"><i class="material-icons md2">close</i></a>  <!--Setter width til 0 igjen-->
-      <a href="index.html">Home</a> 
-      <a href="booking.html">Booking</a>
-      <a href="dining.html">Dining</a>            <!--Linker til de forskjellige sidene, hele nav koden kan kopieres til alle sidene-->
-      <a href="accessibility.html">Accessibility</a>
-      <a href="topic.html">Topic</a>
-    </div>
-<!--NAVIGASJON SLUTT-->
-
-
-
-
-
-<div class="header">
- <div class="headertext"><h1>Menu</h1></div>
+<!--NAVIGATION-->
+<div id="navbar" class="navigasjon">
+  <i class="material-icons md1" onclick="openNav()">menu</i> <!--Top menu bar for small screen side nav-->
+  <a href="index.html"><img src="IMG/logo.png"></a> <!--Logo-->
+  <div class="navbtn">
+    <a href="index.html">Home</a> 
+    <a href="booking.html">Booking</a>
+    <a href="dining.html">Dining</a>            <!--Links to all pages of the website-->
+    <a href="accessibility.html">Accessibility</a>
+    <a href="topic.html">Topic</a>
+  </div>
+</div> 
+<div id="popout" class="nav"> <!--Nav bar div for smaller screens shows when icon is pressed-->
+  <a class="closebtn" onclick="closeNav()"><i class="material-icons md2">close</i></a>  <!--Sets width to 0 again-->
+  <a href="index.html">Home</a> 
+  <a href="booking.html">Booking</a>
+  <a href="dining.html">Dining</a>            <!--Links to all pages of the website-->
+  <a href="accessibility.html">Accessibility</a>
+  <a href="topic.html">Topic</a>
 </div>
-<div class="drinkchart">
-  <div class="drinkcharttext"><h3>Thirsty?</h3>
-  <button href="drinkchart.html" class="drinkbtn">Take a look at our drinkchart</button>
+<!--NAVIGATIOIN end-->
+
+
+
+
+<!-- HEADER / HEADLINE -->
+<div class="header bg">
+ <div class="headertext"><h1>Dine with Ottomo</h1></div>
+  <div class="headerbuttons">
+    <button class="headerbtn" onClick="document.getElementById('starters').scrollIntoView();">Starters</button>
+    <button class="headerbtn"  onClick="document.getElementById('pizza').scrollIntoView();">Pizza</button>
+    <button class="headerbtn" onClick="document.getElementById('pasta').scrollIntoView();">Pasta</button>
+    <button class="headerbtn" onClick="document.getElementById('dessert').scrollIntoView();">Dessert</button>
+    <button class="headerbtn" onClick="document.getElementById('drinks').scrollIntoView();">Drinks</button>
+  </div>
 </div>
-</div>
+<!-- HEADER / HEADLINE end -->
 
 
 
-
-
+<!-- MENU SECTION -->
+<!-- Most of the text examples in the menu are retrieved from https://oliviarestauranter.no/meny/ and translated to english -->
 <div class="main">
-<div class="mealtypes startersbg">
+
+<!-- STARTERS -->
+<div id="starters" class="mealtypes startersbg"> <!-- div for picture headline element -->
   Starters
 </div>
-  <h3>Focaccia sarda <small>Ⓜ️</small></h3>
-          <p>steinovnsbakt pizzabunn med pecorino, parmesan, olivenolje, rosmarin, havsalt og aioli<p>
-              <div class="allergener">allergener: egg, hvete, melk, sennep, svoveldioksid og sulfitt</div>
-<br>
-<h3>Salumi e parmigiano reggiano <small>Ⓜ️</small></h3>
-  <p>parmaskinke, fennikelsalami og parmigiano reggiano<p>
-      <div class="allergener">allergener: melk, egg, svoveldioksid og sulfitt</div>
 
-
-
-
-
-
-  <div class="mealtypes pizzabg">
-    Pizza
+<div class="meny-text">
+  <div class="dishes" style="text-align: left;">
+    Vegetarian - 🌱 <br>
+    Wheat - 🌾<br>
+    Milk - 🐄
   </div>
-      
- <h3>Pizza al formaggio <small>🌱Ⓜ️</small></h3> 
- <p>ost, tomatsaus og oregano<p>
-     <div class="allergener">allergener: hvete, melk, selleri</div>
-<br>
-<h3>Pizza al peperoni <small>🌱Ⓜ️</small></h3>
- <p>ost, tomatsaus, pepperoni, rødløk, rød paprika, gul paprika og oregano<p>
-     <div class="allergener">allergener: hvete, melk, selleri</div> 
-<br>
-<h3>Pizza al prosciutto <small>🌱Ⓜ️</small></h3>
- <p>ost, tomatsaus, parmaskinke, rødløk, oliven og oregano<p>
-     <div class="allergener">allergener: hvete, melk, selleri</div>
+  <div class="dishes">
+    <h3>Focaccia sarda</h3>
+    <p>stone oven baked pizza base with pecorino, parmesan, olive oil, rosemary, sea salt and aioli<p>
+    <div class="allergens">allergens: eggs, wheat, milk, mustard, sulfur dioxide and sulphite</div>
+    <p>109,-</p> 
+  </div>
+  <div class="dishes">
+    <h3>Salumi e parmigiano reggiano</h3>
+    <p>parma, fennel salami and parmigiano reggiano<p>
+    <div class="allergens">allergens: milk, eggs, sulfur dioxide and sulphite</div>
+    <p>139,-</p> 
+  </div>
+  <div class="dishes">
+    <h3>Olive bella di Cerignola 🌱</h3>
+    <p>italian olives marinates in olive oil infused with fresh herbs, lemon & plenty of garlic<p>
+    <div class="allergens">allergens: sulfur dioxide and sulphite</div>
+    <p>89,-</p> 
+  </div>
+  <div class="dishes">
+    <h3>Caprese di Olivia 🌱</h3>
+    <p>cherry tomatoes, confit tomatoes, buffalo mozzarella, basil oil and focaccia<p>
+    <div class="allergens">allergens: wheat, milk, sulfur dioxide and sulfite</div>
+    <p>99,-</p> 
+  </div>
+</div>
+<!-- STARTERS end -->
 
-<div class="mealtypes pastabg">
+
+
+<!-- PIZZA -->
+<div id="pizza" class="mealtypes pizzabg"> <!-- div for picture headline element -->
+  Pizza
+</div>
+
+<div class="meny-text">
+  <div class="dishes">
+    <h3>Margherita 🌱</h3>
+    <p>stone oven baked pizza base with tomato sauce, fresh mozzarella, parmesan and basil<p>
+    <div class="allergens">allergens: milk, eggs</div>
+    <p>209,-</p> 
+  </div>
+  <div class="dishes">
+    <h3>Alla diavola</h3>
+    <p>stone oven baked pizza base with tomato sauce, italian strong salami, pecorino and oregano<p>
+    <div class="allergens">allergens: milk, eggs, sulfur dioxide and sulfite</div>
+    <p>239,-</p> 
+  </div>
+  <div class="dishes">
+    <h3>Capricciosa</h3>
+    <p>stone oven baked pizza base with tomato sauce, mozzarella, mushroom, oregano, cooked ham, artichoke and olives<p>
+    <div class="allergens">allergens: milk, eggs</div>
+    <p>239,-</p> 
+  </div>
+  <div class="dishes">
+    <h3>Prosciutto di parma</h3>
+    <p>stone oven baked pizza base with tomato sauce, mozzarella, parma ham, pine nuts, arugula and parmesan<p>
+    <div class="allergens">allergens: milk, eggs</div>
+    <p>259,-</p> 
+  </div>
+  <div class="dishes">
+    <h3>Al prosciutto cotto</h3>
+    <p>stone oven baked pizza base with tomato sauce, mozzarella and cooked ham<p>
+    <div class="allergens">allergens: milk, eggs</div>
+    <p>249,-</p> 
+  </div>
+</div>
+<!-- PIZZA end -->
+
+
+<!-- PASTA -->
+<div id="pasta" class="mealtypes pastabg"> <!-- div for picture headline element -->
   Pasta
 </div>
-     <h3>Pasta carbonara <small>Ⓜ️</small></h3> 
-         <p>linguine, guanciale, eggeplommer, fløte, parmesan, nykvernet sort pepper<p>
-             <div class="allergener">allergener: hvete, egg, melk</div>
- <br>
-     <h3>Penne al pollo ubriaco <small>Ⓜ️</small></h3>
-         <p>penne, kylling, bacon, tomat, basilikum, chili, fløte<p>
-             <div class="allergener">allergener: hvete, melk</div>
- <br>
-     <h3>Pasta di manzo <small>Ⓜ️</small></h3>
-         <p>tagliatelle, ytrefilet av okse, sopp, fløte, gorgonzola<p>
-             <div class="allergener">allergener: hvete, melk, selleri</div>
- <br>
+
+<div class="meny-text">
+  <div class="dishes">
+    <h3>Ravioli con funghi 🌱</h3>
+    <p>ravioli filled with porcini mushrooms, creamy white wine sauce, butter-fried mushrooms, parmesan, truffle oil and arugula<p>
+    <div class="allergens">allergens: eggs, wheat, milk, celery, soy, sulfur dioxide and sulfite</div>
+    <p>229,-</p> 
+  </div>
+  <div class="dishes">
+    <h3>Penne al pollo ubriaco</h3>
+    <p>penne, chicken, bacon, tomato, basil, chilli, cream<p>
+    <div class="allergens">allergens: milk, eggs</div>
+    <p>239,-</p> 
+  </div>
+  <div class="dishes">
+    <h3>Pasta carbonara 🌱</h3>
+    <p>linguine, guanciale, egg yolk, cream, parmesan, freshly ground black pepper<p>
+    <div class="allergens">allergens: milk, eggs</div>
+    <p>229,-</p> 
+  </div>
+  <div class="dishes">
+    <h3>Pasta di manzo</h3>
+    <p>tagliatelle, sirloin of beef, mushrooms, cream and gorgonzola<p>
+    <div class="allergens">allergens: milk, eggs and celery</div>
+    <p>269,-</p> 
+  </div>
+</div>
+<!-- PASTA end -->
 
 
-<div class="mealtypes dessertbg">
+<!-- DESSERT -->
+<div id="dessert" class="mealtypes dessertbg"> <!-- div for picture headline element -->
   Dessert
 </div>
- <h3>Panna cotta <small>Ⓜ️</small></h3>
-     <p>klassisk fløte- og vaniljedessert med marinerte bjørnebær og bringebærcoulis<p>
-         <div class="allergener">allergener: melk</div>
-<br>
- <h3>Tiramisù <small>Ⓜ️</small></h3>
-     <p>savoiardikjeks dyppet i espresso og rom med mascarponekrem og kakaodryss<p>
-         <div class="allergener">allergener: egg, hvete, melk</div>
-<br>
-</div>
 
+<div class="meny-text">
+  <div class="dishes">
+    <h3>Gelato e sorbetto 🌱</h3>
+    <p>choose one scoop of vanilla ice cream, raspberry sorbet or chocolate ice cream<p>
+    <div class="allergens">allergens: milk, eggs</div>
+    <p>89,-</p> 
+  </div>
+  <div class="dishes">
+    <h3>Panna cotta 🌱</h3>
+    <p>classic cream and vanilla dessert with marinated blackberries and raspberry coulis<p>
+    <div class="allergens">allergens: milk</div>
+    <p>119,-</p> 
+  </div>
+  <div class="dishes">
+    <h3>Tiramisù 🌱</h3>
+    <p>Savoyard biscuits dipped in espresso and rum with mascarpone cream and cocoa sprinkles<p>
+    <div class="allergens">allergens: milk, eggs</div>
+    <p>79,-</p> 
+  </div>
+  <div class="dishes">
+    <h3>Soufflè al cioccolato 🌱</h3>
+    <p>Italian chocolate fondant with raspberry coulis and vanilla ice cream<p>
+    <div class="allergens">allergens: milk, eggs and wheat</div>
+    <p>119,-</p> 
+  </div>
+</div>
+<!-- DESSERT end-->
+
+<!-- MENU section end -->
+
+<!--Drinks-->
+<div id="drinks" class="drinkchart">  <!-- Links to eternal drinkchart menu, only linked via dining page -->
+  <div class="drinkcharttext"><h3>Thirsty?</h3> 
+  <button href="drinkchart.html" class="drinkbtn">Take a look at our drinkchart</button>
+  </div>
+</div>
 
 <!--FOOTER-->
 <footer>
   <div class="footerheader"><h3>Our location</h3><p>Our location lies in a suberb spot in the beautiful sorroundings of Aker Brygge, Oslo. Come visit us at Bryggetorget 2, Oslo during our opening hours. If you have any questions feel free to contact us.</p></div>
-<div class="footerrow">
-    <div class="footercolumn">
-      <div class="google-maps">
-        <iframe
-            src="https://maps.google.com/maps?q=bryggetorget%202&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            width="600"
-            height="500"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy">
-        </iframe>
+    <div class="footerrow">
+      <div class="footercolumn">
+        <div class="google-maps">
+          <iframe
+              src="https://maps.google.com/maps?q=bryggetorget%202&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              width="600"
+              height="500"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy">
+          </iframe>
         </div>
       </div>
-    
-        <div class="footercolumn">
-      <p>Mandag - Torsdag   15:00 - 22:00</p>
-      <p>Fredag - Lørdag    16:00 - 23:15</p>
-      <p>Søndag Stengt</p>
-      <br>
-      <p>987 65 432 <span class="material-symbols-rounded" style="color:#7f6e56;">phone_in_talk</span></p>
-      
-      <p>contact@ottimo.com <span class="material-symbols-rounded" style="color:#7f6e56;">mail</span></p>
-      <p><a href="facebook.com">facebook <i class="fa fa-facebook-f" style="color:#7f6e56;"></i></a></p>
-  </div>
+      <div class="footercolumn">
+        <p>Mandag - Torsdag   15:00 - 22:00</p>
+        <p>Fredag - Lørdag    16:00 - 23:15</p>
+        <p>Søndag Stengt</p>
+        <br>
+        <p>987 65 432 <span class="material-symbols-rounded" style="color:#7f6e56;">phone_in_talk</span></p>
+        
+        <p>contact@ottimo.com <span class="material-symbols-rounded" style="color:#7f6e56;">mail</span></p>
+        <p><a href="facebook.com">facebook <i class="fa fa-facebook-f" style="color:#7f6e56;"></i></a></p>
+    </div>
 </div>
 <div class="footerinfo" style="background-color:#2b251d; width: 100%; height: 100%; color:#CFB997; padding: 1.5%;"> <p><strong>Site created by</strong></p>
-  <p>S374949 - Ludvig Stenvik</p>
-  <p>S348906 - Herman Røv</p>
-  <p>S374993 - Selmer James Solland</p>
-  <p>S374955 - Michael Nguyen</p>
-     </div>
+    <p>S374949 - Ludvig Stenvik</p>
+    <p>S348906 - Herman Røv</p>
+    <p>S374993 - Selmer James Solland</p>
+    <p>S374955 - Michael Nguyen</p>
+</div>
 </footer>
-<!--FOOTER END-->
+<!--FOOTER end-->
   </body>
 </html>

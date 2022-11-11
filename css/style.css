@@ -1,52 +1,67 @@
-/*Setter body margin til 0 og legger til bg color*/
+/*Sets body bargin to zero, adds bg image, sets auto scroll to smooth, sets the global font*/
 * {
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
  margin: 0;
+ overflow: overlay; /* For custom transp scrollbar */
  background-color: #fbfbfb;
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb {  /* Styles the scrollbar */
+    background: #2b251d;}
+::-webkit-scrollbar-track {
+    background: #7f6e5640;} 
 
-/*Navigation, lager boks øverst på siden*/
+/*Navigation container at the top of the page*/
 .navigasjon {
     display: flex;
-    float: left;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: #0f0f0fdf;
     position: fixed;
     top: 0;
     width: 100%;
-    transition: top 0.3s;
+    transition: top 0.6s;
     z-index: 1;
 }
 
-
+/* Google icons*/
 .material-icons.md1 {
     font-size: 36px;
     cursor: pointer;
     color: rgb(240, 240, 240);
 }
 
+/* Logo */
 .navigasjon img {
     max-width: 140px;
     padding: 20px 0px;
-    transition: transform .5s;
+    transition: .4s;
 }
+
 .navigasjon img:hover{
     cursor: pointer;
     transform: scale(1.05);
 }
 
+/* Menu buttons */
 .navbtn a{
     padding-left: 20px;
     display: none;
     font-size: 20px;
     color: rgb(240, 240, 240);
     text-decoration: none;
-    transition: transform .5s;
+    transition: .4s;
 }
 
 .navbtn a:hover {
@@ -54,8 +69,7 @@ body {
     transform: scale(1.1);
 }
 
-
-/*Medida query: CSS for når viewport er videre enn 600px*/
+/*Medida query: CSS when viewport is wider than 600px, hides menu icon and shows the nav buttons*/
 @media only screen and (min-width: 600px) {
     .navbtn a{
         display: inline-flex;
@@ -67,7 +81,7 @@ body {
 }
 
 
-/*Lager en boks som legger seg foran innholdet på siden, denne boksen inneholder navigasjonen*/
+/* Creates a container to hold our nav menu */
 .nav {
     height: 100%;
     width: 0px;
@@ -113,13 +127,18 @@ body {
 }
 
 /*FOOTER*/
+footer
+{
+    background-color: #f4efe9;
+}
 .footerheader{
     max-width: 100%;
     text-align: center;
+    padding-top: 1.5%;
     font-size: 1.5rem;
     margin-left: 15%;
     margin-right: 15%;
-    margin-top: 15%;
+    margin-top: 10px;
     font-weight: 100;
 }
 
@@ -138,46 +157,97 @@ body {
     clear: both;
   }
 
-  @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .footercolumn {
-      width: 100%;
+        width: 100%;
     }
-  }
 
-  .google-maps {
+    .headerbuttons {
+        flex-wrap: wrap;
+    }
+}
+
+/* Google maps api */
+.google-maps {
     position: relative;
     padding-bottom: 60%;
     padding-top: 5%;
     height: 0;
-  }
+}
 
-  .google-maps iframe {
+.google-maps iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100% !important;
     height: 100% !important;
-  }
+}
 
 footer a:link{
     text-decoration: none;
     color: #7f6e56;
 }
+
 footer a:hover{
     text-decoration: underline;
     color: #CFB997;
-    cursor: pointer;
 }
+
 footer a:visited{
     color: #7f6e56;
 }
+
   footer p {
     font-size: 1.5rem;
-  }
+}
 
-  .footerinfo p {
+.footerinfo p {
     font-size: 0.8rem;
     text-align: center;
     margin-top: 1%;
-  }
-  /*FOOTER END*/
+}
+/*FOOTER END*/
+
+.header {
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.headertext{
+    color: white;
+    text-align: center;
+    font-size: 200%;
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.headerbuttons {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.headerbtn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 14px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    margin: 2%;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    font-size: larger;
+    cursor: pointer;
+}
+    
+.headerbtn:hover {  
+    border-color: #CFB997;
+    color: #CFB997;
+}
