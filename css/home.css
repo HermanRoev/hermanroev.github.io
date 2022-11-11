@@ -1,7 +1,3 @@
-body, html {
-    scroll-behavior: smooth;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 .bg {
     background-image:url(/IMG/home/homepageBG-min.png);
