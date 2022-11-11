@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    height: 5000px;
+}
+ 
+.header{
+    height: 100vh;
+}
+
+.headertxt{
+    position: relative;
+    color: aliceblue;
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    text-align: right;
+ }
+
+.bg {
+    position: sticky;
+    top: 0;
+    background-image: url("/IMG/topic/topicBG.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.graphic {
+    margin-top: 300px;
+    position: relative;
+    z-index: 1;
+}
+
+.headset {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.highlight {
+    position: absolute;
+    top: -370px;
+    left: -100px;
+}
+
+.vr-zoom {
+    position: relative;
+    margin-top: 400px;
+}
+
+
+ /*Navigation, lager boks øverst på siden*/
+.navigasjon {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-right: 100px;
+    margin-top: 30px;
+    z-index: 1;
+}
+
+.navbtn a{
+    padding-left: 20px;
+    font-size: 1.7rem;
+    color: rgb(240, 240, 240);
+    text-decoration: none;
+    transition: transform .5s;
+}
+
+.navbtn a:hover{
+    color: rgb(87, 181, 169);
+}

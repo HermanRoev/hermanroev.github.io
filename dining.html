@@ -39,8 +39,15 @@
 
 
 <!-- HEADER / HEADLINE -->
-<div class="header">
- <div class="headertext"><h1>Menu</h1></div>
+<div class="header bg">
+ <div class="headertext"><h1>Dine with Ottomo</h1></div>
+  <div class="headerbuttons">
+    <button class="headerbtn" onClick="document.getElementById('starters').scrollIntoView();">Starters</button>
+    <button class="headerbtn"  onClick="document.getElementById('pizza').scrollIntoView();">Pizza</button>
+    <button class="headerbtn" onClick="document.getElementById('pasta').scrollIntoView();">Pasta</button>
+    <button class="headerbtn" onClick="document.getElementById('dessert').scrollIntoView();">Dessert</button>
+    <button class="headerbtn" onClick="document.getElementById('drinks').scrollIntoView();">Drinks</button>
+  </div>
 </div>
 <!-- HEADER / HEADLINE end -->
 
@@ -51,7 +58,7 @@
 <div class="main">
 
 <!-- STARTERS -->
-<div class="mealtypes startersbg"> <!-- div for picture headline element -->
+<div id="starters" class="mealtypes startersbg"> <!-- div for picture headline element -->
   Starters
 </div>
 
@@ -91,7 +98,7 @@
 
 
 <!-- PIZZA -->
-<div class="mealtypes pizzabg"> <!-- div for picture headline element -->
+<div id="pizza" class="mealtypes pizzabg"> <!-- div for picture headline element -->
   Pizza
 </div>
 
@@ -131,7 +138,7 @@
 
 
 <!-- PASTA -->
-<div class="mealtypes pastabg"> <!-- div for picture headline element -->
+<div id="pasta" class="mealtypes pastabg"> <!-- div for picture headline element -->
   Pasta
 </div>
 
@@ -165,7 +172,7 @@
 
 
 <!-- DESSERT -->
-<div class="mealtypes dessertbg"> <!-- div for picture headline element -->
+<div id="dessert" class="mealtypes dessertbg"> <!-- div for picture headline element -->
   Dessert
 </div>
 
@@ -200,11 +207,11 @@
 <!-- MENU section end -->
 
 <!--Drinks-->
-<div class="drinkchart">
-  <!-- Links to eternal drinkchart menu, only linked via dining page -->
-  <div class="drinkcharttext"><h3>Thirsty?</h3>
-  <a href="drinkchart.html">Take a look at our drinkchart</a>
-</div></div></div>
+<div id="drinks" class="drinkchart">  <!-- Links to eternal drinkchart menu, only linked via dining page -->
+  <div class="drinkcharttext"><h3>Thirsty?</h3> 
+  <button href="drinkchart.html" class="drinkbtn">Take a look at our drinkchart</button>
+  </div>
+</div>
 
 <!--FOOTER-->
 <footer>

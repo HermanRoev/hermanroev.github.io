@@ -3,47 +3,30 @@ body, html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.header {
+.bg {
     background-image:url(/IMG/home/homepageBG-min.png);
-    height: 900px; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-
 .logo {
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 50%;
     height: 40%;
 }
 
 .logo img {
-    width: 100%;
-}
-
-#logoinfo {
-    color: white;
-    text-align: center;
-    font-size: 200%;
-    font-weight: lighter;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-#headerbuttons {
-    margin: 2%;
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 100%;
 }
 
 .events {
     height: 100px;
 }
 
-.events-container {
+.home-container {
     display: flex;
     flex-direction: column;
     padding: 5% 5%;
@@ -53,24 +36,24 @@ body, html {
     flex-direction: column-reverse;
 }
 
-.events-image-container {
+.home-image-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.events-image-container .col {
+.home-image-container .col {
     max-width: 45%;
 }
 
-.events-image-container .col img{
+.home-image-container .col img{
     max-width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
 }
 
-.events-text-container {
+.home-text-container {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -78,12 +61,8 @@ body, html {
     color: rgb(0, 0, 0);
     align-items: center;
 }
-.events-text-container-button {
-    background-color: transparent;
-    border: 2px solid rgb(10, 10, 10);
-    color: rgb(10, 10, 10);
-    padding: 10px;
-    text-align: center;
+
+.home-text-container-button {
     text-decoration: none;
     display: inline-block;
     transition-duration: 0.4s;
@@ -91,9 +70,8 @@ body, html {
     border-radius: 10px;
     font-size: larger;
 }
-    
-.events-text-container-button:hover {
-    border: 2px solid #CFB997;
+
+.home-text-container-button:hover {
     color: #CFB997;
 }
 
@@ -111,7 +89,7 @@ body, html {
 
 /* Changes the layout of the events and menu section */
 @media only screen and (min-width: 600px) {
-    .events-container {
+    .home-container {
         flex-direction: row;
     }
 

@@ -9,7 +9,6 @@ function closeNav() {
 }
 
 //Function to hide nav menu on scroll
-
 var scrollPosition = window.scrollY;
 window.onscroll = function() {
   var newScrollPosition = window.scrollY;
