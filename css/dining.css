@@ -46,6 +46,10 @@
     .mealtypes {
         height: 20vh;
     }
+
+    .dishes {
+        width: 90%;
+    }
 } /* Makes mealtypes headline divs with image smaller on smaller screens */
 
 
