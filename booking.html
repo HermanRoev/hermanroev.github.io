@@ -7,28 +7,30 @@
     <link rel="icon" href="/IMG/O.png" sizes="16x16" type="image/png">
     <link rel="stylesheet" type="text/css" href="css/style.css"> <!--Link til css fil-->
     <link rel="stylesheet" type="text/css" href="css/booking.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!--Google sine free to use icons-->
-    <script src="js/script.js"></script>  <!--Link til javascript fil-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><!--Google sine free to use icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!--Google sine free to use icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--font awesome, for facebook logo-->
+    <script src="/js/script.js"></script>  <!--Link til javascript fil-->
   </head>
   <body>
 
 <!--NAVIGATION-->
-<div class="navigasjon">
-  <i class="material-icons md1" onclick="openNav()">menu</i> <!--Top menu bar for small screen side nav-->
+<div id="navbar" class="navigasjon">
+  <i class="material-icons md1" onclick="openNav()">menu</i> <!--Top menu bar som får frem en side nav-->
   <a href="index.html"><img src="IMG/logo.png"></a> <!--Logo-->
   <div class="navbtn">
     <a href="index.html">Home</a> 
     <a href="booking.html">Booking</a>
-    <a href="dining.html">Dining</a>            <!--Links to all pages of the website-->
+    <a href="dining.html">Dining</a>            <!--Linker til de forskjellige sidene, hele nav koden kan kopieres til alle sidene-->
     <a href="accessibility.html">Accessibility</a>
     <a href="topic.html">Topic</a>
   </div>
 </div> 
-<div id="popout" class="nav"> <!--Nav bar div for smaller screens shows when icon is pressed-->
-  <a class="closebtn" onclick="closeNav()"><i class="material-icons md2">close</i></a>  <!--Sets width to 0 again-->
+<div id="popout" class="nav"> <!--Nav bar div, er gjemt frem til js endrer width når onclick kalles-->
+  <a class="closebtn" onclick="closeNav()"><i class="material-icons md2">close</i></a>  <!--Setter width til 0 igjen-->
   <a href="index.html">Home</a> 
   <a href="booking.html">Booking</a>
-  <a href="dining.html">Dining</a>            <!--Links to all pages of the website-->
+  <a href="dining.html">Dining</a>            <!--Linker til de forskjellige sidene, hele nav koden kan kopieres til alle sidene-->
   <a href="accessibility.html">Accessibility</a>
   <a href="topic.html">Topic</a>
 </div>
@@ -37,7 +39,8 @@
     <div class= "bg">
       <div class="header">
         <h1>Host with Ottimo</h1>
-        <a href="#reservation" button class="headerbtn">Book events</button>
+        <a href="#reservation">
+          <button class="headerbtn">Book Events</button>
         </a>
       </div>
     </div>
@@ -45,36 +48,72 @@
     <div class="about-us-page">
       <div class="about-us-container">
         <div class="about-us-text">
-          <h1>We are Ottimo</h1>
-          <p> Your requests, our passion</p>
-          <a href="aboutus.html">
-            <div class="button">
-            <button class="btn" style="border: 2px solid rgb(255, 255, 255); color: rgb(255, 255, 255);" >Read more</button>
-           </div>
-         </a>
-        </div>
-        <div class="aboutus-image">
-          <img src="/IMG/booking/aboutUs.jpg" alt="aboutUs">
+          <h1 id="toptext">We are Ottimo</h1>
+          <p id="undertext"> Your requests, our passion</p>
         </div>
       </div>
 
-      <div class="about-us-container2">
-        <div class="about-us-info">
-          <h1>About us</h1>
+      <div class="about-us-container">
+        <div class="about-us-text2">
+          <h1>Om oss!</h1>
           <p>
-            Prestiege er et sted for å tilbringe tid sammen med de nærmeste. Tid med latter og kjærlighet.
+            Ottimo er et sted for å tilbringe tid sammen med de nærmeste. Tid med latter og kjærlighet.
             Vi tilbyr en unik reise gjennom vår meny, fylt med vår kjærlighet og lidenskap til mat,
             slik at våre gjester får en fantastisk opplevelse. En opplevelse toppet med plettfri
             service og kvalitet.</p>
         </div>
-        <div class="aboutus-image">
+        <div class="about-us-image">
           <img src="/IMG/booking/aboutUs.jpg" alt="aboutUs">
         </div>
       </div>
 
-    
+      <div class="about-us-container">
+        <div class="about-us-text3">
+          <h1>Bryllup</h1>
+            <p id="bottomtext">Gratulerer med ekteskapet!</p>
+          <p> 
+            Bryllupsdagen er en viktig dag, derfor er det viktig å vite hvor den skal holdes- eller feiers.
+            Her hos Ottimo forbereder vi gjerne et lokale slik at dere kan få en fantastisk feiring. 
+            <br>
+            <br>
+            Våre lokaler er innredet med romantisk atmosfære, med en kapasitet på opptil 80 gjester. 
+            <br>
+            <br> 
+            Ottimo-teamet hjelper dere med å skape en stemingsfull feiring, og har ingen problem med å imøtekomme deres ønsker. 
+            <br>
+            <br>
+            Det er inkludert mat og drikke servering blant vår meny. I tillegg er det tilgang til alkoholservering.
+            <br>
+            <br>
+            Vi ønsker dere et fantastisk ekteskap! 
+          </p>
+        </div>
+        <div class="about-us-image">
+          <img src="/IMG/booking/wedding.jpg" alt="wedding" style="float:right;" height="400" width="600">
+        </div>
+      </div>
 
-
+      <div class="about-us-container">
+        <div class="about-us-text4">
+          <h1>Lukket event</h1>
+          <p>
+            Trenger du- /-dere et sted å holde et arrangement, blant annet sommerfest, julebord, dining out på store grupper eller bursdag?
+            <br>
+            <br>
+            Ottimo har det perfekte lokalet, slik at dere kan holde en stemningsfult treff med nære venner, famile og, eventuellt, kollegaer.
+            <br>
+            <br>
+            Våre lokaler har en kapasitet på, opptil, 50 personer. Mat- og drikkeservering, i tillegg til alkoholservering, er tilgjengelig etter valg fra vår meny og bar.
+            Ottimo-Teamet hjelper deg gjerne med å tilfredstille dine ønsker.
+            <br>
+            <br>
+            Hjertelig velkommen til oss!
+          </p>
+        </div>
+        <div class="about-us-image">
+          <img src="/IMG/booking/lukketevent.jpg" alt="lukketevent">
+        </div>
+      </div>
     </div>
 
     <section id="reservation">
@@ -83,32 +122,26 @@
           <h1>Book Bord</h1>
             <div class="input-field">
               <label for="date">Dato:</label>
-              <input type="date" name="date" id="date" required>
+              <input type="date" name="date" id="date" value="2022-09-21" required>
             </div>
             <div class="input-field">
               <label for="time-of-date">Tid:</label>
-              <input type="time" name="time" id="time" value="07:00" required> 
+              <input type="time" name="time" id="time" value="15:00" min="15" max="23:15" required> 
             </div>
             <div class="input-field">
               <label for="number-of-people">Antall gjester</label>
-              <select name="People" id="number-of-people">
-              <option value="1">1 person</option>
-              <option value="2">2 persons</option>
-              <option value="3">3 persons</option>
-              <option value="4">4 persons</option>
-              <option value="5">5 persons</option>
-              <option value="6">6 persons</option>
-            </select>
+              <input type="number" id="number-of-people" name="number-of-people" min="1" max="100" placeholder="Eks. 20">
             </div>
             <div class="input-field">
-              <label for="type event">Type event</label>
+              <label for="type event">Type event:</label>
               <select name="event" id="event" required>
                 <option value="" disabled selected hidden>Velg type event</option>
                 <option value="0">Dining out</option>
                 <option value="1">Konfirmasjon</option>
                 <option value="2">Bryllup</option>
                 <option value="3">Lukket event</option>
-                <option value="4">Annet, vennligst spesifiser</option>
+                <option value="4">Bursdag</option>
+                <option value="5">Annet, vennligst spesifiser</option>
               </select>
             </div>
             <div class="input-field">
@@ -123,14 +156,13 @@
               <label for="last-name">Etternavn:</label>
               <input type="text" name="last-name" id="last-name" placeholder= "Eks. Torkild" required>
             </div>
-            <br>
             <div class="text-box">
               <label for="message">Noe annet vi trenger å vite?</label>
               <br>
-              <textarea name="message" id="message" rows="4" cols=80 placeholder="Ved valg av 'Annet event' vennligst spesifiser"></textarea>
+              <textarea name="message" id="message" placeholder="Ved valg av 'Annet event' vennligst spesifiser"></textarea>
             </div>
             <div class="reservation-button">
-              <button class="reservation-btn">Make a reservation</button>
+              <button class="reservation-btn">Send</button>
             </div>
         </form>
       </div>
@@ -167,7 +199,7 @@
     <p>S374949 - Ludvig Stenvik</p>
     <p>S348906 - Herman Røv</p>
     <p>S374993 - Selmer James Solland</p>
-    <p>S374955 - Michael Nguyen</p>
+    <p>S374955 - Michael Minh Tri Nguyen</p>
 </div>
 </footer>
 <!--FOOTER end-->
