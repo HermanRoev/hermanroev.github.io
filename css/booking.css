@@ -1,5 +1,4 @@
 body {
-  background-color: #f4efe9;
   font-weight: 400;
 }
 /* HEADER */
@@ -46,7 +45,6 @@ body {
 /* BOOKING INFORMATION */
 .Booking_info
 {
-  background-color: #e3dcd1;
   color: #2b251d;
   display: flex;
   gap: 10vh;
