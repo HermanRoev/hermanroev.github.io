@@ -1,7 +1,10 @@
 body {
   background-color: #f4efe9;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+	letter-spacing: 1px;
 }
-
+/* HEADER */
 .bg {
     background-image: url("/IMG/booking/bookingBG.png");
     height: 100vh;
@@ -28,227 +31,109 @@ body {
   background-color: transparent;
   border: 2px solid white;
   color: white;
-  position: relative;
   display: inline-block;
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 10px;
-  font-size: larger;
+  font-size: x-large;
+  min-width: 200px;
 }
 
 .headerbtn:hover {  
   border: 2px solid #CFB997;
   color: #CFB997;
 }
+/* HEADER end */
 
-.about-us-page {
-display: flex;
-flex-direction: column;
-margin-top: 50px;
-margin-left: 20px;
-margin-right: 20px;
+/* BOOKING INFORMATION */
+.Booking_info
+{
+  height: 400vh;
+  width: 100vw;
+  background-color: #e3dcd1;
 }
 
-.about-us-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: nowrap;
-  margin-bottom: 50px;
-  box-shadow: 0px 0px 38px -7px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0px 0px 38px -7px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  padding: 20px;
-  background-color: white;
-}
-
-.about-us-text {
-  color: black;
-  text-align: center;
+/* BOOKING FORM */
+.container {
+  background-color: #140d03;
+	width: 100vw;
+	display: flex;
   justify-content: center;
-  flex: 1;
-  margin-bottom: 50px;
+  align-items: center;
+  color: #e3cdaa;
 }
 
-.about-us-text3 {
-  color: black;
-  flex: 1;
-  text-align: center;
-  margin-right: 50px;
-}
-
-.about-us-container p {
-  text-align: left;
-}
-
-.about-us-text2, .about-us-text4 {
-  color: black;
-  flex: 1;
-  order: 3;
-  text-align: center;
-  margin-left: 50px;
-}
-
-.about-us-text2 h1, .about-us-text3 h1, .about-us-text4 h1 {
-  border-bottom: 2px rgb(231, 231, 231) solid;
-}
-
-#toptext {
-  font-size: 60px;
+.heading {
+	font-size: 2.5rem;
+	text-transform: uppercase;
   text-align: center;
 }
 
-#undertext {
-  font-size: 25px;
-  text-align: center;
+.container-form {
+  margin: auto;
+}
+form {
+	display: grid;
+	grid-row-gap: 20px;
+  min-width: 500px;
+  padding: 20px;
+}
+form p {
+	font-weight: 600;
+}
+.form-field {
+	display: flex;
+	justify-content: space-between;
 }
 
-.about-us-image {
-  flex: 1;
-  order: 2;
+.form-field input, select{
+  min-width: 44%;
+  background-color: #e3dcd1;
+  color: #2b251d;
+  border-radius: 10px;
 }
 
-.about-us-image img {
-  height: auto;
-  width: 100%;
+.btn {
+  background-color: transparent;
+  border: 2px solid #e3cdaa;
+  color: #e3cdaa;
+  position: relative;
+  display: inline-block;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: larger;
+  padding: 10px;
+  margin-bottom: 40px;
 }
 
-#reservation {
-  background:rgba(0, 0, 0, 0.5) url(/IMG/booking/reservation.jpg);
-  background-blend-mode: darken;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.btn:hover {
+  border: 2px solid #e3dcd1;
+  color: #e3dcd1;
 }
 
-.reservation-page {
-padding: 20px 0;
-display: flex;
-align-items: center;
-justify-content: center;
-height: 100vh;
+/* BOOKING FORM end */
+
+@media screen and (max-width: 768px) {
+	.container {
+		flex-direction: column;
+	}
+	.container-form  {
+		padding: 10px;
+	}
+	.heading-phone {
+		font-size: 17px;
+	}
+	
 }
 
-.reservation-page form {
-display: grid;
-grid-row-gap: 20px;
-background-color: white;
-border-radius: 10px;
-padding: 20px;
-box-shadow: 0px 0px 38px -7px rgba(0, 0, 0, 0.5);
--webkit-box-shadow: 0px 0px 38px -7px rgba(0, 0, 0, 0.5);
-}
-
-.reservation-page h1, .reservation-button {
-text-align: center;
-text-transform: uppercase;
-text-decoration: underline;
-text-decoration-color: #CFB997;
-}
-
-.input-field {
-display: flex;
-justify-content: space-between;
-margin: 4px;
-}
-
-.input-field label, .text-box label {
-font-weight: 575;
-}
-
-.input-field input, select {
-height: 40px;
-outline-style: solid;
-border-radius: 4px;
-outline-color: #CFB997;
-border: none;
-box-shadow: 0px 12px 29px -11px rgba(0, 0, 0, 0.5);
--webkit-box-shadow: 0px 12px 29px -11px rgba(0, 0, 0, 0.5);;
-}
-
-.text-box textarea {
-outline-style: solid;
-border-radius: 4px;
-outline-color: #CFB997;
-border: none;
-box-shadow: 0px 12px 29px -11px rgba(0, 0, 0, 0.5);
--webkit-box-shadow: 0px 12px 29px -11px rgba(0, 0, 0, 0.5);;
-margin-top: 6px;
-width: 500px;
-height: 60px;
-}
-
-.reservation-button {
-  margin: 2%;
-  text-align: center;
-  font-weight: lighter;
-}
-
-.reservation-btn {
-background-color: #CFB997;
-border: none;
-color: white;
-padding: 14px 30px;
-transition-duration: 0.4s;
-cursor: pointer;
-border-radius: 10px;
-font-size: larger;
-}
-
-.reservation-btn:hover {  
-border: 2px solid #CFB997;
-color: black;
-}
-
-
-@media (max-width:550px) {
-   .about-us-container {
-    flex-direction: column;
-  }
-
- .about-us-text2, .about-us-text3, .about-us-text4 {
-    order: 1;
-  }
-
-  .text-box textarea {
-    width: 250px;
-    height: 50px;
-    font-size: 15px;
-  }
-  .text-box label {
-    font-size: 15px;
-  }
-
-  .input-field {
-    flex-direction: column;
-  }
-
-  .input-field input, select {
-    height: 20px;
-    font-size: 15px;
-    margin-top: 5px;
-  }
-  
-  .reservation-page form{
-    grid-row-gap: 10px;
-  }
-
-  .reservation-page form h1 {
-    font-size: 25px;
-  }
-
-  .input-field label {
-    font-size: 15px;
-  }
-} 
-
-@media (max-width:961px) {
-  .about-us-container {
-    flex-direction: column;
-  }
-
-  .about-us-text2, .about-us-text3, .about-us-text4 {
-    order: 1;
-    margin: 0;
-  }
+@media screen and (min-width: 768px) and (max-width: 880px) {
+	.container-time {
+		padding: 30px;
+	}
+	.container-form  {
+		padding: 10px;
+	}
+	
+	
 }
