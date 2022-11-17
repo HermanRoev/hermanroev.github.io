@@ -5,6 +5,29 @@
     background-size: cover;
 }
 
+.wine-int-container {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.wine-header {
+    margin-top: 0;
+    margin-bottom: 5%;
+    font-size: 75px;
+    text-align: center;
+}
+
+
+.wine-text-container {
+    font-size: larger;
+    max-width: 50%;
+    text-align: center;
+}
+
 .wines-container {
     display: flex;
     align-items: center;
@@ -51,6 +74,24 @@
 
 .wine-info {
     font-size: larger;
+}
+
+.wines-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 200px;
+}
+
+.shots-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 200px;
 }
 
 @media only screen and (min-width: 600px) {
