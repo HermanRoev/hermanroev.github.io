@@ -1,8 +1,6 @@
 body {
   background-color: #f4efe9;
-  font-family: 'Raleway', sans-serif;
   font-weight: 400;
-	letter-spacing: 1px;
 }
 /* HEADER */
 .bg {
@@ -16,7 +14,7 @@ body {
 }
 
 .header {
-    color: white;
+    color: rgb(250, 250, 250);
     position: absolute;
     text-align: center;
 }
@@ -48,10 +46,43 @@ body {
 /* BOOKING INFORMATION */
 .Booking_info
 {
-  height: 400vh;
-  width: 100vw;
   background-color: #e3dcd1;
+  color: #2b251d;
+  display: flex;
+  gap: 10vh;
+  flex-direction: column;
+  padding: 14vh 0;
 }
+
+.about-us-text-header {
+  justify-content: center;
+  text-align: center;
+  font-size: x-large;
+  font-style: italic;
+}
+.about-us-text-header h1 {
+  margin: 0;
+  font-style: normal;
+}
+
+.about-us-text-container{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+.about-us-text{
+  text-align: center;
+  max-width: 38%;
+  align-self: center;
+  font-size: larger;
+}
+.about-us-text-container img{
+  max-width: 40%;
+  align-self: center;
+}
+
+
+/* BOOKING INFORMATION end */
 
 /* BOOKING FORM */
 .container {
@@ -114,26 +145,15 @@ form p {
 
 /* BOOKING FORM end */
 
-@media screen and (max-width: 768px) {
-	.container {
+@media screen and (max-width: 800px) {
+	.about-us-text-container {
 		flex-direction: column;
 	}
-	.container-form  {
-		padding: 10px;
-	}
-	.heading-phone {
-		font-size: 17px;
-	}
-	
-}
-
-@media screen and (min-width: 768px) and (max-width: 880px) {
-	.container-time {
-		padding: 30px;
-	}
-	.container-form  {
-		padding: 10px;
-	}
-	
+  .about-us-text-container img{
+    min-width: 90%;
+  }
+  .about-us-text{
+    min-width: 90%;
+  }
 	
 }
