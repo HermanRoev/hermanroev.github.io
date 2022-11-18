@@ -43,8 +43,7 @@ body {
 /* HEADER end */
 
 /* BOOKING INFORMATION */
-.Booking_info
-{
+.Booking_info {
   color: #2b251d;
   display: flex;
   gap: 10vh;
@@ -58,6 +57,7 @@ body {
   font-size: x-large;
   font-style: italic;
 }
+
 .about-us-text-header h1 {
   margin: 0;
   font-style: normal;
@@ -66,14 +66,24 @@ body {
 .about-us-text-container{
   display: flex;
   justify-content: space-evenly;
-  width: 100vw;
+  align-items: center;
+  gap: 2vh;
 }
+
 .about-us-text{
+  display: flex;
   text-align: center;
   max-width: 38%;
-  align-self: center;
+  align-items: center;
+  flex-direction: column;
   font-size: larger;
+  gap: 1.5vh;
 }
+
+.about-us-text p {
+  margin: 0;
+}
+
 .about-us-text-container img{
   max-width: 40%;
   align-self: center;
@@ -85,10 +95,8 @@ body {
 /* BOOKING FORM */
 .container {
   background-color: #140d03;
-	width: 100vw;
 	display: flex;
   justify-content: center;
-  align-items: center;
   color: #e3cdaa;
 }
 
@@ -101,21 +109,24 @@ body {
 .container-form {
   margin: auto;
 }
+
 form {
 	display: grid;
 	grid-row-gap: 20px;
   min-width: 500px;
   padding: 20px;
 }
+
 form p {
 	font-weight: 600;
 }
+
 .form-field {
 	display: flex;
 	justify-content: space-between;
 }
 
-.form-field input, select{
+.form-field input, select {
   min-width: 44%;
   background-color: #e3dcd1;
   color: #2b251d;
@@ -147,6 +158,11 @@ form p {
 	.about-us-text-container {
 		flex-direction: column;
 	}
+
+  .flip {
+    flex-direction: column-reverse;
+  }
+
   .about-us-text-container img{
     min-width: 90%;
   }
