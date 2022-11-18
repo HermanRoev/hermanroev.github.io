@@ -1,6 +1,7 @@
 body {
   font-weight: 400;
 }
+
 /* HEADER */
 .bg {
     background-image: url("/IMG/booking/bookingBG.png");
@@ -88,8 +89,6 @@ body {
   max-width: 40%;
   align-self: center;
 }
-
-
 /* BOOKING INFORMATION end */
 
 /* BOOKING FORM */
@@ -151,7 +150,6 @@ form p {
   border: 2px solid #e3dcd1;
   color: #e3dcd1;
 }
-
 /* BOOKING FORM end */
 
 @media screen and (max-width: 800px) {
