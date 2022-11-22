@@ -9,14 +9,6 @@ body {
 }
 
 /* BOOKING INFORMATION */
-.Booking_info {
-  color: #2b251d;
-  display: flex;
-  gap: 10vh;
-  flex-direction: column;
-  padding: 14vh 0;
-}
-
 .about-us-text-header {
   justify-content: center;
   text-align: center;
@@ -28,36 +20,12 @@ body {
   margin: 0;
   font-style: normal;
 }
-
-.about-us-text-container{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 2vh;
-}
-
-.about-us-text{
-  display: flex;
-  text-align: center;
-  max-width: 38%;
-  align-items: center;
-  flex-direction: column;
-  font-size: larger;
-  gap: 1.5vh;
-}
-
-.about-us-text p {
-  margin: 0;
-}
-
-.about-us-text-container img{
-  max-width: 40%;
-  align-self: center;
-}
 /* BOOKING INFORMATION end */
 
+
+
 /* BOOKING FORM */
-.container {
+.booking-container {
   background-color: #140d03;
 	display: flex;
   justify-content: center;
