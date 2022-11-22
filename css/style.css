@@ -12,6 +12,7 @@ body {
  margin: 0;
  overflow: overlay; /* For custom transp scrollbar */
  background-color: #fbfbfb;
+ color: rgb(240, 240, 240);
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 ::-webkit-scrollbar {
@@ -22,6 +23,7 @@ body {
     background: #2b251d;}
 ::-webkit-scrollbar-track {
     background: #7f6e5640;} 
+
 
 /*Navigation container at the top of the page*/
 .navigasjon {
@@ -69,6 +71,65 @@ body {
     color: #CFB997;
     transform: scale(1.1);
 }
+/* NAVIGATION end */
+
+
+/* HEADER */
+
+.bg {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.header {
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.headertext{
+    color: white;
+    text-align: center;
+    font-size: 200%;
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.headerbuttons {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.headerbtn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 14px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    margin: 2%;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    font-size: larger;
+    cursor: pointer;
+}
+    
+.headerbtn:hover {  
+    border-color: #CFB997;
+    color: #CFB997;
+}
+/* HEADER end */
+
 
 /*Medida query: CSS when viewport is wider than 600px, hides menu icon and shows the nav buttons*/
 @media only screen and (min-width: 600px) {
