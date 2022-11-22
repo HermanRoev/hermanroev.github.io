@@ -35,138 +35,134 @@
   <a href="topic.html">Topic</a>
 </div>
 <!--NAVIGATIOIN end-->
-    
+<!-- HEADER -->
     <div class= "bg">
       <div class="header">
         <h1>Host with Ottimo</h1>
-        <a href="#reservation">
+        <a href="#bookingform">
           <button class="headerbtn">Book Events</button>
         </a>
       </div>
     </div>
+<!-- HEADER end-->
 
-    <div class="about-us-page">
-      <div class="about-us-container">
-        <div class="about-us-text">
-          <h1 id="toptext">We are Ottimo</h1>
-          <p id="undertext"> Your requests, our passion</p>
-        </div>
-      </div>
+<!-- BOOKING & EVENTS information -->
+<div class="Booking_info">
 
-      <div class="about-us-container">
-        <div class="about-us-text2">
-          <h1>Om oss!</h1>
-          <p>
-            Ottimo er et sted for å tilbringe tid sammen med de nærmeste. Tid med latter og kjærlighet.
-            Vi tilbyr en unik reise gjennom vår meny, fylt med vår kjærlighet og lidenskap til mat,
-            slik at våre gjester får en fantastisk opplevelse. En opplevelse toppet med plettfri
-            service og kvalitet.</p>
-        </div>
-        <div class="about-us-image">
-          <img src="/IMG/booking/aboutUs.jpg" alt="aboutUs">
-        </div>
-      </div>
+  <div class="about-us-text-header">
+    <h1>We are Ottimo</h1>
+    <p>"<b>Your requests, our passion.</b>"</p>
+  </div>
 
-      <div class="about-us-container">
-        <div class="about-us-text3">
-          <h1>Bryllup</h1>
-            <p id="bottomtext">Gratulerer med ekteskapet!</p>
-          <p> 
-            Bryllupsdagen er en viktig dag, derfor er det viktig å vite hvor den skal holdes- eller feiers.
-            Her hos Ottimo forbereder vi gjerne et lokale slik at dere kan få en fantastisk feiring. 
-            <br>
-            <br>
-            Våre lokaler er innredet med romantisk atmosfære, med en kapasitet på opptil 80 gjester. 
-            <br>
-            <br> 
-            Ottimo-teamet hjelper dere med å skape en stemingsfull feiring, og har ingen problem med å imøtekomme deres ønsker. 
-            <br>
-            <br>
-            Det er inkludert mat og drikke servering blant vår meny. I tillegg er det tilgang til alkoholservering.
-            <br>
-            <br>
-            Vi ønsker dere et fantastisk ekteskap! 
-          </p>
-        </div>
-        <div class="about-us-image">
-          <img src="/IMG/booking/wedding.jpg" alt="wedding" style="float:right;" height="400" width="600">
-        </div>
-      </div>
-
-      <div class="about-us-container">
-        <div class="about-us-text4">
-          <h1>Lukket event</h1>
-          <p>
-            Trenger du- /-dere et sted å holde et arrangement, blant annet sommerfest, julebord, dining out på store grupper eller bursdag?
-            <br>
-            <br>
-            Ottimo har det perfekte lokalet, slik at dere kan holde en stemningsfult treff med nære venner, famile og, eventuellt, kollegaer.
-            <br>
-            <br>
-            Våre lokaler har en kapasitet på, opptil, 50 personer. Mat- og drikkeservering, i tillegg til alkoholservering, er tilgjengelig etter valg fra vår meny og bar.
-            Ottimo-Teamet hjelper deg gjerne med å tilfredstille dine ønsker.
-            <br>
-            <br>
-            Hjertelig velkommen til oss!
-          </p>
-        </div>
-        <div class="about-us-image">
-          <img src="/IMG/booking/lukketevent.jpg" alt="lukketevent">
-        </div>
-      </div>
+  <div class="about-us-text-container">
+    <div class="about-us-text">
+      <h1>About us!</h1>
+      <p>
+        Ottimo is a place to spend time with those closest to you. Time of laughter and love.
+        We offer a unique journey through our menu, filled with our love and passion for food,
+        so that our guests have a fantastic experience. An experience topped off with spotless
+        service and quality.
+      </p>
     </div>
+    <img src="/IMG/booking/aboutUs.jpg">
+  </div> 
 
-    <section id="reservation">
-      <div class="reservation-page">
-        <form action="#">
-          <h1>Book Bord</h1>
-            <div class="input-field">
-              <label for="date">Dato:</label>
-              <input type="date" name="date" id="date" value="2022-09-21" required>
-            </div>
-            <div class="input-field">
-              <label for="time-of-date">Tid:</label>
-              <input type="time" name="time" id="time" value="15:00" min="15" max="23:15" required> 
-            </div>
-            <div class="input-field">
-              <label for="number-of-people">Antall gjester</label>
-              <input type="number" id="number-of-people" name="number-of-people" min="1" max="100" placeholder="Eks. 20">
-            </div>
-            <div class="input-field">
-              <label for="type event">Type event:</label>
-              <select name="event" id="event" required>
-                <option value="" disabled selected hidden>Velg type event</option>
-                <option value="0">Dining out</option>
-                <option value="1">Konfirmasjon</option>
-                <option value="2">Bryllup</option>
-                <option value="3">Lukket event</option>
-                <option value="4">Bursdag</option>
-                <option value="5">Annet, vennligst spesifiser</option>
-              </select>
-            </div>
-            <div class="input-field">
-              <label for="first-name">Telefon:</label>
-              <input type="tel" name="phonenumber" id="phonenumber" placeholder="Eks. 987 65 432" pattern="[0-9]{3} [0-9]{2} [0-9]{3}|[0-9]{8}|[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
-            </div>
-            <div class="input-field">
-              <label for="first-name">Fornavn:</label>
-              <input type="text" name="first-name" id="first-name" placeholder="Eks. Grim" required>
-            </div>
-            <div class="input-field">
-              <label for="last-name">Etternavn:</label>
-              <input type="text" name="last-name" id="last-name" placeholder= "Eks. Torkild" required>
-            </div>
-            <div class="text-box">
-              <label for="message">Noe annet vi trenger å vite?</label>
-              <br>
-              <textarea name="message" id="message" placeholder="Ved valg av 'Annet event' vennligst spesifiser"></textarea>
-            </div>
-            <div class="reservation-button">
-              <button class="reservation-btn">Send</button>
-            </div>
-        </form>
-      </div>
-    </section>
+<div class="about-us-text-container flip">
+  <img src="/IMG/booking/wedding.jpg" alt="wedding" style="float:right;" height="400" width="600">
+  <div class="about-us-text">
+  <h1>Wedding</h1>
+    <p>Congratulations on your marriage!</p>
+  <p>
+    The wedding day is an important day, so it is important to know where it will be held or celebrated.
+    Here at Ottimo, we are happy to prepare a venue so that you can have a fantastic celebration.
+  </p>
+  <p>
+    Our premises are furnished with a romantic atmosphere, with a capacity of up to 80 guests.
+  </p>
+  <p>
+    The Ottimo team will help you create an atmospheric celebration, and have no problem accommodating your wishes.
+  </p>
+  <p>
+    Food and drink serving is included in our menu. In addition, there is access to alcohol service.
+  </p>
+  <p>
+    We wish you a wonderful marriage!
+  </p>
+</div>
+</div>
+  
+<div class="about-us-text-container">
+  <div class="about-us-text">
+    <h1>Closed event</h1>
+    <p>
+      Do you need a place to hold an event, including a summer party, Christmas party, dining out for large groups or a birthday?
+    </p>
+    <p>
+      Ottimo has the perfect venue, so you can hold an atmospheric meeting with close friends, family and, possibly, colleagues.
+    </p>
+    <p>
+      Our premises have a capacity of up to 50 people. Food and drink service, in addition to alcohol service, is available by choice from our menu and bar.
+      The Ottimo team will be happy to help you satisfy your wishes.
+    </p>
+    <p>
+      A warm welcome to us!
+    </p>
+  </div>
+      <img src="/IMG/booking/lukketevent.jpg" alt="lukketevent">
+  </div>
+</div>
+
+<!-- BOOKING FORM -->
+<div class="wrapper">
+	<div class="container">
+		<div class="container-form" id="bookingform">
+				<form action="#">
+					<h2 class="heading heading-yellow">Booking form</h2>
+
+					<div class="form-field">
+						<p>Your Name</p>
+						<input type="text" placeholder="Your Name">
+					</div>
+					<div class="form-field">
+						<p>Your email</p>
+						<input type="email" placeholder="Your email">
+					</div>
+          <div class="form-field">
+						<p>Event</p>
+            <select name="select" id="#">
+							<option value="1">Book a table</option>
+							<option value="2">Wedding</option>
+							<option value="3">Consert</option>
+							<option value="4">Confirmation</option>
+						</select>
+					</div>
+					<div class="form-field">
+						<p>Date</p>
+						<input type="date">
+					</div>
+					<div class="form-field">
+						<p>Time</p>
+						<input type="time">
+					</div>
+					<div class="form-field">
+						<p>How many people?</p>
+						<select name="select" id="#">
+							<option value="1">1 person</option>
+							<option value="2">2 persons</option>
+							<option value="3">3 persosn</option>
+							<option value="4">4 persons</option>
+							<option value="5">5 persons</option>
+							<option value="5+">5+ persons</option>
+						</select>
+					</div>
+
+					<button class="btn" onclick="alert('Thank you for booking with Ottomo')">Submit</button>
+				</form>
+		</div>
+	</div>
+</div>	
+<!-- BOOKING FORM end -->
+
 
 <!--FOOTER-->
 <footer>
@@ -185,12 +181,10 @@
         </div>
       </div>
       <div class="footercolumn">
-        <p>Mandag - Torsdag   15:00 - 22:00</p>
-        <p>Fredag - Lørdag    16:00 - 23:15</p>
-        <p>Søndag Stengt</p>
-        <br>
+        <p>Thuesday - Thursday   15:00 - 22:00</p>
+        <p>Friday - Sunday    16:00 - 23:30</p>
+        <p style="margin-bottom: 50px;">Monday - Closed</p>
         <p>987 65 432 <span class="material-symbols-rounded" style="color:#7f6e56;">phone_in_talk</span></p>
-        
         <p>contact@ottimo.com <span class="material-symbols-rounded" style="color:#7f6e56;">mail</span></p>
         <p><a href="facebook.com">facebook <i class="fa fa-facebook-f" style="color:#7f6e56;"></i></a></p>
     </div>
