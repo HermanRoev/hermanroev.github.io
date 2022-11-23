@@ -25,18 +25,16 @@
 .headertext {
     padding-bottom: 2.5vh;
 }
+
 .home-image-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
     max-width: 45%;
+    gap: 10px;
 }
 
-.home-image-container .col {
-    max-width: 45%;
-}
-
-.home-image-container .col img{
+.home-image-container img{
     max-width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
