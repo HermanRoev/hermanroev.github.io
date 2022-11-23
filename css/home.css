@@ -22,6 +22,9 @@
     flex-direction: column-reverse;
 }
 
+.headertext {
+    padding-bottom: 2.5vh;
+}
 .home-image-container {
     display: flex;
     justify-content: space-evenly;
@@ -40,9 +43,10 @@
 }
 
 .color {
+    margin-top: 2vh;
     color: black;
     border-color: black;
-}
+} /* Overwrites headerbtn colors with new class so the two same headerbtns have diff colors using same div */
 
 /* Changes the layout of the events and menu section */
 @media only screen and (min-width: 600px) {

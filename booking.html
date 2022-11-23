@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Ottimo: Hosting and Restaurant</title> <!--Tittelen som kommer opp i nettleseren-->
     <meta charset="UTF-8">
@@ -38,7 +38,7 @@
 <!-- HEADER -->
     <div class= "bg">
       <div class="header">
-        <h1>Host with Ottimo</h1>
+        <div class="headertext"><h1>Host with Ottimo</h1></div>
         <a href="#bookingform">
           <button class="headerbtn">Book Events</button>
         </a>
@@ -51,7 +51,7 @@
 
   <div class="about-us-text-header">
     <h1>We are Ottimo</h1>
-    <p>"<b>Your requests, our passion.</b>"</p>
+    <h3>"Your requests, our passion."</h3>
   </div>
 
   <div class="content-container">
@@ -73,14 +73,13 @@
   <h1>Wedding</h1>
     <p>Congratulations on your marriage!</p>
   <p>
-    The wedding day is an important day, so it is important to know where it will be held or celebrated.
-    Here at Ottimo, we are happy to prepare a venue so that you can have a fantastic celebration.
+    The wedding day is an important day. Here at Ottimo, we are happy to prepare a venue so that you can have a fantastic celebration.
   </p>
   <p>
     Our premises are furnished with a romantic atmosphere, with a capacity of up to 80 guests.
   </p>
   <p>
-    The Ottimo team will help you create an atmospheric celebration, and have no problem accommodating your wishes.
+    The Ottimo team will help you create an atmospheric celebration.
   </p>
   <p>
     Food and drink serving is included in our menu. In addition, there is access to alcohol service.
@@ -119,14 +118,19 @@
 				<form action="#">
 					<h2 class="heading heading-yellow">Booking form</h2>
 
+          <label input="name">
 					<div class="form-field">
 						<p>Your Name</p>
 						<input type="text" placeholder="Your Name">
 					</div>
+        </label>
+          <label input="email">
 					<div class="form-field">
 						<p>Your email</p>
 						<input type="email" placeholder="Your email">
 					</div>
+        </label>
+        <label input="events">
           <div class="form-field">
 						<p>Event</p>
             <select name="select" id="#">
@@ -136,14 +140,20 @@
 							<option value="4">Confirmation</option>
 						</select>
 					</div>
+        </label>
+          <label input="date">
 					<div class="form-field">
 						<p>Date</p>
 						<input type="date">
 					</div>
+        </label>
+        <label input="time">
 					<div class="form-field">
 						<p>Time</p>
 						<input type="time">
 					</div>
+        </label>
+        <label input="number of people">
 					<div class="form-field">
 						<p>How many people?</p>
 						<select name="select" id="#">
@@ -155,6 +165,7 @@
 							<option value="5+">5+ persons</option>
 						</select>
 					</div>
+        </label>
 
 					<button class="btn" onclick="alert('Thank you for booking with Ottomo')">Submit</button>
 				</form>
