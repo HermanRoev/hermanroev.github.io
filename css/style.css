@@ -252,9 +252,9 @@ footer
     content: "";
     display: table;
     clear: both;
-  }
+}
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) { /* When screen is less than 800 px */
     .footercolumn {
         width: 100%;
     }
