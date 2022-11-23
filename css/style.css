@@ -165,6 +165,13 @@ h1 {
     border-color: #CFB997;
     color: #CFB997;
 }
+
+.img-alternative-text {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    color: white;
+}
 /* HEADER end */
 
 /* CONTENT CONTAINERS */
