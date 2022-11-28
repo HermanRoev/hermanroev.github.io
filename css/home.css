@@ -15,10 +15,6 @@
     max-width: 100%;
 }
 
-.meny { /* Makes the menu div be the opposite of the events div */
-    flex-direction: column-reverse;
-}
-
 .headertext { /* Text sizing */
     padding-bottom: 2.5vh;
 }
@@ -44,12 +40,20 @@
 } /* Overwrites headerbtn colors with new class so the two same headerbtns have diff colors using same div */
 
 /* Changes the layout of the events and menu section */
-@media only screen and (min-width: 600px) {
-    .home-container {
-        flex-direction: row;
+@media only screen and (max-width: 800px) {
+    .content-container {
+        flex-direction: column-reverse;
     }
 
     .meny {
-        flex-direction: row;
+        flex-direction: column;
     }
+
+    .home-image-container {
+        max-width: 70%;
+    }
+
+    .content-text {
+        max-width: 70%;
+    }    
 }

@@ -1,6 +1,5 @@
 body {
   font-weight: 400;
-
 }
 
 /* HEADER */
@@ -87,7 +86,7 @@ form p {
 /* BOOKING FORM end */
 
 @media screen and (max-width: 800px) {
-	.about-us-text-container {
+	.content-container {
 		flex-direction: column;
 	}
 
@@ -95,11 +94,10 @@ form p {
     flex-direction: column-reverse;
   }
 
-  .about-us-text-container img{
-    min-width: 90%;
+  .content-container img{
+    max-width: 90%;
   }
-  .about-us-text{
-    min-width: 90%;
+  .content-text{
+    max-width: 90%;
   }
-	
 }
