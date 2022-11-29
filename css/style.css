@@ -21,7 +21,7 @@ html, body{
 ::-webkit-scrollbar-track {
     background: #7f6e5640;} 
 
-h1 { /* Overwrites set margin of h1 */
+h2 { /* Overwrites set margin of h2 */
     margin: 0;
     border-bottom: 4px solid #7f6e56; /* Decorational divivder */
     padding: 10px 40px;
@@ -137,15 +137,18 @@ h1 { /* Overwrites set margin of h1 */
     gap: 2.5vh;
 }
 
-.header-text{
+.header-text {
+    font-size: 70px;
     color: rgb(240, 240, 240);
-    font-size: 200%;
-    font-weight: lighter;
+    font-weight: bold;
+    text-align: center; /* Centers text on small screens */
 }
 
 .header-buttons {
     display: flex;
+    flex-wrap: wrap;
     gap: 1vh;
+    justify-content: center;
 }
 /* HEADER end */
 
@@ -176,46 +179,26 @@ h1 { /* Overwrites set margin of h1 */
     gap: 1.5vh;
 }
 
-.content-text p {
-    margin: 0;
-}
-
 .content-container img{
     max-width: 40%;
 }
 /* CONTENT CONTAINER end */
 
 /*FOOTER*/
-footer
-{
+footer {
     background-color: #f4efe9;
 }
 
-.footerheader{
+.footer-header{
     max-width: 100%;
     text-align: center;
     padding-top: 1.5%;
-    font-size: 1.5rem;
+    font-size: 24px;
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 10px;
     font-weight: 100;
 }
-
-.footercolumn {
-    margin: auto;
-    float: left;
-    width: 50%;
-    height: 100%;
-    padding: 2.5%;
-    padding-left: 7.5%;
-  }
-
-.footerrow::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 
 /* Google maps api */
 .google-maps {
@@ -233,6 +216,10 @@ footer
     height: 100% !important;
 }
 
+.mk1 {
+    color:#7f6e56;
+}
+
 footer a:link{
     text-decoration: none;
     color: #7f6e56;
@@ -247,22 +234,31 @@ footer a:visited{
     color: #7f6e56;
 }
 
-  footer p {
-    font-size: 1.5rem;
+footer p {
+    font-size: 20px;
+}
+
+.footerinfo {
+    background-color:#2b251d; 
+    color:#CFB997; 
+    padding: 20px;
 }
 
 .footerinfo p {
-    font-size: 0.8rem;
+    font-size: 15px;
     text-align: center;
-    margin-top: 1%;
 }
 /*FOOTER END*/
 
 /* Universal CSS  */
+.img-text-container {
+    position: relative;
+}
+
 .img-text {
     position: absolute;
-    right: 20px;
-    bottom: 20px;
+    right: 10px;
+    bottom: 10px;
     color: white;
 }
 

@@ -4,9 +4,15 @@
 }
 
 .header img {   /* Logo image sizing */
-    min-width: 400px;
+    min-width: 250px;
     width: 750px;
     max-width: 80%;
+}
+
+.under-text {
+    color: rgb(240, 240, 240);
+    font-size: 200%;
+    font-weight: lighter;
 }
 
 .home-image-container { /* A grid container to display pictures 2x2 with equal size */
