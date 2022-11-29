@@ -3,23 +3,13 @@
     background-image:url(/IMG/home/homepageBG-min.png);
 }
 
-.logo { /* Container for the logo */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    height: 40%;
+.header img {   /* Logo image sizing */
+    min-width: 400px;
+    width: 750px;
+    max-width: 80%;
 }
 
-.logo img { /* Limiting the size of the logo img to max width of the div */
-    max-width: 100%;
-}
-
-.headertext { /* Text sizing */
-    padding-bottom: 2.5vh;
-}
-
-.home-image-container { /* A grid container to display pictures 2x2 with equal size*/
+.home-image-container { /* A grid container to display pictures 2x2 with equal size */
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
@@ -33,11 +23,10 @@
     object-fit: cover;
 }
 
-.color {
-    margin-top: 2vh;
+.color { /* Change button and border color */
     color: black;
     border-color: black;
-} /* Overwrites headerbtn colors with new class so the two same headerbtns have diff colors using same div */
+} 
 
 /* Changes the layout of the events and menu section */
 @media only screen and (max-width: 800px) {

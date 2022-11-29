@@ -21,24 +21,57 @@ html, body{
 ::-webkit-scrollbar-track {
     background: #7f6e5640;} 
 
+h1 { /* Overwrites set margin of h1 */
+    margin: 0;
+    border-bottom: 4px solid #7f6e56; /* Decorational divivder */
+    padding: 10px 40px;
+} 
 
 /*Navigation container at the top of the page*/
-.navigasjon {
+.navigation {   /* Navigation container when the viewport is wide */
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
+    align-items: center;
     background-color: #0f0f0fdf;
     position: fixed;
     top: 0;
-    width: 100%;
     transition: top 0.6s;
     z-index: 1;
+    width: 100%;
+}
+
+/* Menu buttons */
+.nav-btn a{
+    padding-left: 20px;
+    display: none;
+    font-size: 25px;
+    font-weight: 450;
+    color: rgb(240, 240, 240);
+    text-decoration: none;
+    transition: .4s;
+}
+
+.nav-btn a:hover {
+    color: #CFB997;
+    transform: scale(1.1);
+}
+
+/* Logo in nav container*/
+.navigation img {
+    max-width: 140px;
+    padding: 20px 0px;
+    transition: .4s;
+}
+
+.navigation img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 /* Creates a container to hold our nav menu */
-.nav {
-    height: 100%;
+.nav {  /* Navigation container that comes when the viewport is small and you press the menu button */
     width: 0px;
+    height: 100%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -47,13 +80,11 @@ html, body{
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 100px;
-
 }
 
-.nav a {
+.nav a {    /* Button styling inside nav */
     font-size: 25px;
     font-weight: 450;
-    text-align: left;
     display: block;
     color: rgb(240, 240, 240);
     padding: 15px 16px;
@@ -64,10 +95,17 @@ html, body{
     color: #CFB997;
 }
 
-.nav .closebtn {
+.nav .close-btn {
     position: absolute;
     top: 15px;
     right: 25px;
+}
+
+/* Google icons*/
+.material-icons.md1 {
+    font-size: 36px;
+    cursor: pointer;
+    color: rgb(240, 240, 240);
 }
 
 .material-icons.md2 {
@@ -80,122 +118,58 @@ html, body{
     cursor: pointer;
 }
 
-/* Logo */
-.navigasjon img {
-    max-width: 140px;
-    padding: 20px 0px;
-    transition: .4s;
-}
-
-.navigasjon img:hover{
-    cursor: pointer;
-    transform: scale(1.05);
-}
-
-/* Menu buttons */
-.navbtn a{
-    padding-left: 20px;
-    display: none;
-    font-size: 20px;
-    color: rgb(240, 240, 240);
-    text-decoration: none;
-    transition: .4s;
-}
-
-.navbtn a:hover {
-    color: #CFB997;
-    transform: scale(1.1);
-}
 /* NAVIGATION end */
 
 
 /* HEADER */
 
-.bg {
-    height: 100vh;
+.bg { /* Sets background image */
     background-repeat: no-repeat;
     background-size: cover;
-    justify-content: center;
-    align-items: center;
-    display: flex;
 }
 
-.header {
+.header { /* Header container */
     height: 100vh; 
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 2.5vh;
 }
 
-.headertext{
+.header-text{
     color: rgb(240, 240, 240);
-    text-align: center;
     font-size: 200%;
     font-weight: lighter;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-h1 {
-    margin: 2.5vh 0;
-} /* Overwrites set margin of h1 */
-
-.headerbuttons {
+.header-buttons {
     display: flex;
     gap: 1vh;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.headerbtn {
-    background-color: transparent;
-    border: 2px solid white;
-    color: rgb(240, 240, 240);
-    padding: 14px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    transition-duration: 0.4s;
-    border-radius: 10px;
-    font-size: larger;
-    cursor: pointer;
-}
-    
-.headerbtn:hover {  
-    border-color: #CFB997;
-    color: #CFB997;
-}
-
-.img-alternative-text {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    color: white;
 }
 /* HEADER end */
 
 /* CONTENT CONTAINERS */
-.container-wrap {
+.container-wrap { /* Main container */
     display: flex;
-    gap: 10vh;
+    gap: 14vh;
     flex-direction: column;
     padding: 14vh 0;
     align-items: center;
   }
   
-.content-container {
+.content-container { /* Containers for the content */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 2vh;
     max-width: 1600px;
+    gap: 3vh; /* Gap for when the content is in column */
 }
 
-.content-text {
+.content-text { /* Container for text content */
     display: flex;
     text-align: center;
-    max-width: 38%;
+    max-width: 35%;
     align-items: center;
     flex-direction: column;
     font-size: larger;
@@ -204,28 +178,19 @@ h1 {
 
 .content-text p {
     margin: 0;
-    padding: 0 40px;
 }
 
 .content-container img{
     max-width: 40%;
-    align-self: center;
 }
 /* CONTENT CONTAINER end */
-
-/* Google icons*/
-.material-icons.md1 {
-    font-size: 36px;
-    cursor: pointer;
-    color: rgb(240, 240, 240);
-}
-
 
 /*FOOTER*/
 footer
 {
     background-color: #f4efe9;
 }
+
 .footerheader{
     max-width: 100%;
     text-align: center;
@@ -293,11 +258,34 @@ footer a:visited{
 }
 /*FOOTER END*/
 
+/* Universal CSS  */
+.img-text {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    color: white;
+}
 
+.global-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: rgb(240, 240, 240);
+    padding: 14px 30px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+    font-size: larger;
+    cursor: pointer;
+}
+    
+.global-btn:hover {  
+    border-color: #CFB997;
+    color: #CFB997;
+}
 
 /*Medida query: CSS when viewport is wider than 600px, hides menu icon and shows the nav buttons*/
 @media only screen and (min-width: 700px) {
-    .navbtn a{
+    .nav-btn a{
         display: inline-flex;
     }
 
