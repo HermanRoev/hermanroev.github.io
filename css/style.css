@@ -201,17 +201,13 @@ footer {
 }
 
 /* Google maps api */
-.google-maps {
-    position: relative;
-    padding-bottom: 60%;
-    padding-top: 5%;
-    height: 0;
+.google-maps {  /* Size for the google maps using aspect ratio*/
+    width: 60%;
+    aspect-ratio: 3/2;
+    margin: 20px;
 }
 
 .google-maps iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100% !important;
     height: 100% !important;
 }
@@ -293,6 +289,10 @@ footer p {
 @media screen and (max-width: 800px) {
     .footercolumn {
         width: 100%;
+    }
+
+    .google-maps {
+        width: 85%;
     }
 
     .headerbuttons {

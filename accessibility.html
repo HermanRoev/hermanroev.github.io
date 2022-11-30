@@ -1,23 +1,73 @@
+<!--Final assignment!-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>tittel til siden</title>
+    <title>Ottimo: Accessibility</title> <!--Title that comes up in the browser-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Sets initial viewport width to the device width-->
     <link rel="icon" href="/IMG/O.png" sizes="16x16" type="image/png">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css"> <!--Link to css file-->
+    <link rel="stylesheet" type="text/css" href="css/access.css"> <!--Link to css file-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><!--Google icons link-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!--Google icons link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--font awesome, for facebook logo-->
   </head>
-  <body>
-    <div class="nav">
-      <ul>
-        <li><a href=>icon</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="booking.html">Booking</a></li>
-        <li><a href="menu.html">Meny</a></li>
-        <li><a href="accessibility.html">Accessibility</a></li>
-        <li><a href="topic.html">Topic</a></li>
-      </ul>
+<body>
+
+<!--Navigation-->
+<nav id="navbar" class="navigation">
+  <i class="material-icons md1" onclick="openNav()">menu</i> <!--Top menu bar menu icon for small creen width, bring up navigation menu-->
+  <a href="index.html"><img src="IMG/logo.png"></a> <!--Logo-->
+  <div class="nav-btn">
+    <a href="index.html">Home</a> 
+    <a href="booking.html">Booking</a>
+    <a href="dining.html">Dining</a>
+    <a href="accessibility.html">Accessibility</a>
+    <a href="topic.html">Topic</a>
+  </div>
+</nav> 
+<nav id="popout" class="nav"> <!--Nav menu, pops up when you press the menu button on small screens-->
+  <a class="close-btn" onclick="closeNav()"><i class="material-icons md2">close</i></a>  <!--Close button that hides the menu-->
+  <a href="index.html">Home</a> 
+  <a href="booking.html">Booking</a>
+  <a href="dining.html">Dining</a>
+  <a href="accessibility.html">Accessibility</a>
+  <a href="topic.html">Topic</a>
+</nav>
+<!--End of navigation-->
+
+<footer>
+  <div class="footer-header">
+    <h2>Our location</h2>
+    <p>Our location lies in a suberb spot in the beautiful sorroundings of Aker Brygge, Oslo. Come visit us at Bryggetorget 2, Oslo during our opening hours. If you have any questions feel free to contact us.</p>
+  </div>
+  <div class="content-container">   <!-- Footer row and columns for responsive design on different screen width -->
+    <div class="google-maps">  <!-- Google maps integrated into site via iframe element, from https://google-map-generator.com/ -->
+      <iframe
+          src="https://maps.google.com/maps?q=bryggetorget%202&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          width="800"
+          height="500"
+          style="border:0"
+          allowfullscreen
+          loading="lazy">
+      </iframe>
     </div>
-    <h1>Dette er accessibility siden</h1>
-  </body>
+    <div class="content-text" style="gap: 0;">   <!-- Footer row and columns for responsive design on different screen width -->
+      <p>Thuesday - Thursday   15:00 - 22:00</p>
+      <p>Friday - Sunday    16:00 - 23:30</p>
+      <p>Monday - Closed</p>
+      <p>987 65 432 <span class="material-symbols-rounded mk1">phone_in_talk</span></p>
+      <p>contact@ottimo.com <span class="material-symbols-rounded mk1">mail</span></p>
+      <p><a href="">facebook <i class="fa fa-facebook-f mk1"></i></a></p>
+    </div>
+  </div>
+  <!-- Design credits, bottom of footer -->
+  <div class="footerinfo"> <p><strong>Site created by</strong></p>
+    <p>S374949 - Ludvig Stenvik</p>
+    <p>S348906 - Herman Røv</p>
+    <p>S374993 - Selmer James Solland</p>
+    <p>S374955 - Michael Minh Tri Nguyen</p>
+  </div>
+</footer>
+</body>
 </html>

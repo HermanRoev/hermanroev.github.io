@@ -41,7 +41,6 @@ body {
 form {
 	display: grid;
 	grid-row-gap: 20px;
-  min-width: 200px;
   padding: 20px;
 }
 
@@ -55,11 +54,11 @@ form p {
 }
 
 .form-field input, select {
-  min-width: 45%;
-  width: 30%;
-  background-color: #e3dcd1;
+  width: 40%;
   color: #2b251d;
+  background-color: bisque;
   border-radius: 10px;
+  border: 2px solid #e3cdaa;
 }
 
 .color { /* Changes color of button and border */
