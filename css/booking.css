@@ -20,6 +20,13 @@ body {
   margin: 0;
   font-style: normal;
 }
+
+.img-text-container{
+  max-width: 40%;
+}
+.img-text-container img {
+  max-width:100%;
+}
 /* BOOKING INFORMATION end */
 
 
@@ -82,7 +89,7 @@ form p {
     flex-direction: column-reverse;
   }
 
-  .content-container img{
+  .img-text-container{
     max-width: 85%;
   }
   .content-text{
