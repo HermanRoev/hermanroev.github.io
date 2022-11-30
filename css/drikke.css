@@ -1,3 +1,5 @@
+
+
 .bg {
     background-image:url(/IMG/drikke/rsz_1bar\ \(1\).jpg);
     background-position: center;
@@ -5,101 +7,66 @@
     background-size: cover;
 }
 
-.wine-int-container {
-    margin-top: 10%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
 .wine-header {
     margin-top: 0;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     font-size: 75px;
     text-align: center;
 }
 
 
-.wine-text-container {
-    font-size: larger;
-    max-width: 50%;
-    text-align: center;
+
+/* Main drinks container */
+.wine-container {
+    display: flex;
+    gap: 15px;
+    width: fit-content;
+    padding: 30px;
 }
 
-.wines-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    width: 100vw;
-    margin-top: 200px;
-}
-
-.wine-box {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    height: 50vh;
+.wine-boxes {
+    transition: .3s;
+    width: 230px;
+    height: 350px;
     border-radius: 10px;
-    padding: 10px;
-    box-shadow: 5px 5px 20px grey;
+    border: 2px solid rgb(201, 201, 201);
 }
 
+.wine-box:hover{
+    box-shadow: 0 0 50px
+    rgba(33, 33, 33, .2);
+}
+
+/* Image and price section */
 .image-price {
     display: flex;
-    flex-direction: row;
     height: 70%;
+    border-bottom: 2px solid rgb(201, 201, 201);
 }
 
+/* Price and name */
 .wine-price {
     display: flex;
-    width: 50%;
-    flex-wrap: wrap;
-    align-content: center;
-    font-size: large;
+    max-width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
 }
 
+/* Image max-width */
 .wine-img {
-    width: 50%;
+    max-width: 50%;
 }
 
+/* Image sizing within the div */
 .wine-img img{
     width: 100%;
     height: 100%;
     object-fit: contain;
-    object-position: center;
 }
 
+/* Info text under the image and name */
 .wine-info {
-    font-size: larger;
-}
-
-.wines-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    width: 100vw;
-    margin-top: 200px;
-}
-
-.shots-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    width: 100vw;
-    margin-top: 200px;
-}
-
-@media only screen and (min-width: 600px) {
-    .wines-container {
-        flex-direction: row;
-    }
-
-    .wine-box {
-        width: 20%;
-    }
+    font-size: 13px;
+    padding: 5px;
 }
