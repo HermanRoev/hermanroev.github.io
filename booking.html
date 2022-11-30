@@ -1,206 +1,194 @@
+<!--Final assignment!-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Ottimo: Hosting and Restaurant</title> <!--Tittelen som kommer opp i nettleseren-->
+    <title>Ottimo: Booking</title> <!--Title that comes up in the browser-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Setter initial screen size til enheten-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Sets initial viewport width to the device width-->
     <link rel="icon" href="/IMG/O.png" sizes="16x16" type="image/png">
-    <link rel="stylesheet" type="text/css" href="css/style.css"> <!--Link til css fil-->
-    <link rel="stylesheet" type="text/css" href="css/booking.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><!--Google sine free to use icons-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!--Google sine free to use icons-->
+    <link rel="stylesheet" type="text/css" href="css/style.css"> <!--Link to css file-->
+    <link rel="stylesheet" type="text/css" href="css/booking.css"> <!--Link to css file-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!--Google icons link-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!--Google icons link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--font awesome, for facebook logo-->
-    <script src="/js/script.js"></script>  <!--Link til javascript fil-->
   </head>
 <body>
 
-<!--NAVIGATION-->
-<div id="navbar" class="navigasjon">
-  <i class="material-icons md1" onclick="openNav()">menu</i> <!--Top menu bar som får frem en side nav-->
+<!--Navigation-->
+<nav id="navbar" class="navigation">
+  <i class="material-icons md1" onclick="openNav()">menu</i> <!--Top menu bar menu icon for small creen width, bring up navigation menu-->
   <a href="index.html"><img src="IMG/logo.png"></a> <!--Logo-->
-  <div class="navbtn">
+  <div class="nav-btn">
     <a href="index.html">Home</a> 
     <a href="booking.html">Booking</a>
-    <a href="dining.html">Dining</a>            <!--Linker til de forskjellige sidene, hele nav koden kan kopieres til alle sidene-->
+    <a href="dining.html">Dining</a>
     <a href="accessibility.html">Accessibility</a>
     <a href="topic.html">Topic</a>
   </div>
-</div> 
-<div id="popout" class="nav"> <!--Nav bar div, er gjemt frem til js endrer width når onclick kalles-->
-  <a class="closebtn" onclick="closeNav()"><i class="material-icons md2">close</i></a>  <!--Setter width til 0 igjen-->
+</nav> 
+<nav id="popout" class="nav"> <!--Nav menu, pops up when you press the menu button on small screens-->
+  <a class="close-btn" onclick="closeNav()"><i class="material-icons md2">close</i></a>  <!--Close button that hides the menu-->
   <a href="index.html">Home</a> 
   <a href="booking.html">Booking</a>
-  <a href="dining.html">Dining</a>            <!--Linker til de forskjellige sidene, hele nav koden kan kopieres til alle sidene-->
+  <a href="dining.html">Dining</a>
   <a href="accessibility.html">Accessibility</a>
   <a href="topic.html">Topic</a>
-</div>
-<!--NAVIGATIOIN end-->
+</nav>
+<!--End of navigation-->
+
 <!-- HEADER -->
-    <div class= "bg">
-      <div class="header">
-        <div class="headertext"><h1>Host with Ottimo</h1></div>
+    <div class= "bg header">
+        <div class="header-text">Host with Ottimo</div>
         <a href="#bookingform">
-          <button class="headerbtn">Book Events</button>
+          <button class="global-btn">Book Events</button>
         </a>
-      </div>
+        <div class="img-text">bildetekst</div>
     </div>
 <!-- HEADER end-->
 
 <!-- BOOKING & EVENTS information -->
-<div class="container-wrap">
-
+<main class="container-wrap">
   <div class="about-us-text-header">
-    <h1>We are Ottimo</h1>
+    <h2 style="border:none;">We are Ottimo</h2> <!-- Removes border of h2 for aesthetics -->
     <h3>"Your requests, our passion."</h3>
   </div>
-
   <div class="content-container">
     <div class="content-text">
-      <h1>About us!</h1>
+      <h2>About us!</h2>
       <p>
-        Ottimo is a place to spend time with those closest to you. Time of laughter and love.
+        Ottimo is a place to spend time with those closest to you. Time of laughter and love.<br>
         We offer a unique journey through our menu, filled with our love and passion for food,
-        so that our guests have a fantastic experience. An experience topped off with spotless
-        service and quality.
+        so that our guests have a fantastic experience. <br>
+        An experience topped off with spotless service and quality.
       </p>
     </div>
-    <img src="/IMG/booking/aboutUs.jpg">
+    <div class="img-text-container">
+      <img alt="Two chefs laughing while making bread" src="/IMG/booking/aboutUs.jpg">
+        <div class="img-text">bildetekst</div>
+    </div>
   </div> 
-
   <div class="content-container flip">
-    <img src="/IMG/booking/wedding.jpg" alt="wedding">
+    <div class="img-text-container">
+      <img alt="Decorated wedding room" src="/IMG/booking/wedding.jpg">
+        <div class="img-text">bildetekst</div>
+    </div>
     <div class="content-text">
-      <h1>Wedding</h1>
+      <h2>Wedding</h2>
       <p>
-        Congratulations on your marriage!
-      </p>
-      <p>
-        The wedding day is an important day. Here at Ottimo, we are happy to prepare a venue so that you can have a fantastic celebration.
-      </p>
-      <p>
-        Our premises are furnished with a romantic atmosphere, with a capacity of up to 80 guests.
-      </p>
-      <p>
-        The Ottimo team will help you create an atmospheric celebration.
-      </p>
-      <p>
-        Food and drink serving is included in our menu. In addition, there is access to alcohol service.
-      </p>
-      <p>
+        Congratulations on your marriage! <br>
+        The wedding day is an important day. Here at Ottimo, we are happy to prepare a venue so that you can have a fantastic celebration. <br>
+        Our premises are furnished with a romantic atmosphere, with a capacity of up to 80 guests. <br>
+        The Ottimo team will help you create an atmospheric celebration. <br>
+        Food and drink serving is included in our menu. In addition, there is access to alcohol service. <br>
         We wish you a wonderful marriage!
       </p>
     </div>
   </div>
-  
   <div class="content-container">
     <div class="content-text">
-      <h1>Closed event</h1>
+      <h2>Closed event</h2>
       <p>
-        Do you need a place to hold an event, including a summer party, Christmas party, dining out for large groups or a birthday?
-      </p>
-      <p>
-        Ottimo has the perfect venue, so you can hold an atmospheric meeting with close friends, family and, possibly, colleagues.
-      </p>
-      <p>
-        Our premises have a capacity of up to 50 people. Food and drink service, in addition to alcohol service, is available by choice from our menu and bar.
-        The Ottimo team will be happy to help you satisfy your wishes.
-      </p>
-      <p>
-        A warm welcome to us!
+        Do you need a place to hold an event, including a summer party, Christmas party, dining out for large groups or a birthday? <br>
+        Ottimo has the perfect venue, so you can hold an atmospheric meeting with close friends, family and, possibly, colleagues. <br>
+        Our premises have a capacity of up to 50 people. Food and drink service, in addition to alcohol service, is available by choice from our menu and bar. <br>
+        The Ottimo team will be happy to help you satisfy your wishes. <br>
+        A warm welcome to us! <br>
       </p>
     </div>
-    <img src="/IMG/booking/lukketevent.jpg" alt="lukketevent">
+    <div class="img-text-container">
+      <img alt="Waiter bringing drinks" src="/IMG/booking/lukketevent.jpg">
+        <div class="img-text">bildetekst</div>
+    </div>
   </div>
-</div>
+</main>
 
 <!-- BOOKING FORM -->
-<div class="wrapper">
-	<div class="booking-container">
-		<div class="container-form" id="bookingform">
-      <form action="#">
-        <h2 class="heading heading-yellow">Booking form</h2>
-        <label input="name">
+<div class="booking-container" id="bookingform"> 
+  <!-- KAN BYTTES TIL CONTENT-WRAP -->
+    <form action="#">
+      <h2 class="heading heading-yellow">Booking form</h2>
+      <label input="name">
+      <div class="form-field">
+        <p>Your Name</p>
+        <input type="text" placeholder="Your Name">
+      </div>
+      </label>
+        <label input="email">
         <div class="form-field">
-          <p>Your Name</p>
-          <input type="text" placeholder="Your Name">
+          <p>Your email</p>
+          <input type="email" placeholder="Your email">
         </div>
-        </label>
-          <label input="email">
-          <div class="form-field">
-            <p>Your email</p>
-            <input type="email" placeholder="Your email">
-          </div>
-        </label>
-        <label input="events">
-          <div class="form-field">
-            <p>Event</p>
-            <select name="select" id="#">
-              <option value="1">Book a table</option>
-              <option value="2">Wedding</option>
-              <option value="3">Consert</option>
-              <option value="4">Confirmation</option>
-            </select>
-          </div>
-        </label>
-        <label input="date">
+      </label>
+      <label input="events">
         <div class="form-field">
-          <p>Date</p>
-          <input type="date">
+          <p>Event</p>
+          <select name="select" id="#">
+            <option value="1">Book a table</option>
+            <option value="2">Wedding</option>
+            <option value="3">Consert</option>
+            <option value="4">Confirmation</option>
+          </select>
         </div>
-        </label>
-        <label input="time">
-          <div class="form-field">
-            <p>Time</p>
-            <input type="time">
-          </div>
-        </label>
-        <label input="number of people">
-          <div class="form-field">
-            <p>How many people?</p>
-            <select name="select" id="#">
-              <option value="1">1 person</option>
-              <option value="2">2 persons</option>
-              <option value="3">3 persosn</option>
-              <option value="4">4 persons</option>
-              <option value="5">5 persons</option>
-              <option value="5+">5+ persons</option>
-            </select>
-          </div>
-        </label>
-        <button class="btn" onclick="alert('Thank you for booking with Ottomo')">Submit</button>
-      </form>
-		</div>
-	</div>
+      </label>
+      <label input="date">
+      <div class="form-field">
+        <p>Date</p>
+        <input type="date">
+      </div>
+      </label>
+      <label input="time">
+        <div class="form-field">
+          <p>Time</p>
+          <input type="time">
+        </div>
+      </label>
+      <label input="number of people">
+        <div class="form-field">
+          <p>How many people?</p>
+          <select name="select" id="#">
+            <option value="1">1 person</option>
+            <option value="2">2 persons</option>
+            <option value="3">3 persosn</option>
+            <option value="4">4 persons</option>
+            <option value="5">5 persons</option>
+            <option value="5+">5+ persons</option>
+          </select>
+        </div>
+      </label>
+      <button class="global-btn color" onclick="alert('Thank you for booking with Ottomo')">Submit</button>
+    </form>
 </div>	
 <!-- BOOKING FORM end -->
 
 
 <!--FOOTER-->
 <footer>
-  <div class="footerheader"><h3>Our location</h3><p>Our location lies in a suberb spot in the beautiful sorroundings of Aker Brygge, Oslo. Come visit us at Bryggetorget 2, Oslo during our opening hours. If you have any questions feel free to contact us.</p></div>
-    <div class="footerrow">
-      <div class="footercolumn">
-        <div class="google-maps">
-          <iframe
-            src="https://maps.google.com/maps?q=bryggetorget%202&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            width="600"
-            height="500"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy">
-          </iframe>
-        </div>
-      </div>
-      <div class="footercolumn">
-        <p>Thuesday - Thursday   15:00 - 22:00</p>
-        <p>Friday - Sunday    16:00 - 23:30</p>
-        <p style="margin-bottom: 50px;">Monday - Closed</p>
-        <p>987 65 432 <span class="material-symbols-rounded" style="color:#7f6e56;">phone_in_talk</span></p>
-        <p>contact@ottimo.com <span class="material-symbols-rounded" style="color:#7f6e56;">mail</span></p>
-        <p><a href="facebook.com">facebook <i class="fa fa-facebook-f" style="color:#7f6e56;"></i></a></p>
-      </div>
+  <div class="footer-header">
+    <h2>Our location</h2>
+    <p>Our location lies in a suberb spot in the beautiful sorroundings of Aker Brygge, Oslo. Come visit us at Bryggetorget 2, Oslo during our opening hours. If you have any questions feel free to contact us.</p>
+  </div>
+  <div class="content-container">   <!-- Footer row and columns for responsive design on different screen width -->
+    <div class="google-maps">  <!-- Google maps integrated into site via iframe element, from https://google-map-generator.com/ -->
+      <iframe
+          src="https://maps.google.com/maps?q=bryggetorget%202&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          width="800"
+          height="500"
+          style="border:0"
+          allowfullscreen
+          loading="lazy">
+      </iframe>
     </div>
-  <div class="footerinfo" style="background-color:#2b251d; width: 100%; height: 100%; color:#CFB997; padding: 1.5%;"> <p><strong>Site created by</strong></p>
+    <div class="content-text" style="gap: 0;">   <!-- Footer row and columns for responsive design on different screen width -->
+      <p>Thuesday - Thursday   15:00 - 22:00</p>
+      <p>Friday - Sunday    16:00 - 23:30</p>
+      <p>Monday - Closed</p>
+      <p>987 65 432 <span class="material-symbols-rounded mk1">phone_in_talk</span></p>
+      <p>contact@ottimo.com <span class="material-symbols-rounded mk1">mail</span></p>
+      <p><a href="">facebook <i class="fa fa-facebook-f mk1"></i></a></p>
+    </div>
+  </div>
+  <!-- Design credits, bottom of footer -->
+  <div class="footerinfo"> <p><strong>Site created by</strong></p>
     <p>S374949 - Ludvig Stenvik</p>
     <p>S348906 - Herman Røv</p>
     <p>S374993 - Selmer James Solland</p>
@@ -210,4 +198,5 @@
 <!--FOOTER end-->
 
 </body>
+<script src="/js/script.js"></script>
 </html>

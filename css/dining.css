@@ -10,16 +10,19 @@ body, html {
     background-size: cover;
 }
 
+/* MENU */
 .mealtypes {
-    background-size: cover;
-    height: 35vh;
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
-    font-size: 4rem;
-    color: #f6f3ef;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 35vh;
+    color: rgb(240, 240, 240);
+    font-size: 54px;
+    font-weight: normal;
+    border-top: 4px solid #7f6e56; /* Adds small border on top of images */
+
 } /* Styles mealtype headlines with fixed image bg and aligns and styles text */
 
 /* Background images for mealtype headlines */
@@ -36,33 +39,20 @@ body, html {
 {background-image: url(/IMG/dining/food/dessert.png);}
 /* Background images for mealtype headlines end */
 
-@media only screen and (max-width: 600px) {
-    .mealtypes {
-        height: 20vh;
-    }
-
-    .dishes {
-        width: 90%;
-    }
-} /* Makes mealtypes headline divs with image smaller on smaller screens */
-
-
-
-/* main */
-.meny-text {
+.menu-container {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    margin: 50px 5px 50px 5px;
+    padding: 60px 0; /* Uses padding to creates whitespace between elements. Also possible to use margin as gaps but this would create a whitespace where the background color is visible */
 } /* Creates div for meny text, centers text and creates margins between mealtype header and meny text */
 
 .dishes {
-    margin: 20px 0;
-} /* Creates bigger margin between each dish */
+    max-width: 85%; 
+}
 
-.dishes p{
+.dishes p { 
     color: #2b251d;
 } /* Changes text color of dishes and price */
 
@@ -73,7 +63,9 @@ body, html {
     font-family: 'Times New ROman', Times, serif;
     color: #4a4032;   
 } /* Styling the allergens text */
+/* MENU end */
 
+/* DRINKS */
 .drinkchart{
     height: 30vh;
     background-color: #2b251d;
@@ -82,34 +74,18 @@ body, html {
     justify-content: center;
 }/* Styles drinkchart div and aligns items inside div */
 
-.drinkcharttext{
-    color: #f6f3ef;
-    font-size: xx-large;
+.drinkcharttext {
     text-align: center;
-    margin: 10px;
+    color: rgb(240, 240, 240);
+    gap: 1.5vh;
+    display: flex;
+    flex-direction: column;
 }
+/* DRINKS end */
 
-/* Styles drinkchart headline text */
-.drinkcharttext h3{
-    margin: 0px 0px 10px 0px;
-} /* Overrites h3 margin from style.css and sets another */
 
-.drinkbtn {
-    margin-top: 10px;
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    padding: 14px 30px;
-    text-align: center;
-    text-decoration: none;
-    transition-duration: 0.5s;
-    cursor: pointer;
-    border-radius: 10px;
-    font-size: large;
-} /* Styles drinkchart button */
-  
-.drinkbtn:hover {  
-    border: 2px solid #CFB997;
-    color: #CFB997;
-    cursor: pointer;
-} /* Changes btn on hover */
+@media only screen and (max-width: 700px) {
+    .mealtypes {
+        height: 20vh;
+    }
+} /* Makes mealtypes headline divs with image smaller on smaller screens */

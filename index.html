@@ -2,121 +2,141 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Ottimo: Events og Restaurant</title> <!--Tittelen som kommer opp i nettleseren-->
+    <title>Ottimo: Events & Restaurant</title> <!--Title that comes up in the browser-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Setter initial screen size til enheten-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Sets initial viewport width to the device width-->
     <link rel="icon" href="/IMG/O.png" sizes="16x16" type="image/png">
-    <link rel="stylesheet" type="text/css" href="css/style.css"> <!--Link til css fil-->
-    <link rel="stylesheet" type="text/css" href="css/home.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><!--Google sine free to use icons-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!--Google sine free to use icons-->
+    <link rel="stylesheet" type="text/css" href="css/style.css"> <!--Link to css file-->
+    <link rel="stylesheet" type="text/css" href="css/home.css"> <!--Link to css file-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><!--Google icons link-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!--Google icons link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--font awesome, for facebook logo-->
-    <script src="/js/script.js"></script>  <!--Link til javascript fil-->
   </head>
 <body>
 
-<!--NAVIGASJON-->
-<div id="navbar" class="navigasjon">
-  <i class="material-icons md1" onclick="openNav()">menu</i> <!--Top menu bar som får frem en side nav-->
+<!--Navigation-->
+<nav id="navbar" class="navigation">
+  <i class="material-icons md1" onclick="openNav()">menu</i> <!--Top menu bar menu icon for small creen width, bring up navigation menu-->
   <a href="index.html"><img src="IMG/logo.png"></a> <!--Logo-->
-  <div class="navbtn">
+  <div class="nav-btn">
     <a href="index.html">Home</a> 
     <a href="booking.html">Booking</a>
-    <a href="dining.html">Dining</a>            <!--Linker til de forskjellige sidene, hele nav koden kan kopieres til alle sidene-->
+    <a href="dining.html">Dining</a>
     <a href="accessibility.html">Accessibility</a>
     <a href="topic.html">Topic</a>
   </div>
-</div> 
-<div id="popout" class="nav"> <!--Nav bar div, er gjemt frem til js endrer width når onclick kalles-->
-  <a class="closebtn" onclick="closeNav()"><i class="material-icons md2">close</i></a>  <!--Setter width til 0 igjen-->
+</nav> 
+<nav id="popout" class="nav"> <!--Nav menu, pops up when you press the menu button on small screens-->
+  <a class="close-btn" onclick="closeNav()"><i class="material-icons md2">close</i></a>  <!--Close button that hides the menu-->
   <a href="index.html">Home</a> 
   <a href="booking.html">Booking</a>
-  <a href="dining.html">Dining</a>            <!--Linker til de forskjellige sidene, hele nav koden kan kopieres til alle sidene-->
+  <a href="dining.html">Dining</a>
   <a href="accessibility.html">Accessibility</a>
   <a href="topic.html">Topic</a>
-</div>
-
-<div class="header bg">
-  <div class="logo">
-    <img src="/IMG/OttimoW.png"> 
-    <div class="headertext">Events and dining</div>
-    <div class="headerbuttons"><button class="headerbtn" onClick="document.getElementById('events').scrollIntoView();">Events</button><button o class="headerbtn"  onClick="document.getElementById('meny').scrollIntoView();">Dining</button></div> <!--Creates buttons when clicked scrolls the divs into view-->
-  </div>
-  <div class="img-alternative-text">alternativ bildetekst eks.</div>
-</div>
+</nav>
 <!--End of navigation-->
 
-<!--Events div, mangler alt tekst på bildene-->
-<div class="container-wrap">
+<!--Header-->
+<header class="header bg"> <!--Sets a container with an background image with 100vh-->
+  <img src="/IMG/OttimoW.png"> 
+  <h1 class="under-text">Events and dining</h1>
+  <div class="header-buttons"><button class="global-btn" onClick="document.getElementById('events').scrollIntoView();">Events</button><button class="global-btn"  onClick="document.getElementById('meny').scrollIntoView();">Dining</button></div> <!--Creates buttons when clicked scrolls the divs into view-->
+  <div class="img-text">bildetekst eks.</div>
+</header>
+<!--End Header-->
+
+<!--Events div-->
+<main class="container-wrap"> <!--Main content container-->
   <div id="events" class="content-container">
     <div class="home-image-container">
-        <img alt="Gathering of people" src="/IMG/home/gathering-min.jpg">
-        <img alt="Party" src="/IMG/home/party-min.jpg">
-        <img alt="Wedding" src="/IMG/home/wedding-min.jpg">
-        <img alt="Workshop" src="/IMG/home/workshop-min.jpg">
+      <div class="img-text-container">
+        <img alt="A decked table" src="/IMG/home/gathering-min.jpg">
+        <div class="img-text">bildetekst</div>
+      </div>
+      <div class="img-text-container">
+        <img alt="People toasting" src="/IMG/home/party-min.jpg">
+        <div class="img-text">bildetekst</div>
+      </div>
+      <div class="img-text-container">
+        <img alt="Two people getting their vows" src="/IMG/home/wedding-min.jpg">
+        <div class="img-text">bildetekst</div>
+      </div>
+      <div class="img-text-container">
+        <img alt="Group of people at workshop" src="/IMG/home/workshop-min.jpg">
+        <div class="img-text">bildetekst</div>
+      </div>
     </div>
     <div class="content-text">
-      <h1>Events</h1>
-      <img src=""> <!--Divider image-->
+      <h2>Events</h2>
       <p>Her på Ottimo kan du ha alle events du kan tenkte deg. Vi hjelper til med å tilrettelegge for bryllup, konfirmasjon, firmafester, workshops og mer.</p>
-      <a href="booking.html" class="headerbtn color">Book her</a>
+      <a href="booking.html" class="global-btn color">Book her</a>
     </div>
   </div>
   <!--End of events-->
+
   <!--Menu div--> 
   <div id="meny" class="content-container meny">
     <div class="content-text">
-      <h1>Meny</h1>
-      <img src=""> <!--Divider img-->
+      <h2>Meny</h2>
       <p>Her på Ottimo er vi stolte av å servere Italiensk mat. ogås noe mer tekst om maten jeg er litt usikker på hva det er vanlig å ha her</p>
-      <a href="dining.html" class="headerbtn color">Se Menyen</a>
+      <a href="dining.html" class="global-btn color">Se Menyen</a>
     </div>
-    <div class="home-image-container">
+  <div class="home-image-container">
+    <div class="img-text-container">
       <img alt="Pasta Bologense Dish" src="IMG/home/bolognese-min.jpg">
+        <div class="img-text">bildetekst</div>
+    </div>
+    <div class="img-text-container">
       <img alt="Lasagne Dish" src="IMG/home/lasagne-min.jpg">
+        <div class="img-text">bildetekst</div>
+    </div>
+    <div class="img-text-container">
       <img alt="Pizzadough being made" src="IMG/home/pizzabunn-min.jpg">
+        <div class="img-text">bildetekst</div>
+    </div>
+    <div class="img-text-container">
       <img alt="Pasta Carbonara Dish" src="IMG/home/carbonara-min.jpg">
+        <div class="img-text">bildetekst</div>
     </div>
   </div>
-</div>
+</main>
 <!--End Menu div-->
 
 <!--FOOTER-->
 <footer>
-  <div class="footerheader">
-    <h3>Our location</h3>
+  <div class="footer-header">
+    <h2>Our location</h2>
     <p>Our location lies in a suberb spot in the beautiful sorroundings of Aker Brygge, Oslo. Come visit us at Bryggetorget 2, Oslo during our opening hours. If you have any questions feel free to contact us.</p>
   </div>
-  <div class="footerrow">   <!-- Footer row and columns for responsive design on different screen width -->
-    <div class="footercolumn">
-      <div class="google-maps">  <!-- Google maps integrated into site via iframe element, from https://google-map-generator.com/ -->
-        <iframe
-            src="https://maps.google.com/maps?q=bryggetorget%202&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            width="600"
-            height="500"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy">
-        </iframe>
-      </div>
+  <div class="content-container">   <!-- Footer row and columns for responsive design on different screen width -->
+    <div class="google-maps">  <!-- Google maps integrated into site via iframe element, from https://google-map-generator.com/ -->
+      <iframe
+          src="https://maps.google.com/maps?q=bryggetorget%202&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          width="800"
+          height="500"
+          style="border:0"
+          allowfullscreen
+          loading="lazy">
+      </iframe>
     </div>
-  <div class="footercolumn">   <!-- Footer row and columns for responsive design on different screen width -->
-    <p>Thuesday - Thursday   15:00 - 22:00</p>
-    <p>Friday - Sunday    16:00 - 23:30</p>
-    <p style="margin-bottom: 50px;">Monday - Closed</p>
-    <p>987 65 432 <span class="material-symbols-rounded" style="color:#7f6e56;">phone_in_talk</span></p>
-    <p>contact@ottimo.com <span class="material-symbols-rounded" style="color:#7f6e56;">mail</span></p>
-    <p><a href="">facebook <i class="fa fa-facebook-f" style="color:#7f6e56;"></i></a></p>
+    <div class="content-text" style="gap: 0;">   <!-- Footer row and columns for responsive design on different screen width -->
+      <p>Thuesday - Thursday   15:00 - 22:00</p>
+      <p>Friday - Sunday    16:00 - 23:30</p>
+      <p>Monday - Closed</p>
+      <p>987 65 432 <span class="material-symbols-rounded mk1">phone_in_talk</span></p>
+      <p>contact@ottimo.com <span class="material-symbols-rounded mk1">mail</span></p>
+      <p><a href="">facebook <i class="fa fa-facebook-f mk1"></i></a></p>
+    </div>
   </div>
-</div>
-<!-- Design credits, bottom of footer -->
-<div class="footerinfo" style="background-color:#2b251d; width: 100%; height: 100%; color:#CFB997; padding: 1.5%;"> <p><strong>Site created by</strong></p>
-  <p>S374949 - Ludvig Stenvik</p>
-  <p>S348906 - Herman Røv</p>
-  <p>S374993 - Selmer James Solland</p>
-  <p>S374955 - Michael Minh Tri Nguyen</p>
-     </div>
+  <!-- Design credits, bottom of footer -->
+  <div class="footerinfo"> <p><strong>Site created by</strong></p>
+    <p>S374949 - Ludvig Stenvik</p>
+    <p>S348906 - Herman Røv</p>
+    <p>S374993 - Selmer James Solland</p>
+    <p>S374955 - Michael Minh Tri Nguyen</p>
+  </div>
 </footer>
 <!--FOOTER END-->
 </body>
+<script src="/js/script.js"></script>  <!--Link til javascript fil-->
 </html>
