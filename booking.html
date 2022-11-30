@@ -16,8 +16,8 @@
 
 <!--Navigation-->
 <nav id="navbar" class="navigation">
-  <i class="material-icons md1" onclick="openNav()">menu</i> <!--Top menu bar menu icon for small creen width, bring up navigation menu-->
-  <a href="index.html"><img src="IMG/logo.png"></a> <!--Logo-->
+  <button class="material-icons md1" onclick="openNav()">menu</button> <!--Top menu bar menu icon for small creen width, bring up navigation menu-->
+  <a href="index.html"><img src="IMG/logo.png" alt="Ottomo logo"></a> <!--Logo-->
   <div class="nav-btn">
     <a href="index.html">Home</a> 
     <a href="booking.html">Booking</a>
@@ -27,7 +27,7 @@
   </div>
 </nav> 
 <nav id="popout" class="nav"> <!--Nav menu, pops up when you press the menu button on small screens-->
-  <a class="close-btn" onclick="closeNav()"><i class="material-icons md2">close</i></a>  <!--Close button that hides the menu-->
+  <button class="close-btn material-icons md2" onclick="closeNav()">close</button>  <!--Close button that hides the menu-->
   <a href="index.html">Home</a> 
   <a href="booking.html">Booking</a>
   <a href="dining.html">Dining</a>
@@ -38,7 +38,7 @@
 
 <!-- HEADER -->
     <div class= "bg header">
-        <div class="header-text">Host with Ottimo</div>
+        <h1 class="header-text">Host with Ottimo</h1>
         <a href="#bookingform">
           <button class="global-btn">Book Events</button>
         </a>

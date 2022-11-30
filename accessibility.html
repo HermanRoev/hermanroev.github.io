@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Sets initial viewport width to the device width-->
     <link rel="icon" href="/IMG/O.png" sizes="16x16" type="image/png">
     <link rel="stylesheet" type="text/css" href="css/style.css"> <!--Link to css file-->
-    <link rel="stylesheet" type="text/css" href="css/access.css"> <!--Link to css file-->
+    <link rel="stylesheet" type="text/css" href="css/accessibility.css"> <!--Link to css file-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><!--Google icons link-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!--Google icons link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--font awesome, for facebook logo-->
@@ -36,38 +36,30 @@
 </nav>
 <!--End of navigation-->
 
-<footer>
-  <div class="footer-header">
-    <h2>Our location</h2>
-    <p>Our location lies in a suberb spot in the beautiful sorroundings of Aker Brygge, Oslo. Come visit us at Bryggetorget 2, Oslo during our opening hours. If you have any questions feel free to contact us.</p>
+<header class="header">
+  <h1>Accessibility for all</h1>
+</header>
+
+<main>
+  <div class="access-text">
+  <h2>How we improved accessibility</h2>
+  <h3>Designing phase</h3>
+  <p>
+    While designing our page we had accessibility in mind. To start off with, we have the same navigation bar and footer on all of our pages (except from the "topic page" which is designed as an independent page). This was a decision we made not only for aesthetic reasons, but also for the user to get familiar with the format. To further the point of a familiar format we also used as much of the same layout code for our different pages as possible. This creates a similar flow on all pages which makes it easier for any user to get used to the page, with the added bonus of making it easier to make a change on all pages with the same line of code. <br>
+    We also decided to have a lot of white space and text with high contrast to make everything easily visible and intelligible. The use of clickable buttons in the header section on most of our pages also makes it very easy for the user to navigate to different sections of the page. <br>
+    To make structural hierarchy in our page we used different h1, and h2 elements, however this was later improved on when using WAVE´s automated test. Another clear example of ease of access on our page is on our “dining” page, where we used icons to make it fast and easy to see common allergens in different dishes. <br>
+    A responsible side and layout was also a big factor when we were coding. We had a goal to make all pages fully responsible for all screens and coded with this goal in mind. Everyone of our pages are now accessible and scalable to all screen sizes used as examples in the inspect element of our browser. This makes our website accessible and usable for most screen sizes.
+    
+  </p>
+  <h3>WAVE automated test</h3>
+  <p>
+  After finishing all of our pages' visual design we ran the WAVE automated test tool on our page to check how we could improve our page for better accessibility. The most important alert we got was that the icon that open and close our navbar was not targetable for keyboard users. This essentially means that our navbar was inaccessible for keyboard users, which we fixed by placing the icon inside an button element. As earlier mentioned we also improved upon the structural layout using the WAVE tool by changing h elements to the correct order as well as using nav, main, section and footer tags instead of too many divs. These changes were the biggest and most important changes we made, but we also had to make several smaller changes such as for example giving the pages a set language using the html lang tag and giving all pages a title element.
+  </p>
   </div>
-  <div class="content-container">   <!-- Footer row and columns for responsive design on different screen width -->
-    <div class="google-maps">  <!-- Google maps integrated into site via iframe element, from https://google-map-generator.com/ -->
-      <iframe
-          src="https://maps.google.com/maps?q=bryggetorget%202&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          width="800"
-          height="500"
-          style="border:0"
-          allowfullscreen
-          loading="lazy">
-      </iframe>
-    </div>
-    <div class="content-text" style="gap: 0;">   <!-- Footer row and columns for responsive design on different screen width -->
-      <p>Thuesday - Thursday   15:00 - 22:00</p>
-      <p>Friday - Sunday    16:00 - 23:30</p>
-      <p>Monday - Closed</p>
-      <p>987 65 432 <span class="material-symbols-rounded mk1">phone_in_talk</span></p>
-      <p>contact@ottimo.com <span class="material-symbols-rounded mk1">mail</span></p>
-      <p><a href="">facebook <i class="fa fa-facebook-f mk1"></i></a></p>
-    </div>
-  </div>
-  <!-- Design credits, bottom of footer -->
-  <div class="footerinfo"> <p><strong>Site created by</strong></p>
-    <p>S374949 - Ludvig Stenvik</p>
-    <p>S348906 - Herman Røv</p>
-    <p>S374993 - Selmer James Solland</p>
-    <p>S374955 - Michael Minh Tri Nguyen</p>
-  </div>
-</footer>
+</main>
+
+
+
+
 </body>
 </html>

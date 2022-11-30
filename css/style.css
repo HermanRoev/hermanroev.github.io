@@ -101,6 +101,10 @@ h2 { /* Overwrites set margin of h2 */
     right: 25px;
 }
 
+nav button { /* Makes icon background transparent */
+ background-color: transparent;
+ border: none;
+}
 /* Google icons*/
 .material-icons.md1 {
     font-size: 36px;
