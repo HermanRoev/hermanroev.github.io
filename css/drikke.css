@@ -5,10 +5,11 @@
     background-size: cover;
 }
 
-.wine-int-container {
+.wine-intformation-container {
     margin-top: 10%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
@@ -16,7 +17,7 @@
 
 .wine-header {
     margin-top: 0;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     font-size: 75px;
     text-align: center;
 }
@@ -24,27 +25,33 @@
 
 .wine-text-container {
     font-size: larger;
-    max-width: 50%;
     text-align: center;
+    max-width: 50%;
 }
 
-.wines-container {
+.wine-container {
     display: flex;
     align-items: center;
+    flex-direction: row;
+    overflow-x: scroll;
+    margin-top: 2%;
+    width: max-content;
+    gap: 15px;
     justify-content: space-evenly;
-    flex-direction: column;
-    width: 100vw;
-    margin-top: 200px;
 }
 
 .wine-box {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    height: 50vh;
+    transition: .3s;
+    max-width: 200px;
+    height: 300px;
     border-radius: 10px;
-    padding: 10px;
-    box-shadow: 5px 5px 20px grey;
+    border: 1px solid rgb(201, 201, 201);
+    background: white;
+    float: left;
+}
+.wine-box:hover{
+    box-shadow: 0 0 11px
+    rgba(33, 33, 33, .2);
 }
 
 .image-price {
@@ -58,7 +65,7 @@
     width: 50%;
     flex-wrap: wrap;
     align-content: center;
-    font-size: large;
+    font-size: 15px;
 }
 
 .wine-img {
@@ -73,26 +80,13 @@
 }
 
 .wine-info {
-    font-size: larger;
+    font-size: 10px;
+
 }
 
 .wines-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    width: 100vw;
-    margin-top: 200px;
-}
-
-.shots-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    width: 100vw;
-    margin-top: 200px;
-}
+    overflow: auto;
+  }
 
 @media only screen and (min-width: 600px) {
     .wines-container {
