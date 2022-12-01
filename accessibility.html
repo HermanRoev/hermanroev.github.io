@@ -16,8 +16,8 @@
 
 <!--Navigation-->
 <nav id="navbar" class="navigation">
-  <i class="material-icons md1" onclick="openNav()">menu</i> <!--Top menu bar menu icon for small creen width, bring up navigation menu-->
-  <a href="index.html"><img src="IMG/logo.png"></a> <!--Logo-->
+  <button class="material-icons md1" onclick="openNav()">menu</button> <!--Top menu bar menu icon for small creen width, bring up navigation menu-->
+ <img src="IMG/logo.png" alt="Ottomo logo"> <!--Logo-->
   <div class="nav-btn">
     <a href="index.html">Home</a> 
     <a href="booking.html">Booking</a>
@@ -27,7 +27,7 @@
   </div>
 </nav> 
 <nav id="popout" class="nav"> <!--Nav menu, pops up when you press the menu button on small screens-->
-  <a class="close-btn" onclick="closeNav()"><i class="material-icons md2">close</i></a>  <!--Close button that hides the menu-->
+  <button class="close-btn material-icons md2" onclick="closeNav()">close</button>  <!--Close button that hides the menu-->
   <a href="index.html">Home</a> 
   <a href="booking.html">Booking</a>
   <a href="dining.html">Dining</a>
@@ -40,8 +40,7 @@
   <h1>Accessibility for all</h1>
 </header>
 
-<main>
-  <div class="access-text">
+<main class="container-wrap">
   <h2>How we improved accessibility</h2>
   <h3>Designing phase</h3>
   <p>
@@ -49,12 +48,17 @@
     We also decided to have a lot of white space and text with high contrast to make everything easily visible and intelligible. The use of clickable buttons in the header section on most of our pages also makes it very easy for the user to navigate to different sections of the page. <br>
     To make structural hierarchy in our page we used different h1, and h2 elements, however this was later improved on when using WAVE´s automated test. Another clear example of ease of access on our page is on our “dining” page, where we used icons to make it fast and easy to see common allergens in different dishes. <br>
     A responsible side and layout was also a big factor when we were coding. We had a goal to make all pages fully responsible for all screens and coded with this goal in mind. Everyone of our pages are now accessible and scalable to all screen sizes used as examples in the inspect element of our browser. This makes our website accessible and usable for most screen sizes.
-    
   </p>
+  <div class="content-container">
+  <div class="content-text">
   <h3>WAVE automated test</h3>
   <p>
   After finishing all of our pages' visual design we ran the WAVE automated test tool on our page to check how we could improve our page for better accessibility. The most important alert we got was that the icon that open and close our navbar was not targetable for keyboard users. This essentially means that our navbar was inaccessible for keyboard users, which we fixed by placing the icon inside an button element. As earlier mentioned we also improved upon the structural layout using the WAVE tool by changing h elements to the correct order as well as using nav, main, section and footer tags instead of too many divs. These changes were the biggest and most important changes we made, but we also had to make several smaller changes such as for example giving the pages a set language using the html lang tag and giving all pages a title element.
   </p>
+</div>
+<div class="content-img">
+  <img src="IMG/access/WAVE-test.png" alt="Screenshot of WAVE automated test on accessibility">
+</div>
   </div>
 </main>
 

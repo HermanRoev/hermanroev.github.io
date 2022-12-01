@@ -9,23 +9,23 @@ header{
 
 
 main {
-    height: 500vh;
     display: flex;
     justify-content: center;
-}
-
-.access-text {
-    padding: 50px 0px;
-    max-width: 85%;
     text-align: center;
 }
-.access-text p {
-    font-size: large;
-    line-height: 1.5;
+
+.container-wrap {
+    gap: 0;
 }
-br { /* Creates bigger spacing between paragraphs */
-    content: "";
-    font-size: 200%;
+.container-wrap p {
+    max-width: 85%;
+}
+.content-img {
+    max-width: 35%;
+}
+
+.content-img img {
+    max-width: 100%;
 }
 
 

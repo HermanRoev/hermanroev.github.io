@@ -206,7 +206,7 @@ footer {
 
 /* Google maps api */
 .google-maps {  /* Size for the google maps using aspect ratio*/
-    width: 60%;
+    width: 50%;
     aspect-ratio: 3/2;
     margin: 20px;
 }
@@ -259,7 +259,8 @@ footer p {
     position: absolute;
     right: 10px;
     bottom: 10px;
-    color: white;
+    color: rgba(240, 240, 240, 0.7);
+    font-size: small;
 }
 
 .global-btn {
