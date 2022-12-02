@@ -128,20 +128,19 @@ body, html {
 
 /* Drinks end */
 
-.content-text {
-    max-width: fit-content;
-}
 
 @media only screen and (max-width: 700px) {
     .mealtypes {
         height: 20vh;
     }
-
-    
 } /* Makes mealtypes headline divs with image smaller on smaller screens */
 
 @media only screen and (max-width: 850px) {
     .content-container {
         flex-direction: column-reverse;
+    }
+
+    .google-maps {
+        width: 85%;
     }
 }

@@ -105,6 +105,7 @@ nav button { /* Makes icon background transparent */
  background-color: transparent;
  border: none;
 }
+
 /* Google icons*/
 .material-icons.md1 {
     font-size: 36px;
@@ -173,7 +174,7 @@ nav button { /* Makes icon background transparent */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    max-width: 1600px;
+    max-width: 1600px;  /* Max width for when the screen gets really wide, the content will stop growing */
     gap: 3vh; /* Gap for when the content is in column */
 }
 
@@ -186,6 +187,7 @@ nav button { /* Makes icon background transparent */
     font-size: larger;
     gap: 1.5vh;
 }
+
 .content-text h2 {
     font-size: 42px;
 }
@@ -198,6 +200,10 @@ nav button { /* Makes icon background transparent */
 /*FOOTER*/
 footer {
     background-color: rgb(244, 239, 233);
+}
+
+footer .content-text {
+    max-width: fit-content;
 }
 
 .footer-header{
@@ -296,18 +302,4 @@ footer p {
     .material-icons.md1 {
         display: none;
     }  
-}
-
-@media screen and (max-width: 800px) {
-    .footercolumn {
-        width: 100%;
-    }
-
-    .google-maps {
-        width: 85%;
-    }
-
-    .headerbuttons {
-        flex-wrap: wrap;
-    }
 }

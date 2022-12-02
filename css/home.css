@@ -45,10 +45,14 @@
     }
 
     .home-image-container {
-        max-width: 70%;
+        max-width: 85%;
     }
 
     .content-text {
-        max-width: 70%;
-    }    
+        max-width: 85%;
+    }
+
+    .google-maps {
+        width: 85%;
+    }
 }

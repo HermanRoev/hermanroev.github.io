@@ -92,7 +92,12 @@ form p {
   .img-text-container{
     max-width: 85%;
   }
+
   .content-text{
     max-width: 85%;
+  }
+
+  .google-maps {
+    width: 85%;
   }
 }
