@@ -18,10 +18,10 @@
 
 /* Main drinks container */
 .wine-container {
+    color: rgb(240, 240, 240);
     display: flex;
     gap: 15px;
     width: fit-content;
-    padding: 30px;
 }
 
 .wine-boxes {
@@ -33,8 +33,8 @@
 }
 
 .wine-box:hover{
-    box-shadow: 0 0 50px
-    rgba(33, 33, 33, .2);
+    box-shadow: 0 0 5px
+    rgb(240, 240, 240);
 }
 
 /* Image and price section */
@@ -69,4 +69,6 @@
 .wine-info {
     font-size: 13px;
     padding: 5px;
+    opacity: 80%;
+
 }

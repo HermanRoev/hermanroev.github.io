@@ -67,17 +67,15 @@ body, html {
 
 /* DRINKS */
 .drinkchart{
-    height: 30vh;
+    height: fit-content;
     background-color: #2b251d;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }/* Styles drinkchart div and aligns items inside div */
 
 .drinkcharttext {
     text-align: center;
     color: rgb(240, 240, 240);
-    gap: 1.5vh;
     display: flex;
     flex-direction: column;
 }
