@@ -17,13 +17,13 @@ html, body{
     height: 10px;
 }
 ::-webkit-scrollbar-thumb {  /* Styles the scrollbar */
-    background: #2b251d;}
+    background: rgb(43, 37, 29);}
 ::-webkit-scrollbar-track {
-    background: #7f6e5640;} 
+    background: rgb(127, 110, 86)40;} 
 
 h2 { /* Overwrites set margin of h2 */
     margin: 0;
-    border-bottom: 4px solid #7f6e56; /* Decorational divivder */
+    border-bottom: 4px solid rgb(127, 110, 86); /* Decorational divivder */
     padding: 10px 40px;
 } 
 
@@ -32,7 +32,7 @@ h2 { /* Overwrites set margin of h2 */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #0f0f0fdf;
+    background-color: rgba(15, 15, 15, 0.87);
     position: fixed;
     top: 0;
     transition: top 0.6s;
@@ -52,7 +52,7 @@ h2 { /* Overwrites set margin of h2 */
 }
 
 .nav-btn a:hover {
-    color: #CFB997;
+    color: rgb(207, 185, 151);
     transform: scale(1.1);
 }
 
@@ -76,7 +76,7 @@ h2 { /* Overwrites set margin of h2 */
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #101010;
+    background-color: rgb(16, 16, 16);
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 100px;
@@ -92,7 +92,7 @@ h2 { /* Overwrites set margin of h2 */
 }
 
 .nav a:hover {
-    color: #CFB997;
+    color: rgb(207, 185, 151);
 }
 
 .nav .close-btn {
@@ -118,7 +118,7 @@ nav button { /* Makes icon background transparent */
 }
 
 .material-icons.md2:hover {
-    color: #CFB997;
+    color: rgb(207, 185, 151);
     cursor: pointer;
 }
 
@@ -190,7 +190,7 @@ nav button { /* Makes icon background transparent */
 
 /*FOOTER*/
 footer {
-    background-color: #f4efe9;
+    background-color: rgb(244, 239, 233);
 }
 
 .footer-header{
@@ -217,21 +217,21 @@ footer {
 }
 
 .mk1 {
-    color:#7f6e56;
+    color:rgb(127, 110, 86);
 }
 
 footer a:link{
     text-decoration: none;
-    color: #7f6e56;
+    color: rgb(127, 110, 86);
 }
 
 footer a:hover{
     text-decoration: underline;
-    color: #CFB997;
+    color: rgb(207, 185, 151);
 }
 
 footer a:visited{
-    color: #7f6e56;
+    color: rgb(127, 110, 86);
 }
 
 footer p {
@@ -239,8 +239,8 @@ footer p {
 }
 
 .footerinfo {
-    background-color:#2b251d; 
-    color:#CFB997; 
+    background-color:rgb(43, 37, 29); 
+    color:rgb(207, 185, 151); 
     padding: 20px;
 }
 
@@ -276,8 +276,8 @@ footer p {
 }
     
 .global-btn:hover {  
-    border-color: #CFB997;
-    color: #CFB997;
+    border-color: rgb(207, 185, 151);
+    color: rgb(207, 185, 151);
 }
 
 /*Medida query: CSS when viewport is wider than 600px, hides menu icon and shows the nav buttons*/

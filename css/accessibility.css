@@ -1,8 +1,8 @@
 body, html{
-    color: #181510;
+    color: rgb(24, 21, 16);
 }
 header{
-    background-color: #1d1914;
+    background-color: rgb(29, 25, 20);
     color: rgb(240, 240, 240);
     font-size: xx-large;
 }

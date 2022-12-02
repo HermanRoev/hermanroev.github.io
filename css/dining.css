@@ -21,7 +21,7 @@ body, html {
     color: rgb(240, 240, 240);
     font-size: 54px;
     font-weight: normal;
-    border-top: 4px solid #7f6e56; /* Adds small border on top of images */
+    border-top: 4px solid rgb(127, 110, 86); /* Adds small border on top of images */
 
 } /* Styles mealtype headlines with fixed image bg and aligns and styles text */
 
@@ -53,7 +53,7 @@ body, html {
 }
 
 .dishes p { 
-    color: #2b251d;
+    color: rgb(43, 37, 29);
 } /* Changes text color of dishes and price */
 
 .allergens {
@@ -61,14 +61,14 @@ body, html {
     opacity: 95%;
     font-style: italic;
     font-family: 'Times New ROman', Times, serif;
-    color: #4a4032;   
+    color: rgb(74, 64, 50);   
 } /* Styling the allergens text */
 /* MENU end */
 
 /* DRINKS */
 .drinkchart{
     height: fit-content;
-    background-color: #2b251d;
+    background-color: rgb(43, 37, 29);
     display: flex;
     flex-direction: column;
 }/* Styles drinkchart div and aligns items inside div */
