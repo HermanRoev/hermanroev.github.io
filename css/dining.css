@@ -66,9 +66,64 @@ body, html {
 /* MENU end */
 
 /* Drinks */
-.drink-container {
-    color: #2b251d;
+.overflow {
     overflow-x: scroll;
+    scroll-snap-type: x proximity;
+}
+
+.drink-container {
+    display: flex;
+    width: fit-content;
+    gap: 15px;
+    margin: 20px;
+    color: #2b251d;
+}
+
+.drink-box {
+    transition: .3s;
+    width: 230px;
+    height: 350px;
+    border-radius: 10px;
+    border: 2px solid rgb(201, 201, 201);
+    scroll-snap-align: center;
+}
+
+.drink-box:hover{
+    box-shadow: 0 0 5px
+}
+
+/* Image and price section */
+.image-price {
+    display: flex;
+    height: 70%;
+    border-bottom: 2px solid rgb(201, 201, 201);
+}
+
+/* Price and name */
+.drink-price {
+    display: flex;
+    max-width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+}
+
+/* Image max-width */
+.drink-img {
+    max-width: 50%;
+}
+
+/* Image sizing within the div */
+.drink-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Info text under the image and name */
+.drink-info {
+    font-size: 13px;
+    padding: 5px;
 }
 
 /* Drinks end */
