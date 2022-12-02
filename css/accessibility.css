@@ -33,17 +33,16 @@ main {
     max-width: 100%;
 }
 
-
 h2 {
     font-size: xx-large;
 }
 
 @media screen and (max-width: 1000px) {
     /* Changes flex direction to give better space for text & image on smaller screens */
-     .content-container {
-         flex-direction: column;
-     }
- 
+    .content-container {
+        flex-direction: column;
+    }
+
    .flip {
      flex-direction: column-reverse;
    }
@@ -51,8 +50,8 @@ h2 {
    .img-text-container{
      max-width: 85%;
    }
+
    .content-text{
      max-width: 85%;
    }
- }
- 
+}
