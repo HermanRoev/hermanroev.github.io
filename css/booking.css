@@ -33,10 +33,10 @@ body {
 
 /* BOOKING FORM */
 .booking-container {
-  background-color: #140d03;
+  background-color: rgb(20, 13, 3);
 	display: flex;
   justify-content: center;
-  color: #e3cdaa;
+  color: rgb(227, 205, 170);
 }
 
 .heading {
@@ -62,20 +62,20 @@ form p {
 
 .form-field input, select {
   width: 40%;
-  color: #2b251d;
+  color: rgb(43, 37, 29);
   background-color: bisque;
   border-radius: 10px;
-  border: 2px solid #e3cdaa;
+  border: 2px solid rgb(227, 205, 170);
 }
 
 .color { /* Changes color of button and border */
-  border: 2px solid #e3cdaa;
-  color: #e3cdaa;
+  border: 2px solid rgb(227, 205, 170);
+  color: rgb(227, 205, 170);
 }
 
 .color:hover {
-  border: 2px solid #e3dcd1;
-  color: #e3dcd1;
+  border: 2px solid rgb(227, 220, 209);
+  color: rgb(227, 220, 209);
 }
 /* BOOKING FORM end */
 
