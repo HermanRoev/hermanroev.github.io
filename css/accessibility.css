@@ -14,12 +14,19 @@ main {
 
 .container-wrap {
     gap: 0;
+
 }
+
+.content-text{
+    max-width: 60%;
+}
+
 .container-wrap p {
     max-width: 85%;
 }
+
 .img-text-container {
-    max-width: 35%;
+    max-width: 25%;
 }
 
 .img-text-container img{
