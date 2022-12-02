@@ -5,9 +5,6 @@ body, html {
 
 .bg {
     background-image: url(/IMG/dining/menuBG.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 /* MENU */
@@ -37,6 +34,9 @@ body, html {
 
 .dessertbg
 {background-image: url(/IMG/dining/food/dessert.png);}
+
+.drinksbg 
+{background-image: url();}
 /* Background images for mealtype headlines end */
 
 .menu-container {
@@ -65,21 +65,13 @@ body, html {
 } /* Styling the allergens text */
 /* MENU end */
 
-/* DRINKS */
-.drinkchart{
-    height: fit-content;
-    background-color: #2b251d;
-    display: flex;
-    flex-direction: column;
-}/* Styles drinkchart div and aligns items inside div */
-
-.drinkcharttext {
-    text-align: center;
-    color: rgb(240, 240, 240);
-    display: flex;
-    flex-direction: column;
+/* Drinks */
+.drink-container {
+    color: #2b251d;
+    overflow-x: scroll;
 }
-/* DRINKS end */
+
+/* Drinks end */
 
 .content-text {
     max-width: fit-content;
