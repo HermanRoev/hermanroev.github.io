@@ -18,11 +18,11 @@ main {
 .container-wrap p {
     max-width: 85%;
 }
-.content-img {
+.img-text-container {
     max-width: 35%;
 }
 
-.content-img img {
+.img-text-container img{
     max-width: 100%;
 }
 
@@ -30,3 +30,22 @@ main {
 h2 {
     font-size: xx-large;
 }
+
+@media screen and (max-width: 1000px) {
+    /* Changes flex direction to give better space for text & image on smaller screens */
+     .content-container {
+         flex-direction: column;
+     }
+ 
+   .flip {
+     flex-direction: column-reverse;
+   }
+ 
+   .img-text-container{
+     max-width: 85%;
+   }
+   .content-text{
+     max-width: 85%;
+   }
+ }
+ 
