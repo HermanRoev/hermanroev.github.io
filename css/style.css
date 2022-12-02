@@ -164,6 +164,10 @@ nav button { /* Makes icon background transparent */
     padding: 14vh 0;
     align-items: center;
   }
+
+.container-wrap h2 {
+    font-size: 48px;
+}
   
 .content-container { /* Containers for the content */
     display: flex;
@@ -181,6 +185,9 @@ nav button { /* Makes icon background transparent */
     flex-direction: column;
     font-size: larger;
     gap: 1.5vh;
+}
+.content-text h2 {
+    font-size: 42px;
 }
 
 .content-container img{
