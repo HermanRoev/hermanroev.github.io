@@ -13,20 +13,22 @@ main {
 }
 
 .container-wrap {
-    gap: 0;
-
+    gap: 0; /* Overwrites gap from style.css */
 }
 
 .content-text{
-    max-width: 60%;
+    max-width: 50%;
 }
 
 .container-wrap p {
     max-width: 85%;
+    font-size: 18px;
 }
 
 .img-text-container {
-    max-width: 25%;
+    min-width: 30%;
+    max-width: 40%;
+    margin-top: 50px;
 }
 
 .img-text-container img{
@@ -35,6 +37,9 @@ main {
 
 h2 {
     font-size: xx-large;
+}
+h3 {
+    font-size: 36px;
 }
 
 @media screen and (max-width: 1000px) {
