@@ -4,12 +4,13 @@
 }
 
 html, body{
-    scroll-behavior: smooth;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;    /* Makes the scrollTo function smooth instead of instant */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   /* Sets the font for the entire site */
     margin: 0;
     color: rgb(20, 20, 20);
     overflow: overlay; /* For custom transp scrollbar */
     background-color: rgb(254, 252, 248);
+    overflow-x: hidden; /* Page stays non scrollable in the x direction even when an element is larger than the width */
 
 }
 ::-webkit-scrollbar {
@@ -41,14 +42,18 @@ h2 { /* Overwrites set margin of h2 */
 }
 
 /* Menu buttons */
+.nav-btn {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
 .nav-btn a{
-    padding-left: 20px;
-    display: none;
     font-size: 25px;
     font-weight: 450;
     color: rgb(240, 240, 240);
-    text-decoration: none;
     transition: .4s;
+    text-decoration: none;
 }
 
 .nav-btn a:hover {
@@ -95,27 +100,28 @@ h2 { /* Overwrites set margin of h2 */
     color: rgb(207, 185, 151);
 }
 
-.nav .close-btn {
+.close-btn {
     position: absolute;
     top: 15px;
     right: 25px;
 }
 
-nav button { /* Makes icon background transparent */
- background-color: transparent;
- border: none;
-}
 
 /* Google icons*/
-.material-icons.md1 {
+.material-icons.md1 { /* Menu button */
     font-size: 36px;
     cursor: pointer;
     color: rgb(240, 240, 240);
+    display: none;  /* Hidden until changed by @media */
+    background-color: transparent;  /* Hides default background and border of button element */
+    border: none;
 }
 
-.material-icons.md2 {
+.material-icons.md2 {   /* Close button */
     color: rgb(240, 240, 240);
     font-size: 48px;
+    background-color: transparent;  /* Hides default background and border of button element */
+    border: none;
 }
 
 .material-icons.md2:hover {
@@ -157,7 +163,7 @@ nav button { /* Makes icon background transparent */
 }
 /* HEADER end */
 
-/* CONTENT CONTAINERS */
+/* CONTENT CONTAINERS, containers used on most pages to get a similar look and reusable code */
 .container-wrap { /* Main container */
     display: flex;
     gap: 14vh;
@@ -202,18 +208,16 @@ footer {
     background-color: rgb(244, 239, 233);
 }
 
-footer .content-text {
+footer .content-text { /* Overrides the max-width of the text container in the footer */
     max-width: fit-content;
 }
 
 .footer-header{
-    max-width: 100%;
+    max-width: 70%;
+    margin: auto;
+    padding-top: 20px;
     text-align: center;
-    padding-top: 1.5%;
     font-size: 24px;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 10px;
     font-weight: 100;
 }
 
@@ -270,10 +274,11 @@ footer p {
 
 .img-text {
     position: absolute;
-    right: 10px;
-    bottom: 10px;
+    right: 5px;
+    bottom: 5px;
     color: rgba(240, 240, 240, 0.7);
     font-size: small;
+    text-align: right;
 }
 
 .global-btn {
@@ -294,12 +299,12 @@ footer p {
 }
 
 /*Medida query: CSS when viewport is wider than 600px, hides menu icon and shows the nav buttons*/
-@media only screen and (min-width: 700px) {
-    .nav-btn a{
-        display: inline-flex;
+@media only screen and (max-width: 700px) {
+    .nav-btn {
+        display: none;
     }
 
     .material-icons.md1 {
-        display: none;
+        display: flex;
     }  
 }

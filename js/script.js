@@ -10,9 +10,9 @@ function closeNav() {
 
 //Function to hide nav menu on scroll
 var scrollPosition = window.scrollY;
-window.onscroll = function() {
-  var newScrollPosition = window.scrollY;
-  if (scrollPosition > newScrollPosition) {
+window.onscroll = function() {  /* On Scroll event listener that calls a funtion each time a scroll event occurs */
+  var newScrollPosition = window.scrollY; /* Sets where you are on the page as the position */
+  if (scrollPosition > newScrollPosition) { /* Checks if you scrolled up or down and changes the position of the nav element based on that */
     document.getElementById("navbar").style.top = "0";
   }
   else {
