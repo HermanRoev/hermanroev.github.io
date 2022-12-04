@@ -54,6 +54,24 @@ html, body {
     background-size: cover;
 }
 
+
+/* Header */
+.header-container { /* Sets text middle right, and div to screen height */
+    display: flex;
+    height: 100vh;
+    justify-content: flex-end;
+    align-items: center;
+    scroll-snap-align: start;
+    gap: 5%; /* Gap between gif and text */
+}
+.header-text {
+    margin-right: 4vw;
+    font-size: 60px;
+    text-align: end;
+}
+/* Header end */
+
+
 /* Main container */ 
 .main-container {
     display: flex;
@@ -70,20 +88,7 @@ section { /* Makes each section minimum 100vh tall, and for each section scroll 
 section a {
     color: rgb(43, 182, 170);
 }
-/* Header */
-.header-container { /* Sets text middle right, and div to screen height */
-    display: flex;
-    height: 100vh;
-    justify-content: flex-end;
-    align-items: center;
-    scroll-snap-align: start end;
-    gap: 5%; /* Gap between gif and text */
-}
-.header-text {
-    margin-right: 4vw;
-    font-size: 60px;
-    text-align: end;
-}
+
 
 .topic-container {  /* Container for text and gif */
     display: flex;
