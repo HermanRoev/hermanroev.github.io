@@ -9,7 +9,7 @@ header{
 }
 
 
-main {
+main {  /* Centers all text inside the main element  */
     text-align: center;
 }
 
@@ -17,26 +17,27 @@ main {
     gap: 0; /* Overwrites gap from style.css */
 }
 
-.content-text{
-    max-width: 50%;
-}
-
-.container-wrap p {
-    max-width: 85%;
+.container-wrap p {   /* paragraph size in the main container */
+    max-width: 1600px;
+    width: 85%;
     font-size: 18px;
 }
 
-.img-text-container {
+.content-text{  /* Size of the wave section text */
+    max-width: 50%;
+}
+
+.img-text-container {   /* Sizing of the container with image and image text */
     min-width: 30%;
     max-width: 40%;
     margin-top: 50px;
 }
 
-.img-text-container img{
+.img-text-container img{    /* Max width of image equal to container size or max image */
     max-width: 100%;
 }
 
-h2 {
+h2 {    /* h2 and h3 size */
     font-size: xx-large;
 }
 h3 {
@@ -49,14 +50,10 @@ h3 {
         flex-direction: column;
     }
 
-   .flip {
-     flex-direction: column-reverse;
-   }
- 
    .img-text-container{
      max-width: 85%;
    }
-
+    /* Larger text */
    .content-text{
      max-width: 85%;
    }

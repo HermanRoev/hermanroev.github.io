@@ -2,10 +2,12 @@
 //Sets the width of the div containing the navigation menu to 0 or 250px
 function openNav() {
     document.getElementById("popout").style.width = "250px";
+    document.getElementById("popout").style.visibility = "visible";
   }
 
 function closeNav() {
     document.getElementById("popout").style.width = "0px";
+    document.getElementById("popout").style.visibility = "hidden";
 }
 
 //Function to hide nav menu on scroll

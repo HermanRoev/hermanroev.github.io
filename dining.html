@@ -68,7 +68,7 @@
     <div class="img-text">Dina Nasyrova - Pexels.com</div> <!-- https://www.pexels.com/photo/delicious-grilled-meat-and-vegetables-on-piece-of-bread-7421877/ -->
   </div>
 
-  <div class="menu-container">
+  <section class="menu-container">
     <div class="dishes">
       <strong>Vegetarian - 🌱</strong><br>
       <strong>Wheat - 🌾</strong><br>
@@ -98,7 +98,7 @@
       <div class="allergens">allergens: wheat, milk, sulfur dioxide and sulfite</div>
       <p>99,-</p> 
     </div>
-  </div>
+  </section>
   <!-- STARTERS end -->
 
 
@@ -111,7 +111,7 @@
     <div class="img-text">Eneida Nieves - Pexels.com</div> <!-- https://www.pexels.com/photo/baked-pizza-on-pizza-peel-in-oven-905847/ -->
   </div>
 
-  <div class="menu-container">
+  <section class="menu-container">
     <div class="dishes">
       <h3>Margherita 🌱 🐄</h3>
       <p>stone oven baked pizza base with tomato sauce, fresh mozzarella, parmesan and basil<p>
@@ -142,7 +142,7 @@
       <div class="allergens">allergens: milk, eggs</div>
       <p>249,-</p> 
     </div>
-  </div>
+  </section>
   <!-- PIZZA end -->
 
 
@@ -154,7 +154,7 @@
     <div class="img-text">Yasser Mohamed - Pexels.com</div> <!-- https://www.pexels.com/photo/delicious-macaroni-with-cheese-served-on-table-with-toasted-bread-and-sauce-bowls-4378160/ -->
   </div>
 
-  <div class="menu-container">
+  <section class="menu-container">
     <div class="dishes">
       <h3>Ravioli con funghi 🌱 🌾 🐄</h3>
       <p>ravioli filled with porcini mushrooms, creamy white wine sauce, butter-fried mushrooms, parmesan, truffle oil and arugula<p>
@@ -179,7 +179,7 @@
       <div class="allergens">allergens: milk, eggs and celery</div>
       <p>269,-</p> 
     </div>
-  </div>
+  </section>
   <!-- PASTA end -->
 
 
@@ -191,7 +191,7 @@
     <div class="img-text">Lucie Liz - Pexels.com</div> <!-- https://www.pexels.com/photo/photo-of-person-holding-strainer-with-white-powder-3256807/ -->
   </div>
 
-  <div class="menu-container">
+  <section class="menu-container">
     <div class="dishes">
       <h3>Gelato e sorbetto 🌱 🐄</h3>
       <p>choose one scoop of vanilla ice cream, raspberry sorbet or chocolate ice cream<p>
@@ -216,7 +216,7 @@
       <div class="allergens">allergens: milk, eggs and wheat</div>
       <p>119,-</p> 
     </div>
-  </div>
+  </section>
   <!-- DESSERT end-->
 
   <!-- MENU section end -->
@@ -226,7 +226,7 @@
     <h2 id="drinks" class="mealtypes drinksbg">Drinks</h2>
     <div class="img-text">Kelly - Pexels</div> <!-- https://www.pexels.com/nb-no/bilde/glass-ol-vin-rom-2796105/ -->
   </div>
-  <div class="overflow">
+  <section class="overflow">
     <div class="drink-container"> 
       <div class="drink-box">
         <div class="image-price">
@@ -356,7 +356,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 <!--DRINKS END-->
 
 </main>
@@ -366,35 +366,36 @@
     <h2>Our location</h2>
     <p>Our location lies in a suberb spot in the beautiful sorroundings of Aker Brygge, Oslo. Come visit us at Bryggetorget 2, Oslo during our opening hours. If you have any questions feel free to contact us.</p>
   </div>
-  <div class="content-container">   <!-- Footer row and columns for responsive design on different screen width -->
+  <div class="content-container flip">   <!-- Footer row and columns for responsive design on different screen width -->
     <div class="google-maps">  <!-- Google maps integrated into site via iframe element, from https://google-map-generator.com/ -->
       <iframe
-        src="https://maps.google.com/maps?q=bryggetorget%202&t=&z=13&ie=UTF8&iwloc=&output=embed"
-        width="800"
-        height="500"
-        style="border:0"
-        allowfullscreen
-        loading="lazy">
+          src="https://maps.google.com/maps?q=bryggetorget%202&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          width="800"
+          height="500"
+          style="border:0"
+          allowfullscreen
+          loading="lazy">
       </iframe>
     </div>
     <div class="content-text" style="gap: 0;">   <!-- Footer row and columns for responsive design on different screen width -->
       <p>Thuesday - Thursday   15:00 - 22:00</p>
       <p>Friday - Sunday    16:00 - 23:30</p>
       <p>Monday - Closed</p>
-      <p>987 65 432 <span class="material-symbols-rounded mk1">phone_in_talk</span></p>
-      <p>contact@ottimo.com <span class="material-symbols-rounded mk1">mail</span></p>
-      <p><a href="">facebook <i class="fa fa-facebook-f mk1"></i></a></p>
+      <a href="tel: 987 65 432">987 65 432 <i class="material-symbols-rounded mk1">phone_in_talk</i></a>
+      <a href="mailto: contact@ottimo.com">contact@ottimo.com <i class="material-symbols-rounded mk1">mail</i></a>
+      <a href="#link to facebook page">facebook <i class="fa fa-facebook-f mk1"></i></a>
     </div>
   </div>
   <!-- Design credits, bottom of footer -->
-  <div class="footerinfo"> <p><strong>Site created by</strong></p>
+  <div class="footerinfo"> 
+    <p><strong>Site created by</strong></p>
     <p>S374949 - Ludvig Stenvik</p>
     <p>S348906 - Herman Røv</p>
     <p>S374993 - Selmer James Solland</p>
     <p>S374955 - Michael Minh Tri Nguyen</p>
   </div>
 </footer>
-<!--FOOTER END-->
+<!--FOOTER end-->
 </body>
 <script src="/js/script.js"></script>
 </html>

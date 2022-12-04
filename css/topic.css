@@ -5,7 +5,7 @@
 html, body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(51, 50, 50);
+    background-color: rgb(15, 15, 15);
     color: rgb(240, 240, 240);
     scroll-snap-type: y mandatory;  /* Scrolls to the next scroll-snap-align element each time you give scroll input */
     scroll-snap-stop: always;
@@ -82,9 +82,9 @@ html, body {
     font-size: 2.5vw;
     position: absolute;
     max-width: 40%;
-    color: rgb(20, 20, 20);
+    color: rgb(240, 240, 240);
     font-weight: bolder;
-    text-shadow: white 1px 1px 50px;
+    text-shadow: rgb(12, 12, 12) 1px 1px 50px;
 }
 
 /* Container for vr headset, zooms into Zoom content, changes visible div with js */
