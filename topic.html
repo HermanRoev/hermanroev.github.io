@@ -1,40 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <title>tittel til siden</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/css/topic.css">
-    <script src="js/animations.js"></script>
   </head>
   <body>
 
 <!--NAVIGATION-->
 <div class="navigasjon">
-  <div class="navbtn">
-    <a href="index.html">Home</a> 
-    <a href="booking.html">Booking</a>
-    <a href="dining.html">Dining</a>            <!--Links to all pages of the website-->
-    <a href="accessibility.html">Accessibility</a>
-    <a href="topic.html">Topic</a>
-  </div>
+  <ul class="navbtn">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="booking.html">Booking</a></li>
+    <li><a href="dining.html">Dining</a></li>            <!--Links to all pages of the website-->
+    <li><a href="accessibility.html">Accessibility</a></li>
+    <li><a href="topic.html">Topic</a></li>
+  </ul>
 </div> 
 <!--NAVIGATIOIN end-->
 
-<div id="box" class="bg">
-  <div id="txt" class="headertxt">Explore the future with <br> <b>Virtual Reality</b></div>
-</div>
+<div class="bg"></div> <!-- Sticky background, follows scroll -->
 
-<div id="vr-box" class="graphic">
-  <img class="headset" src="/IMG/topic/VRheadset.png">
-  <img class="highlight" src="/IMG/topic/highlightTopic.png" style="opacity: 0.3;">
-<div>
-
-<div id="zoom" class="vr-zoom">
-  <img src="/IMG/topic/VRheadset.png">
-</div>
-
-</div>
-
+<main class="main-container">
+  <section class="header-container bg"> <!-- Header div -->
+    <h1 class="header-text">Explore the future with<br>Virtual Reality</h1>
+  </section>
+  <section class="vr-headset">  <!-- Headset with highlight and text -->
+    <img src="/IMG/topic/VR_highlight.png">
+    <div class="hightlight-text">
+      Virtual reality (VR) is a simulated experience that employs pose tracking and 3D near-eye displays to give the user an immersive feel of a virtual world.
+    </div>
+  </section>
+  <section class="zoom-content-container"> <!-- Zuckk -->
+    <h2 class="zoom-headline">
+      Virtual Reality for the Future
+    </h2>
+    <div class="zoom-content">
+      <div class="zoom-text"><p>Virtual reality (VR) is a simulated experience that employs pose tracking and 3D near-eye displays to give the user an immersive feel of a virtual world. Applications of virtual reality include entertainment (particularly video games), education (such as medical or military training) and business (such as virtual meetings). Other distinct types of VR-style technology include augmented reality and mixed reality, sometimes referred to as extended reality or XR, although definitions are currently changing due to the nascence of the industry.</p>
+      <p>Currently, standard virtual reality systems use either virtual reality headsets or multi-projected environments to generate realistic images, sounds and other sensations that simulate a user's physical presence in a virtual environment. A person using virtual reality equipment is able to look around the artificial world, move around in it, and interact with virtual features or items. The effect is commonly created by VR headsets consisting of a head-mounted display with a small screen in front of the eyes, but can also be created through specially designed rooms with multiple large screens. Virtual reality typically incorporates auditory and video feedback, but may also allow other types of sensory and force feedback through haptic technology.</p>
+      <p>In futurism and science fiction, the metaverse is a hypothetical iteration of the Internet as a single, universal and immersive virtual world that is facilitated by the use of virtual reality (VR) and augmented reality (AR) headsets. In colloquial use, a metaverse is a network of 3D virtual worlds focused on social connection </p>
+      <p>The term "metaverse" originated in the 1992 science fiction novel Snow Crash, as a portmanteau of "meta" and "universe". Metaverse development is often linked to advancing virtual reality technology due to increasing demands for immersion. Recent interest in metaverse development is influenced by Web3, a concept for a decentralized iteration of the internet. Web3 and the Metaverse have been used as buzzwords to exaggerate development progress of various related technologies and projects for public relations purposes. Information privacy, user addiction, and user safety are concerns within the metaverse, stemming from challenges facing the social media and video game industries as a whole.</p>
+      </div>
+      <img class="zoom-picture" src="/IMG/topic/zuck-metaverse.jpg">
+    </div>
+  </section>
+</main>
 </body>
 </html>
