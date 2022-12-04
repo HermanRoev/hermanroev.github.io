@@ -8,9 +8,16 @@ html, body {
     background-color: rgb(15, 15, 15);
     color: rgb(240, 240, 240);
     scroll-snap-type: y mandatory;  /* Scrolls to the next scroll-snap-align element each time you give scroll input */
-    scroll-snap-stop: always;
+    scroll-snap-stop: always;   /* Always stops at an align point (every section) */
 }
-
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb {  /* Styles the scrollbar */
+    background: rgb(82, 82, 82);}
+::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0)40;} 
 
 /*Navigation, top right of the page*/
 .navigasjon {
@@ -47,85 +54,103 @@ html, body {
 }
 
 /* Main container, makes each section into one where scroll snap stops */
-.main-container section{
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    height: fit-content;
+    min-height: 100vh;
     scroll-snap-align: start;
 }
 
-/* Header contaier */
-.header-container {
+section a {
+    color: rgb(43, 182, 170);
+}
+/* Header */
+.header-container { /* Sets text middle right, and div to screen height */
     display: flex;
     height: 100vh;
     justify-content: flex-end;
     align-items: center;
+    scroll-snap-align: start end;
+    gap: 5%; /* Gap between gif and text */
 }
-
 .header-text {
     margin-right: 4vw;
     font-size: 60px;
     text-align: end;
 }
 
-/* VR-Highlight, text positioning*/
-.vr-headset {
+.topic-container {  /* Container for text and gif */
     display: flex;
-    height: 100vh;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: flex-end;
+    max-width: 1600px;
 }
 
-.vr-headset img {
-    width: 100%;
+.topic-text-container {
+    width: 45%;
+    font-size: calc(15px + 0.5vw); /* Size gets bigger and smaller with view-width but has a constant of 20px, does'nt get to small */
 }
 
-.hightlight-text {
-    margin: 10px;
-    font-size: 2.5vw;
-    position: absolute;
-    max-width: 40%;
-    color: rgb(240, 240, 240);
-    font-weight: bolder;
-    text-shadow: rgb(12, 12, 12) 1px 1px 50px;
-}
-
-/* Container for vr headset, zooms into Zoom content, changes visible div with js */
-.zoom-content-container {
-    
+.topic-img-container {
+    position: relative;
+    width: fit-content; /* Makes the div euqal to the GIF size, to correctly position the image text */
     height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
+    max-width: 45%;
 }
 
-.zoom-headline {
-    font-size: 30px;
-    margin: 20px 0px;
+.topic-img-container img {
+    max-width: 100%;    /* Image not allowed to be larger than container */
 }
 
-.zoom-content {
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    scroll-snap-align: end;
-    gap: 10px;
+.img-text { /* Positions the text at the bottom right of the image */
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    color: rgba(240, 240, 240, 0.7);
+    font-size: small;
+    text-align: right;
 }
 
-.zoom-text {
-    font-weight: 500;
-    font-size: 16px;
-}
-
-.zoom-picture {
-    max-width: 40%;
-    object-fit: contain;
-}
-
-@media only screen and (max-width: 800px) {
-    .zoom-content {
+@media only screen and (max-width: 900px) { /* Changes size and orientation of content containers */
+    .topic-container {
         flex-direction: column;
     }
 
-    .zoom-picture {
-        max-width: 70%;
+    .topic-text-container {
+        width: 80%;
+    }
+
+    .topic-img-container {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+    #animation {
+        display: none;  /* Removes the header gif when there is little space left */
+    }
+}
+
+@media only screen and (max-width: 700px) { /* Changes the header and nav so there isnt any cluttering  */
+    .header-container {
+        align-items: flex-end;
+    }
+
+    .header-text {
+        font-size: 8vw;
+    }
+
+    .navbtn {
+        flex-direction: column;
+    }
+
+    .navigasjon {
+        top: 0;
+        left: 0;
     }
 }
