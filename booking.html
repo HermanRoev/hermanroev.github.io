@@ -117,17 +117,18 @@
         <label input="email">
         <div class="form-field">
           <p>Your email</p>
-          <input type="email" placeholder="Your email">
+          <input type="email" placeholder="Your email"> 
         </div>
       </label>
       <label input="events">
         <div class="form-field">
           <p>Event</p>
-          <select name="select" id="#">
-            <option value="1">Book a table</option>
-            <option value="2">Wedding</option>
-            <option value="3">Consert</option>
-            <option value="4">Confirmation</option>
+          <select name="select">
+            <option value="0" disabled selected hidden>Book a table</option> <!-- Sets to preselected value, in addition to making it hidden and unselectable -->
+            <option value="1">Wedding</option>
+            <option value="2">Consert</option>
+            <option value="3">Confirmation</option>
+            <option value="4">Workshop</option>
           </select>
         </div>
       </label>
@@ -147,12 +148,12 @@
         <div class="form-field">
           <p>How many people?</p>
           <select name="select" id="#">
-            <option value="1">1 person</option>
-            <option value="2">2 persons</option>
-            <option value="3">3 persosn</option>
-            <option value="4">4 persons</option>
-            <option value="5">5 persons</option>
-            <option value="5+">5+ persons</option>
+            <option value="10">Group of ~10</option>
+            <option value="20">Group of ~20</option>
+            <option value="30">Group of ~30</option>
+            <option value="40">Group of ~40</option>
+            <option value="50">Group of ~50</option>
+            <option value="50+">Group of ~50+</option>
           </select>
         </div>
       </label>

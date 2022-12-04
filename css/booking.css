@@ -9,7 +9,7 @@ body {
 
 /* BOOKING INFORMATION */
 
-.about-us-text-header { /* Header  */
+.about-us-text-header { /* Header details */
   justify-content: center;
   text-align: center;
   font-size: x-large;
@@ -46,7 +46,7 @@ body {
   text-align: center;
 }
 
-form {
+form { /* Sets form to grid display, and makes space between each sections */
 	display: grid;
 	grid-row-gap: 20px;
   padding: 20px;
@@ -61,7 +61,7 @@ form p {
   justify-content: space-between;
 }
 
-.form-field input, select {
+.form-field input, select { /* Details for input and select box */
   width: 40%;
   color: rgb(43, 37, 29);
   background-color: bisque;
