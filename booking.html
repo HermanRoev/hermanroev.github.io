@@ -105,60 +105,60 @@
 </main>
 
 <!-- BOOKING FORM -->
-<section class="booking-container" id="bookingform"> 
-    <form action="#">
-      <h2 class="heading heading-yellow">Booking form</h2>
-      <label input="name">
+<section class="booking-container" id="bookingform"> <!-- Booking form -->
+  <form action="#">
+    <h2 class="heading heading-yellow">Booking form</h2>
+    <label input="name">
+    <div class="form-field">
+      <p>Your Name</p>
+      <input type="text" placeholder="Your Name">
+    </div>
+    </label>
+      <label input="email">
       <div class="form-field">
-        <p>Your Name</p>
-        <input type="text" placeholder="Your Name">
+        <p>Your email</p>
+        <input type="email" placeholder="Your email"> 
       </div>
-      </label>
-        <label input="email">
-        <div class="form-field">
-          <p>Your email</p>
-          <input type="email" placeholder="Your email"> 
-        </div>
-      </label>
-      <label input="events">
-        <div class="form-field">
-          <p>Event</p>
-          <select name="select">
-            <option value="0" disabled selected hidden>Choose event</option> <!-- Creates a placeholder, pre-selecting a disable and hidden value -->
-            <option value="1">Wedding</option>
-            <option value="2">Consert</option>
-            <option value="3">Confirmation</option>
-            <option value="4">Workshop</option>
-          </select>
-        </div>
-      </label>
-      <label input="date">
+    </label>
+    <label input="events">
       <div class="form-field">
-        <p>Date</p>
-        <input type="date">
+        <p>Event</p>
+        <select name="select">
+          <option value="0" disabled selected hidden>Choose event</option> <!-- Creates a placeholder, pre-selecting a disable and hidden value -->
+          <option value="1">Wedding</option>
+          <option value="2">Consert</option>
+          <option value="3">Confirmation</option>
+          <option value="4">Workshop</option>
+        </select>
       </div>
-      </label>
-      <label input="time">
-        <div class="form-field">
-          <p>Time</p>
-          <input type="time">
-        </div>
-      </label>
-      <label input="number of people">
-        <div class="form-field">
-          <p>How many people?</p>
-          <select name="select" id="#">
-            <option value="10">Group of ~10</option>
-            <option value="20">Group of ~20</option>
-            <option value="30">Group of ~30</option>
-            <option value="40">Group of ~40</option>
-            <option value="50">Group of ~50</option>
-            <option value="50+">Group of ~50+</option>
-          </select>
-        </div>
-      </label>
-      <button class="global-btn color" onclick="alert('Thank you for booking with Ottomo')">Submit</button>
-    </form>
+    </label>
+    <label input="date">
+    <div class="form-field">
+      <p>Date</p>
+      <input type="date">
+    </div>
+    </label>
+    <label input="time">
+      <div class="form-field">
+        <p>Time</p>
+        <input type="time">
+      </div>
+    </label>
+    <label input="number of people">
+      <div class="form-field">
+        <p>How many people?</p>
+        <select name="select" id="#">
+          <option value="10">Group of ~10</option>
+          <option value="20">Group of ~20</option>
+          <option value="30">Group of ~30</option>
+          <option value="40">Group of ~40</option>
+          <option value="50">Group of ~50</option>
+          <option value="50+">Group of ~50+</option>
+        </select>
+      </div>
+    </label>
+    <button class="global-btn color" onclick="alert('Thank you for booking with Ottomo')">Submit</button>
+  </form>
 </section>	
 <!-- BOOKING FORM end -->
 
