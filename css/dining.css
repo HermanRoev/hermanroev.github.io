@@ -65,6 +65,7 @@ body, html {
 } /* Styling the allergens text */
 /* MENU end */
 
+
 /* Drinks */
 .overflow {     /* Makes the div side-scrollable and adds scroll snap*/
     overflow-x: scroll;
@@ -125,15 +126,14 @@ body, html {
     font-size: 13px;
     padding: 5px;
 }
-
 /* Drinks end */
 
 
-@media only screen and (max-width: 700px) { /* Smaller sections for smaller screens */
+@media only screen and (max-width: 700px) { /* Makes mealtypes headline divs with image smaller on smaller screens */
     .mealtypes {
         height: 20vh;
     }
-} /* Makes mealtypes headline divs with image smaller on smaller screens */
+} 
 
 @media only screen and (max-width: 850px) {
     .content-container {
@@ -145,7 +145,7 @@ body, html {
     }
 }
 
-@media  screen and (min-width: 1985px) {    /* When the screen is larger than the container  */
+@media  only screen and (min-width: 1985px) {    /* When the screen is larger than the container, sets the content to be centered */
     .overflow {
         display: flex;
         justify-content: center;

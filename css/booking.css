@@ -6,9 +6,10 @@ body {
 .bg {
     background-image: url("/IMG/booking/bookingBG.png");
 }
+/* HEADER end */
+
 
 /* BOOKING INFORMATION */
-
 .about-us-text-header { /* Header details */
   justify-content: center;
   text-align: center;
@@ -79,6 +80,7 @@ form p {
   color: rgb(227, 220, 209);
 }
 /* BOOKING FORM end */
+
 
 @media screen and (max-width: 1000px) {
    /* Changes flex direction to give better space for text & image on smaller screens */

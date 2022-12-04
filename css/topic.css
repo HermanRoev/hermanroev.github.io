@@ -120,7 +120,7 @@ html, body {
     object-fit: contain;
 }
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
     .zoom-content {
         flex-direction: column;
     }
