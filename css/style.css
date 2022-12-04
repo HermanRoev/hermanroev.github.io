@@ -212,13 +212,19 @@ footer .content-text { /* Overrides the max-width of the text container in the f
     max-width: fit-content;
 }
 
-.footer-header{
-    max-width: 70%;
+footer .content-container {
+    width: 100%;
     margin: auto;
+}
+
+.footer-header{
+    width: 70%;
+    max-width: 1400px;
     padding-top: 20px;
     text-align: center;
     font-size: 24px;
     font-weight: 100;
+    margin: auto;
 }
 
 /* Google maps api */
@@ -259,6 +265,7 @@ footer p {
     background-color:rgb(43, 37, 29); 
     color:rgb(207, 185, 151); 
     padding: 20px;
+    width: 100%;
 }
 
 .footerinfo p {
