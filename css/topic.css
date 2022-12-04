@@ -2,85 +2,130 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow-x: hidden;
-    height: 5000px;
-}
- 
-.header{
-    height: 100vh;
+    background-color: rgb(51, 50, 50);
+    color: rgb(240, 240, 240);
+    scroll-snap-type: y mandatory;  /* Scrolls to the next scroll-snap-align element each time you give scroll input */
+    scroll-snap-stop: always;
 }
 
-.headertxt{
-    position: relative;
-    color: aliceblue;
-    font-size: 4rem;
+
+/*Navigation, top right of the page*/
+.navigasjon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.navbtn {
     display: flex;
-    flex-direction: column;
-    padding: 100px;
-    text-align: right;
- }
+    gap: 30px;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: end;
+}
 
+.navbtn a{
+  font-size: 30px;
+  color: rgb(240, 240, 240);
+  text-decoration: none;
+  transition: .5s;
+}
+
+.navbtn a:hover{
+  color: rgb(87, 181, 169);
+}
+
+
+/* Background with fixed position, follows scroll*/
 .bg {
-    position: sticky;
-    top: 0;
-    background-image: url("/IMG/topic/topicBG.png");
-    height: 100vh;
-    background-position: center;
+    background-image: url(/IMG/topic/topicBG.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* Main container, makes each section into one where scroll snap stops */
+.main-container section{
+    scroll-snap-align: start;
+}
+
+/* Header contaier */
+.header-container {
     display: flex;
+    height: 100vh;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-text {
+    margin-right: 4vw;
+    font-size: 60px;
+    text-align: end;
+}
+
+/* VR-Highlight, text positioning*/
+.vr-headset {
+    display: flex;
+    height: 100vh;
     align-items: center;
     justify-content: flex-end;
 }
 
-.graphic {
-    margin-top: 300px;
-    position: relative;
-    z-index: 1;
-}
-
-.headset {
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
-
-.highlight {
-    position: absolute;
-    top: -370px;
-    left: -100px;
-}
-
-.vr-zoom {
-    position: relative;
-    margin-top: 400px;
-}
-
-
- /*Navigation, lager boks øverst på siden*/
-.navigasjon {
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    top: 0;
+.vr-headset img {
     width: 100%;
-    padding-right: 100px;
-    margin-top: 30px;
-    z-index: 1;
 }
 
-.navbtn a{
-    padding-left: 20px;
-    font-size: 1.7rem;
-    color: rgb(240, 240, 240);
-    text-decoration: none;
-    transition: transform .5s;
+.hightlight-text {
+    margin: 10px;
+    font-size: 2.5vw;
+    position: absolute;
+    max-width: 40%;
+    color: rgb(20, 20, 20);
+    font-weight: bolder;
+    text-shadow: white 1px 1px 50px;
 }
 
-.navbtn a:hover{
-    color: rgb(87, 181, 169);
+/* Container for vr headset, zooms into Zoom content, changes visible div with js */
+.zoom-content-container {
+    
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.zoom-headline {
+    font-size: 30px;
+    margin: 20px 0px;
+}
+
+.zoom-content {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    scroll-snap-align: end;
+    gap: 10px;
+}
+
+.zoom-text {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.zoom-picture {
+    max-width: 40%;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 800px) {
+    .zoom-content {
+        flex-direction: column;
+    }
+
+    .zoom-picture {
+        max-width: 70%;
+    }
 }
