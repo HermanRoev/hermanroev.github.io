@@ -9,7 +9,7 @@ body {
 
 /* BOOKING INFORMATION */
 
-.about-us-text-header {
+.about-us-text-header { /* Header  */
   justify-content: center;
   text-align: center;
   font-size: x-large;
@@ -21,9 +21,10 @@ body {
   font-style: normal;
 }
 
-.img-text-container{
+.img-text-container{  
   max-width: 40%;
 }
+
 .img-text-container img {
   max-width:100%;
 }
