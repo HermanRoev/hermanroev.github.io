@@ -92,7 +92,7 @@
       <p>
         Do you need a place to hold an event, including a summer party, Christmas party, dining out for large groups or a birthday? <br>
         Ottimo has the perfect venue, so you can hold an atmospheric meeting with close friends, family and, possibly, colleagues. <br>
-        Our premises have a capacity of up to 50 people. Food and drink service, in addition to alcohol service, is available by choice from our menu and bar. <br>
+        Our premises have a capacity of up to 80 people. Food and drink service, in addition to alcohol service, is available by choice from our menu and bar. <br>
         The Ottimo team will be happy to help you satisfy your wishes. <br>
         A warm welcome to us! <br>
       </p>
@@ -149,6 +149,7 @@
         <p>How many people?</p>
       </label>
       <select name="select" id="number-of-people">
+        <option value="0" disabled selected hidden>Choose participants</option> <!-- Creates a placeholder, pre-selecting a disable and hidden value -->
         <option value="10">Group of ~10</option>
         <option value="20">Group of ~20</option>
         <option value="30">Group of ~30</option>
@@ -158,7 +159,9 @@
       </select>
     </div>
     <input type="submit" value="Submit" class="global-btn color">
+    <p>After you send your request we will contact you for further planing</p>
   </form>
+  
 </section>	
 <!-- BOOKING FORM end -->
 
