@@ -28,6 +28,7 @@ h2 { /* Overwrites set margin of h2 */
     padding: 10px 40px;
 } 
 
+
 /*Navigation container at the top of the page*/
 .navigation {   /* Navigation container when the viewport is wide */
     display: flex;
@@ -129,12 +130,10 @@ h2 { /* Overwrites set margin of h2 */
     color: rgb(207, 185, 151);
     cursor: pointer;
 }
-
 /* NAVIGATION end */
 
 
 /* HEADER */
-
 .bg { /* Sets background image */
     background-repeat: no-repeat;
     background-size: cover;
@@ -163,6 +162,7 @@ h2 { /* Overwrites set margin of h2 */
     justify-content: center;
 }
 /* HEADER end */
+
 
 /* CONTENT CONTAINERS, containers used on most pages to get a similar look and reusable code */
 .container-wrap { /* Main container */
@@ -204,6 +204,7 @@ h2 { /* Overwrites set margin of h2 */
 }
 /* CONTENT CONTAINER end */
 
+
 /*FOOTER*/
 footer {
     background-color: rgb(244, 239, 233);
@@ -243,11 +244,10 @@ footer .content-container {
 
 .mk1 {  /* Color for symbols in footer */
     color:rgb(127, 110, 86);
-    vertical-align: text-bottom ;
+    vertical-align: text-bottom ;   /* Aligns icons to the text, normally floats higher*/
 }
 
-footer a {
-    
+footer a {  /* Makes a elements similar to p elements */
     text-decoration: none;
     color: rgb(127, 110, 86);
     font-size: 20px;
