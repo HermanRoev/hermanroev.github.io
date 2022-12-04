@@ -42,13 +42,13 @@ h2 { /* Overwrites set margin of h2 */
 }
 
 /* Menu buttons */
-.nav-btn {
+.nav-btn {  /* List of buttons */
     display: flex;
     list-style-type: none;
-    gap: 10px;
+    gap: 20px;
 }
 
-.nav-btn a{
+.nav-btn a{ /* link elements inside list */
     font-size: 25px;
     font-weight: 450;
     color: rgb(240, 240, 240);
@@ -62,9 +62,9 @@ h2 { /* Overwrites set margin of h2 */
 }
 
 /* Logo in nav container*/
-.navigation img {
+.navigation img {   
     max-width: 140px;
-    padding: 20px 0px;
+    padding: 20px 0px;  /* Doesnt use full height */
     transition: .4s;
 }
 
@@ -75,6 +75,7 @@ h2 { /* Overwrites set margin of h2 */
 
 /* Creates a container to hold our nav menu */
 .nav {  /* Navigation container that comes when the viewport is small and you press the menu button */
+    visibility: hidden; /* Makes it non targetable, so you dont have to tab through two navigation lists if you use keyboard */
     width: 0px;
     height: 100%;
     position: fixed;
@@ -100,7 +101,7 @@ h2 { /* Overwrites set margin of h2 */
     color: rgb(207, 185, 151);
 }
 
-.close-btn {
+.close-btn {    /* Positions the close button in the navigation popout element */
     position: absolute;
     top: 15px;
     right: 25px;
@@ -155,9 +156,9 @@ h2 { /* Overwrites set margin of h2 */
     text-align: center; /* Centers text on small screens */
 }
 
-.header-buttons {
+.header-buttons {   
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    /* Makes the buttons wrap on small screens */
     gap: 1vh;
     justify-content: center;
 }
@@ -172,7 +173,7 @@ h2 { /* Overwrites set margin of h2 */
     align-items: center;
   }
 
-.container-wrap h2 {
+.container-wrap h2 {    /* h2 sizeing */
     font-size: 48px;
 }
   
@@ -181,7 +182,7 @@ h2 { /* Overwrites set margin of h2 */
     justify-content: space-evenly;
     align-items: center;
     max-width: 1600px;  /* Max width for when the screen gets really wide, the content will stop growing */
-    gap: 3vh; /* Gap for when the content is in column */
+    gap: 3vh;
 }
 
 .content-text { /* Container for text content */
@@ -210,14 +211,15 @@ footer {
 
 footer .content-text { /* Overrides the max-width of the text container in the footer */
     max-width: fit-content;
+    
 }
 
 footer .content-container {
-    width: 100%;
+    width: 100%;    /* Width and margin auto centering the container, for when width is over 1600px */
     margin: auto;
 }
 
-.footer-header{
+.footer-header{ /* Centering and positioning of text */
     width: 70%;
     max-width: 1400px;
     padding-top: 20px;
@@ -229,9 +231,9 @@ footer .content-container {
 
 /* Google maps api */
 .google-maps {  /* Size for the google maps using aspect ratio*/
-    width: 50%;
+    width: 50%; /* Of parent element */
     aspect-ratio: 3/2;
-    margin: 20px;
+    margin: 20px; 
 }
 
 .google-maps iframe {
@@ -239,13 +241,17 @@ footer .content-container {
     height: 100% !important;
 }
 
-.mk1 {
+.mk1 {  /* Color for symbols in footer */
     color:rgb(127, 110, 86);
+    vertical-align: text-bottom ;
 }
 
-footer a:link{
+footer a {
+    
     text-decoration: none;
     color: rgb(127, 110, 86);
+    font-size: 20px;
+    margin: 20px 0;
 }
 
 footer a:hover{
@@ -253,7 +259,7 @@ footer a:hover{
     color: rgb(207, 185, 151);
 }
 
-footer a:visited{
+footer a:visited{   /* Changes color after a link has been visited */
     color: rgb(127, 110, 86);
 }
 
@@ -305,7 +311,7 @@ footer p {
     color: rgb(207, 185, 151);
 }
 
-/*Medida query: CSS when viewport is wider than 600px, hides menu icon and shows the nav buttons*/
+/* Hides nav buttons when viewport is less than 700px and display menu icon instead */
 @media only screen and (max-width: 700px) {
     .nav-btn {
         display: none;
