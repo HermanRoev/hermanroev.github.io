@@ -106,19 +106,19 @@
 
 <!-- BOOKING FORM -->
 <section class="booking-container" id="bookingform"> <!-- Booking form -->
-  <form action="#">
+  <form action="#send to handler"> <!-- We do not have a from handler :/ -->
     <h2 class="heading heading-yellow">Booking form</h2>
     <div class="form-field">
       <label for="name">  <!-- Name input -->
         <p>Your Name</p>
       </label>
-      <input id="name" name="name" type="text" placeholder="Your Name">
+      <input required id="name" name="name" type="text" placeholder="Your Name"> <!-- Name and email are required inputs befor you can submit -->
     </div>
     <div class="form-field">
       <label for="email"> <!-- Email input -->
       <p>Your email</p>
       </label>
-      <input id="email" name="email" type="email" placeholder="Your email"> 
+      <input required id="email" name="email" type="email" placeholder="Your email"> 
     </div>
     <div class="form-field">
       <label for="events"> <!-- Event type input -->
@@ -157,7 +157,7 @@
         <option value="50+">Group of ~50+</option>
       </select>
     </div>
-    <button class="global-btn color" onclick="alert('Thank you for booking with Ottomo')">Submit</button>
+    <input type="submit" value="Submit" class="global-btn color">
   </form>
 </section>	
 <!-- BOOKING FORM end -->
